@@ -399,3 +399,24 @@ Nothing is recorded here yet: setup has not run.)
   (`qa/v6-cta-*.png`): image left=0 and right=viewport width at
   320/360/390/768, zero overflow everywhere. Gates green: check
   0/0, lint pass, Vitest 12/12, Playwright 6/6.
+
+### 2026-11-15 — New landing sections + real tech-stack icons (v7)
+
+- Home page completed with five new sections: Experience timeline
+  (3 demo roles), Process (4 steps, ghost numerals), Testimonials
+  (3 demo clients, 5-star, monogram avatars, honesty footnote),
+  Blog preview (shared PostCard component, also used by /blog),
+  FAQ (native details/summary accordion, plus rotates on open).
+  Order: Hero, About, Services, Selected Work, Experience,
+  Process, Testimonials, Tech Stack, Blog preview, FAQ, CTA.
+- Tech Stack rebuilt with REAL brand icons: Simple Icons (CC0)
+  SVG path data fetched from cdn.simpleicons.org and self-hosted
+  inline in `src/lib/data/tech.ts` (13 entries, 3 groups, brand
+  hex fills, no external requests). SvelteKit and Playwright have
+  no Simple Icons slug — SvelteKit uses the Svelte mark, Playwright
+  was dropped. Footer keeps the plain name list from site.ts.
+- Gotcha fixed: after changing the +page.ts load shape,
+  `svelte-kit sync` must run before svelte-check or PageData types
+  are stale (6 false errors). Gates green: check 0/0, lint pass,
+  Vitest 14/14, Playwright 6/6. Verified via `qa/v7-*.png`
+  (desktop + mobile, overflow 0, FAQ open state captured).

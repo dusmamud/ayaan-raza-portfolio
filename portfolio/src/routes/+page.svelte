@@ -1,11 +1,16 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import About from '#lib/components/sections/About.svelte';
+	import BlogPreview from '#lib/components/sections/BlogPreview.svelte';
 	import Cta from '#lib/components/sections/Cta.svelte';
+	import Experience from '#lib/components/sections/Experience.svelte';
+	import Faq from '#lib/components/sections/Faq.svelte';
 	import Hero from '#lib/components/sections/Hero.svelte';
+	import Process from '#lib/components/sections/Process.svelte';
 	import SelectedWork from '#lib/components/sections/SelectedWork.svelte';
 	import Services from '#lib/components/sections/Services.svelte';
 	import TechStack from '#lib/components/sections/TechStack.svelte';
+	import Testimonials from '#lib/components/sections/Testimonials.svelte';
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -40,5 +45,10 @@
 <About stats={data.stats} />
 <Services services={data.services} />
 <SelectedWork projects={data.projects} />
-<TechStack stack={data.site.techStack} />
+<Experience experience={data.experience} />
+<Process steps={data.processSteps} />
+<Testimonials testimonials={data.testimonials} />
+<TechStack stack={data.tech} />
+<BlogPreview posts={data.posts} />
+<Faq faqs={data.faqs} />
 <Cta />
