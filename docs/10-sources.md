@@ -420,3 +420,20 @@ Nothing is recorded here yet: setup has not run.)
   are stale (6 false errors). Gates green: check 0/0, lint pass,
   Vitest 14/14, Playwright 6/6. Verified via `qa/v7-*.png`
   (desktop + mobile, overflow 0, FAQ open state captured).
+
+### 2026-11-15 — Missing pages completed (v8)
+
+- New routes: /about (bio, illustration panel, stats, values),
+  /services (index) + /services/[id] (4 detail pages: includes
+  checklist, approach, related projects, other-service chips),
+  /privacy (honest demo policy), /resume (CV with print/PDF
+  button; print CSS hides header/footer), and a branded +error
+  page (404 + generic states, noindex). Service "Read more" links
+  and footer Services links now point at the detail pages instead
+  of the /#services anchor. Hero "Download CV" button now links
+  to /resume (was a dead "#"). Sitemap extended to all new URLs.
+- Gotcha fixed: +error.svelte must not declare status/error props
+  (eslint valid-prop-names-in-kit-pages rejects them) — it reads
+  page.status / page.error from $app/state instead. Gates green:
+  check 0/0, lint pass, Vitest 16/16, Playwright 6/6. Verified via
+  qa/v8-*.png (6 pages, desktop + mobile, overflow 0).

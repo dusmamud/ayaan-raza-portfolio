@@ -67,6 +67,17 @@
 	}
 }
 
+@media print {
+	header,
+	footer {
+		display: none !important;
+	}
+
+	body {
+		background-color: #fff;
+	}
+}
+
 /* Scroll reveal (see src/lib/actions/reveal.ts). The hidden state is only
    added by JS, so content stays visible without JS or with reduced motion. */
 .reveal-init {

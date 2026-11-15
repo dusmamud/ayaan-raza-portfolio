@@ -1,15 +1,21 @@
 import { site } from '#lib/data/site';
 import { projects } from '#lib/data/projects';
 import { posts } from '#lib/data/posts';
+import { services } from '#lib/data/services';
 
 export const prerender = true;
 
 export function GET() {
 	const paths = [
 		'',
+		'/about',
+		'/services',
 		'/projects',
 		'/blog',
 		'/contact',
+		'/privacy',
+		'/resume',
+		...services.map((service) => `/services/${service.id}`),
 		...projects.map((project) => `/projects/${project.slug}`),
 		...posts.map((post) => `/blog/${post.slug}`)
 	];

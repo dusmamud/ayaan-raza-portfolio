@@ -107,6 +107,7 @@
 		>
 			<p>© 2026 {site.name} — Demo portfolio. All content is fictional.</p>
 			<div class="flex items-center gap-5">
+				<a href="/privacy" class="transition-colors hover:text-white">Privacy Policy</a>
 				<p class="text-white/50">Built with SvelteKit</p>
 				<a
 					href="/#home"

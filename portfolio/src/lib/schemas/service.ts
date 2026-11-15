@@ -31,3 +31,13 @@ export const statSchema = z.object({
 	suffix: z.string()
 });
 export type Stat = z.infer<typeof statSchema>;
+
+export const serviceDetailSchema = z.object({
+	/** Matches the service id this detail page belongs to. */
+	id: z.string().min(1),
+	longDescription: z.string().min(1),
+	includes: z.array(z.string().min(1)).min(1),
+	approach: z.string().min(1),
+	relatedSlugs: z.array(z.string().min(1)).min(1)
+});
+export type ServiceDetail = z.infer<typeof serviceDetailSchema>;

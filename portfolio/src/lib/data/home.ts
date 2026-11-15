@@ -1,8 +1,10 @@
 import {
+	educationSchema,
 	experienceSchema,
 	faqSchema,
 	processStepSchema,
 	testimonialSchema,
+	type Education,
 	type Experience,
 	type Faq,
 	type ProcessStep,
@@ -129,5 +131,23 @@ export const faqs: Faq[] = faqSchema.array().parse([
 		question: 'How do we get started?',
 		answer:
 			'Send a message through the contact page with your idea. This demo form does not send anything yet — it shows the flow.'
+	}
+]);
+
+// Demo education history — fictional entries for the UI/UX demo.
+export const education: Education[] = educationSchema.array().parse([
+	{
+		id: 'btech',
+		degree: 'B.Tech, Computer Science',
+		school: 'Demo University',
+		period: '2018 — 2022',
+		note: 'Graduated with a focus on software engineering and human-computer interaction.'
+	},
+	{
+		id: 'nanodegree',
+		degree: 'Full-Stack Development Program',
+		school: 'Online (Demo)',
+		period: '2022',
+		note: 'Intensive program covering modern web stacks, APIs and mobile development.'
 	}
 ]);

@@ -1,9 +1,9 @@
 import { describe, expect, it } from 'vitest';
-import { experience, faqs, processSteps, testimonials } from '#lib/data/home';
+import { education, experience, faqs, processSteps, testimonials } from '#lib/data/home';
 import { site } from '#lib/data/site';
 import { getProject, projects } from '#lib/data/projects';
 import { posts } from '#lib/data/posts';
-import { services, stats } from '#lib/data/services';
+import { getService, getServiceDetail, serviceDetails, services, stats } from '#lib/data/services';
 import { tech } from '#lib/data/tech';
 
 // Importing the data modules runs their Zod validation, so these tests
@@ -52,5 +52,23 @@ describe('demo data', () => {
 			expect(item.color).toMatch(/^#[0-9A-Fa-f]{6}$/);
 			expect(item.path.length).toBeGreaterThan(50);
 		}
+	});
+
+	it('has a detail page for every service with resolving related projects', () => {
+		expect(serviceDetails).toHaveLength(services.length);
+		for (const service of services) {
+			expect(getService(service.id)?.id).toBe(service.id);
+			const detail = getServiceDetail(service.id);
+			expect(detail).toBeDefined();
+			for (const slug of detail!.relatedSlugs) {
+				expect(getProject(slug)).toBeDefined();
+			}
+		}
+		expect(getService('no-such-service')).toBeUndefined();
+		expect(getServiceDetail('no-such-service')).toBeUndefined();
+	});
+
+	it('has two education entries', () => {
+		expect(education).toHaveLength(2);
 	});
 });

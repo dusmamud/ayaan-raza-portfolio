@@ -35,3 +35,12 @@ export const faqSchema = z.object({
 	answer: z.string().min(1)
 });
 export type Faq = z.infer<typeof faqSchema>;
+
+export const educationSchema = z.object({
+	id: z.string().min(1),
+	degree: z.string().min(1),
+	school: z.string().min(1),
+	period: z.string().min(1),
+	note: z.string().min(1)
+});
+export type Education = z.infer<typeof educationSchema>;
