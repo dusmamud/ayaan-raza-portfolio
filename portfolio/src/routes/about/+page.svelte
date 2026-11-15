@@ -3,6 +3,7 @@
 	import { ArrowRight, Compass, Gem, HeartHandshake } from '@lucide/svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
+	import Picture from '#lib/components/ui/Picture.svelte';
 	import Stat from '#lib/components/ui/Stat.svelte';
 
 	let { data }: { data: PageData } = $props();
@@ -52,13 +53,12 @@
 	/>
 
 	<div class="mt-10 grid items-center gap-10 rounded-3xl bg-blush p-6 sm:p-10 lg:grid-cols-2">
-		<img
-			src="/images/about-illustration.png"
+		<Picture
+			base="/images/about-illustration"
 			alt=""
-			width="1920"
-			height="1280"
+			width={1920}
+			height={1280}
 			loading="lazy"
-			decoding="async"
 			class="h-auto w-full"
 		/>
 		<div>

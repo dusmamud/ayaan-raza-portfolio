@@ -3,6 +3,7 @@
 	import { reveal } from '#lib/actions/reveal';
 	import type { Site } from '#lib/schemas/site';
 	import Button from '#lib/components/ui/Button.svelte';
+	import Picture from '#lib/components/ui/Picture.svelte';
 	import SocialIcon from '#lib/components/ui/SocialIcon.svelte';
 
 	let { site }: { site: Site } = $props();
@@ -51,13 +52,12 @@
 		</div>
 
 		<div use:reveal={{ delay: 120 }}>
-			<img
-				src="/images/hero-illustration.png"
+			<Picture
+				base="/images/hero-illustration"
 				alt=""
-				width="1920"
-				height="1280"
-				fetchpriority="high"
-				decoding="async"
+				width={1920}
+				height={1280}
+				fetchPriority="high"
 				class="h-auto w-full"
 			/>
 		</div>

@@ -2,6 +2,7 @@
 	import { reveal } from '#lib/actions/reveal';
 	import type { Stat as StatData } from '#lib/schemas/service';
 	import Highlight from '#lib/components/ui/Highlight.svelte';
+	import Picture from '#lib/components/ui/Picture.svelte';
 	import SectionHeading from '#lib/components/ui/SectionHeading.svelte';
 	import Stat from '#lib/components/ui/Stat.svelte';
 	import WaveDivider from '#lib/components/ui/WaveDivider.svelte';
@@ -14,13 +15,12 @@
 	<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
 		<div class="grid items-center gap-10 lg:grid-cols-2">
 			<div use:reveal>
-				<img
-					src="/images/about-illustration.png"
+				<Picture
+					base="/images/about-illustration"
 					alt=""
-					width="1920"
-					height="1280"
+					width={1920}
+					height={1280}
 					loading="lazy"
-					decoding="async"
 					class="h-auto w-full"
 				/>
 			</div>

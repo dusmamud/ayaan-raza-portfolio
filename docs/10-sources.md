@@ -464,3 +464,31 @@ Nothing is recorded here yet: setup has not run.)
   links plus inline-prose links (WCAG inline exception).
   Gates green: check 0/0, lint pass, Vitest 16/16, Playwright
   6/6. Verified via qa/v9-home-hero-desktop.png.
+
+### 2026-11-15 — Image format waterfall: AVIF -> WebP -> JPG (v10)
+
+- Web-searched 2026 best practice: <picture> with AVIF <source>
+  first, WebP second, JPG <img> fallback; the browser picks the
+  first type it supports natively — instant, no JavaScript, one
+  file downloaded. AVIF ~93-95% support, WebP ~97-98%, JPG
+  universal. JXL skipped (flag-gated in Chrome). OG image stays
+  PNG: social crawlers do not reliably support AVIF/WebP.
+- All 7 artwork images generated in all 3 formats by
+  qa/convert-images.py (ffmpeg libaom-av1 CRF 28 yuv444p; PIL
+  WebP q85, JPG q90 4:4:4 progressive). Totals: PNG 4.72MB ->
+  AVIF 268KB (-94%), WebP 535KB, JPG 1.52MB. Illustration corner
+  colors verified 0-2/255 from the exact section backgrounds, so
+  the blend is unchanged. PNG masters deleted from static/
+  (preserved in git history).
+- New Picture.svelte component (display:contents wrapper, alt /
+  dimensions / loading / fetchpriority on the <img>); all 6
+  <img> usages converted (Hero, About section, CTA, PhoneMockup
+  x2, /about page). Hero keeps fetchpriority="high" + eager,
+  the rest lazy.
+- Verified with qa/verify-formats.mjs: 12/12 image requests in
+  Chromium were AVIF, zero WebP/JPG/PNG; all 11 home <picture>
+  elements have correct source order + JPG fallback. Visual QA
+  (qa/v10-*.png): phones + CTA blend unchanged. Re-audit 0
+  problems. Gates green: check 0/0, lint pass, Vitest 16/16,
+  Playwright 6/6 (one e2e run failed on a stale port-4173
+  server left by a prior run; clean re-run passed).
