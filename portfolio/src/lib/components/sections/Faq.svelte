@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Plus } from '@lucide/svelte';
 	import { reveal } from '#lib/actions/reveal';
 	import type { Faq } from '#lib/schemas/home';
+	import FaqItem from '#lib/components/sections/FaqItem.svelte';
 	import Highlight from '#lib/components/ui/Highlight.svelte';
 	import SectionHeading from '#lib/components/ui/SectionHeading.svelte';
 
@@ -17,19 +17,7 @@
 		</div>
 		<div class="mt-10 space-y-3" use:reveal={{ delay: 100 }}>
 			{#each faqs as faq (faq.id)}
-				<details class="group rounded-2xl bg-card px-6 shadow-sm">
-					<summary
-						class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 font-display font-bold text-ink [&::-webkit-details-marker]:hidden"
-					>
-						{faq.question}
-						<Plus
-							size={20}
-							class="shrink-0 text-accent transition-transform duration-300 group-open:rotate-45"
-							aria-hidden="true"
-						/>
-					</summary>
-					<p class="pb-5 leading-relaxed text-body">{faq.answer}</p>
-				</details>
+				<FaqItem {faq} />
 			{/each}
 		</div>
 	</div>

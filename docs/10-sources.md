@@ -566,3 +566,26 @@ Nothing is recorded here yet: setup has not run.)
   Playwright 6/6, audit 0 problems (30 pages), no
   overflow at 1440/390, screenshots qa/v12-footer-*.png
   (desktop light, dark sub-page, mobile).
+
+### 2026-11-15 — FAQ smooth expand/collapse animation (v13)
+
+- Web-searched 2026 accordion practice: the grid-template-
+  rows 0fr -> 1fr transition is the safe default (stable
+  in all browsers since 2023, no max-height guessing);
+  the newer ::details-content + interpolate-size route is
+  Chromium-only, so it was not used.
+- <details> cannot animate its close (content hides
+  instantly), so Faq.svelte was converted to a button
+  accordion with a new FaqItem.svelte per item: button +
+  aria-expanded/aria-controls, region panel, `inert` on
+  collapsed panels, h3 question headings, multi-open
+  behaviour kept. Panel animates grid-template-rows
+  300ms ease-out + answer opacity fade + Plus icon
+  rotation; all motion is motion-safe: gated, so
+  prefers-reduced-motion users get instant open/close.
+- Verified with qa/faq-qa.mjs: sampled panel heights rise
+  0 -> 72px and fall 72 -> 0px monotonically (real
+  animation, not a jump); reduced-motion computes 0s
+  duration and full height instantly. Gates green:
+  check 0/0, lint pass, Vitest 18/18, Playwright 6/6.
+  Screenshot qa/v13-faq-open.png.
