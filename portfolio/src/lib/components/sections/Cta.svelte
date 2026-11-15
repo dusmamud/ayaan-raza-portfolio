@@ -25,7 +25,7 @@
 				</Button>
 			</div>
 		</div>
-		<div use:reveal={{ delay: 100 }}>
+		<div use:reveal={{ delay: 100 }} class="mx-[-1rem] sm:mx-[-1.5rem] lg:mx-0">
 			<img
 				src="/images/cta-illustration.png"
 				alt=""

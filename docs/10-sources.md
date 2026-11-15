@@ -386,3 +386,16 @@ Nothing is recorded here yet: setup has not run.)
   (`qa/v5-work-*.png`, overflow 0 everywhere). Gates green again:
   check 0/0, lint pass, Vitest 12/12, Playwright 6/6. Old screens
   kept as `qa/screen-*-v1.png` / `qa/screen-fittrack-orig.png`.
+
+### 2026-11-15 — CTA illustration full-bleed on mobile (v6)
+
+- The user marked side gaps around the CTA illustration on mobile.
+  Cause: the section container's side padding (px-4 / px-6) inset
+  the image. Fix: the illustration wrapper now uses negative
+  horizontal margins below lg (`mx-[-1rem] sm:mx-[-1.5rem]
+  lg:mx-0`), cancelling the container padding so the image spans
+  the full viewport width while stacked; desktop 2-column layout
+  unchanged. Verified by geometry + screenshots at 5 widths
+  (`qa/v6-cta-*.png`): image left=0 and right=viewport width at
+  320/360/390/768, zero overflow everywhere. Gates green: check
+  0/0, lint pass, Vitest 12/12, Playwright 6/6.
