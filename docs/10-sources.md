@@ -365,3 +365,24 @@ Nothing is recorded here yet: setup has not run.)
   `qa/hero-illustration-v1.png`. Gates re-verified: check 0/0, lint
   pass, Vitest 12/12, Playwright 6/6, build pass. `og.png` regenerated
   from the new hero screenshot.
+
+### 2026-11-15 — Work-section screen fit + responsive cross-verification (v5)
+
+- The user reported screens not fitting the phone frames and the
+  design not being responsive. Cross-verification ran at 8 widths
+  (320/360/390/640/768/1024/1280/1440) plus the case-study page:
+  scripted overflow check found 0 overflowing elements at every
+  width, so the layout itself was sound. The real defects were the
+  assets: Shopio + WalletWise screens had an inset white panel on a
+  colored background (a card inside the phone), while Foodly +
+  FitTrack were full-bleed; FitTrack was also wider than the 9:19
+  frame (1152x2048) so the browser side-cropped it. Fix: Shopio +
+  WalletWise screens regenerated full-bleed edge-to-edge (1008x2128,
+  exact 9:19); FitTrack center-cropped to 970x2048 (exact 9:19, no
+  content lost — verified visually); all four screens now share the
+  frame aspect exactly. PhoneMockup sizes made responsive
+  (w-44 default, w-40 at lg, w-44 at xl) so phones fit the narrow
+  4-column cards at 1024px. Re-verified at all 8 widths
+  (`qa/v5-work-*.png`, overflow 0 everywhere). Gates green again:
+  check 0/0, lint pass, Vitest 12/12, Playwright 6/6. Old screens
+  kept as `qa/screen-*-v1.png` / `qa/screen-fittrack-orig.png`.
