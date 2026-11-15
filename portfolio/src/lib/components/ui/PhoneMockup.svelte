@@ -2,9 +2,10 @@
 	import type { MockupVariant } from '#lib/schemas/project';
 	import { cn } from '#lib/utils/cn';
 
-	// Decorative demo phones. The front phone shows the generated app
-	// screen for the project; the back phone is an abstract skeleton for
-	// depth. All project information lives in the card text beside the tile.
+	// Decorative demo phones. Both phones show the generated app screen
+	// for the project — the back phone tilted behind the front one, as
+	// in the reference design. All project information lives in the
+	// card text beside the tile.
 	let { variant, class: className = '' }: { variant: MockupVariant; class?: string } = $props();
 
 	const screens: Record<MockupVariant, { src: string; width: number; height: number }> = {
@@ -17,17 +18,19 @@
 </script>
 
 <div class={cn('relative mx-auto w-44', className)} aria-hidden="true">
-	<!-- Back phone, generic skeleton -->
+	<!-- Back phone, same screen, tilted -->
 	<div
-		class="absolute top-5 -right-4 w-28 rotate-6 rounded-[1.4rem] border-4 border-white/90 bg-white/80 p-2 shadow-sm"
+		class="absolute top-6 -right-3 aspect-[9/19] w-28 rotate-[8deg] overflow-hidden rounded-[1.3rem] border-4 border-white/90 bg-white shadow-sm"
 	>
-		<div class="mx-auto h-1 w-8 rounded-full bg-ink/20"></div>
-		<div class="mt-2 h-10 rounded-lg bg-lilac"></div>
-		<div class="mt-2 space-y-1.5">
-			<div class="h-1.5 rounded-full bg-ink/10"></div>
-			<div class="h-1.5 w-3/4 rounded-full bg-ink/10"></div>
-			<div class="h-1.5 w-1/2 rounded-full bg-ink/10"></div>
-		</div>
+		<img
+			src={screen.src}
+			alt=""
+			width={screen.width}
+			height={screen.height}
+			loading="lazy"
+			decoding="async"
+			class="block h-full w-full object-cover object-top"
+		/>
 	</div>
 
 	<!-- Front phone with the generated app screen -->

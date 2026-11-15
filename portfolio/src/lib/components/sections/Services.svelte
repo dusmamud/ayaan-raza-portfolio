@@ -12,7 +12,7 @@
 
 <section id="services" aria-labelledby="services-heading" tabindex="-1" class="bg-lilac">
 	<WaveDivider fillClass="fill-blush" flip />
-	<div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+	<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
 		<div class="grid items-end gap-4 lg:grid-cols-2" use:reveal>
 			<SectionHeading eyebrow="What I do" id="services-heading">
 				Services I <Highlight>provide</Highlight>

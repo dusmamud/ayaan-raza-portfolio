@@ -9,7 +9,7 @@
 <section id="cta" aria-labelledby="cta-heading" tabindex="-1" class="bg-blush">
 	<WaveDivider fillClass="fill-cream" flip />
 	<div
-		class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-20"
+		class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-16"
 	>
 		<div use:reveal>
 			<h2
@@ -33,7 +33,7 @@
 				height="1280"
 				loading="lazy"
 				decoding="async"
-				class="h-auto w-full rounded-[2rem] shadow-lg ring-1 ring-ink/5"
+				class="h-auto w-full"
 			/>
 		</div>
 	</div>

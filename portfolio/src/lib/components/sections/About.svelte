@@ -11,8 +11,8 @@
 
 <section id="about" aria-labelledby="about-heading" tabindex="-1" class="bg-blush">
 	<WaveDivider fillClass="fill-cream" />
-	<div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-		<div class="grid items-center gap-12 lg:grid-cols-2">
+	<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+		<div class="grid items-center gap-10 lg:grid-cols-2">
 			<div use:reveal>
 				<img
 					src="/images/about-illustration.png"
@@ -21,7 +21,7 @@
 					height="1280"
 					loading="lazy"
 					decoding="async"
-					class="h-auto w-full rounded-[2rem] shadow-lg ring-1 ring-ink/5"
+					class="h-auto w-full"
 				/>
 			</div>
 			<div use:reveal={{ delay: 100 }}>
@@ -36,13 +36,12 @@
 					I love turning ideas into real products with clean code, great user experience and modern
 					technologies.
 				</p>
+				<div class="mt-8 grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-4">
+					{#each stats as stat (stat.id)}
+						<Stat {stat} />
+					{/each}
+				</div>
 			</div>
-		</div>
-
-		<div class="mt-14 grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-4" use:reveal>
-			{#each stats as stat (stat.id)}
-				<Stat {stat} />
-			{/each}
 		</div>
 	</div>
 </section>

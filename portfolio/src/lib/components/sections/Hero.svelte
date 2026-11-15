@@ -10,7 +10,7 @@
 
 <section id="home" aria-labelledby="hero-heading" tabindex="-1">
 	<div
-		class="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-10 pb-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:pt-16 lg:pb-24"
+		class="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-10 pb-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:pt-16 lg:pb-20"
 	>
 		<div use:reveal>
 			<p class="font-display text-lg font-bold text-ink">Hi, I'm Ayaan 👋</p>
@@ -59,7 +59,7 @@
 				height="1280"
 				fetchpriority="high"
 				decoding="async"
-				class="h-auto w-full rounded-[2rem] shadow-lg ring-1 ring-ink/5"
+				class="h-auto w-full"
 			/>
 		</div>
 	</div>

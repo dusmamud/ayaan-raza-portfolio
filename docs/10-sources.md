@@ -346,3 +346,22 @@ Nothing is recorded here yet: setup has not run.)
 - Gates re-verified after integration + polish: check 0 errors /
   0 warnings, lint pass, Vitest 12/12, Playwright 6/6, build pass.
   `og.png` regenerated from the new hero screenshot (1200x630).
+
+### 2026-11-15 — Reference-fidelity pass (v4)
+
+- The user rejected the first artwork integration (cards + layout did
+  not match the reference closely enough). Fixes, all verified by
+  screenshots (`qa/*-v4.png`, scroll-aware capture so lazy images
+  load): hero illustration regenerated with the reference arrangement
+  (large 3/4 laptop with keyboard, floating tilted phone, plant left,
+  AR. mug right, pink blob); the 3 illustration backgrounds were
+  recolored in place (numpy + scipy connected-component mask, feathered)
+  to the exact section colors (hero #FFF7F1, about/CTA #FDE8EE) so the
+  artwork blends into the sections with no card/border; About stats
+  moved into the right column under the text (4-across, as in the
+  reference); PhoneMockup now shows two phones, both with the generated
+  screen (back phone tilted); section padding tightened. Original
+  pre-recolor files kept as `qa/*-orig.png`, first hero as
+  `qa/hero-illustration-v1.png`. Gates re-verified: check 0/0, lint
+  pass, Vitest 12/12, Playwright 6/6, build pass. `og.png` regenerated
+  from the new hero screenshot.

@@ -13,7 +13,7 @@
 
 <section id="projects" aria-labelledby="projects-heading" tabindex="-1" class="bg-cream">
 	<WaveDivider fillClass="fill-lilac" />
-	<div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+	<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
 		<div class="grid items-end gap-4 lg:grid-cols-2" use:reveal>
 			<SectionHeading eyebrow="My Work" id="projects-heading">
 				Selected <Highlight>Work</Highlight>
