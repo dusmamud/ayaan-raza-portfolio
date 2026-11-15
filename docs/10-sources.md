@@ -539,3 +539,30 @@ Nothing is recorded here yet: setup has not run.)
   (light + dark, incl. section clips). One fix found in
   QA: OpenSource icon chips stretched in flex-col cards —
   self-start added.
+
+### 2026-11-15 — Footer redesign (v12)
+
+- Web-searched 2026 footer practice first: 3-4 columns is
+  the sweet spot, 5-8 links per column grouped under short
+  headings, and the "big wordmark" closing statement is
+  the signature portfolio pattern (giant brand name,
+  aria-hidden, fluid size, soft fade).
+- Rebuilt Footer.svelte: brand block (logo, tagline,
+  availability badge, socials) spanning 2 of 6 grid
+  columns; Explore (6), Resources (6, incl. new Resume +
+  Search links), Services (4), Contact as <address> with
+  a 24-hour reply line. The dead Tech Stack list column
+  was removed (its content lives at /#stack, now linked
+  under Resources). Each link column is its own labelled
+  <nav>; links underline on hover; 24px tap targets kept.
+- Giant "AYAAN RAZA." wordmark under the grid: fluid
+  clamp(2.5rem, 11.5vw, 10rem), whitespace-nowrap,
+  white/8 with a bottom mask fade, accent dot at 25%.
+  Bottom bar split into three groups: copyright, legal
+  nav, meta + pill-style Back to top button.
+- QA bug found and fixed: the wordmark wrapped to two
+  lines on mobile (missing nowrap + too-large vw size).
+  Verified: check 0/0, lint pass, Vitest 18/18,
+  Playwright 6/6, audit 0 problems (30 pages), no
+  overflow at 1440/390, screenshots qa/v12-footer-*.png
+  (desktop light, dark sub-page, mobile).
