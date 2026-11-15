@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { reveal } from '#lib/actions/reveal';
 	import type { Stat as StatData } from '#lib/schemas/service';
-	import AboutArt from '#lib/components/ui/AboutArt.svelte';
 	import Highlight from '#lib/components/ui/Highlight.svelte';
 	import SectionHeading from '#lib/components/ui/SectionHeading.svelte';
 	import Stat from '#lib/components/ui/Stat.svelte';
@@ -15,7 +14,15 @@
 	<div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
 		<div class="grid items-center gap-12 lg:grid-cols-2">
 			<div use:reveal>
-				<AboutArt />
+				<img
+					src="/images/about-illustration.png"
+					alt=""
+					width="1920"
+					height="1280"
+					loading="lazy"
+					decoding="async"
+					class="h-auto w-full rounded-[2rem] shadow-lg ring-1 ring-ink/5"
+				/>
 			</div>
 			<div use:reveal={{ delay: 100 }}>
 				<SectionHeading eyebrow="About me" id="about-heading">

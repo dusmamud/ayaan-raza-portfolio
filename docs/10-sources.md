@@ -320,3 +320,29 @@ Nothing is recorded here yet: setup has not run.)
   never printed); a manual dispatch then verified the workflow parses
   and runs. Site `baseUrl` still the `https://ayaanraza.demo`
   placeholder until the live Pages URL is known.
+
+### 2026-11-15 — Live deploy + generated artwork integration
+
+- Live: https://ayaan-raza-portfolio.pages.dev/ — confirmed by the user
+  2026-11-15 and verified serving the site the same day. The earlier
+  Deploy-step failure cause was never read from the run logs. Site
+  `baseUrl` swapped from the `https://ayaanraza.demo` placeholder to
+  the live Pages URL (one line, `src/lib/data/site.ts`).
+- Artwork: 7 PNGs generated via subagents and integrated the same day
+  into `portfolio/static/images/` (hero/about/CTA illustrations,
+  1920x1280; 4 app screens, portrait). Hero/About/CTA sections now
+  render `<img>` tags (rounded card + soft shadow); the hand-drawn SVG
+  components (HeroArt/AboutArt/CtaArt) were removed. PhoneMockup now
+  shows the generated screen inside the phone frame (fixed 9:19
+  aspect + object-cover, so all 4 cards align; the screen is chosen
+  by the project's mockup variant via `$derived`). Generation sidecar
+  JSONs were deleted and filenames normalized; no "Shoaib"/"SH." text
+  appears anywhere.
+- Visual QA re-run 2026-11-15 (Playwright screenshots, desktop +
+  mobile, `qa/*-v3.png`): cards aligned, illustrations render as
+  rounded cards, mobile stacks cleanly. Note: lazy-loaded images
+  below the fold appear blank in full-page screenshots (a capture
+  artifact); section clips confirm they load on scroll.
+- Gates re-verified after integration + polish: check 0 errors /
+  0 warnings, lint pass, Vitest 12/12, Playwright 6/6, build pass.
+  `og.png` regenerated from the new hero screenshot (1200x630).

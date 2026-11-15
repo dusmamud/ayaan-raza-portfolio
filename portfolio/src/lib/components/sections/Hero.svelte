@@ -3,7 +3,6 @@
 	import { reveal } from '#lib/actions/reveal';
 	import type { Site } from '#lib/schemas/site';
 	import Button from '#lib/components/ui/Button.svelte';
-	import HeroArt from '#lib/components/ui/HeroArt.svelte';
 	import SocialIcon from '#lib/components/ui/SocialIcon.svelte';
 
 	let { site }: { site: Site } = $props();
@@ -53,7 +52,15 @@
 		</div>
 
 		<div use:reveal={{ delay: 120 }}>
-			<HeroArt />
+			<img
+				src="/images/hero-illustration.png"
+				alt=""
+				width="1920"
+				height="1280"
+				fetchpriority="high"
+				decoding="async"
+				class="h-auto w-full rounded-[2rem] shadow-lg ring-1 ring-ink/5"
+			/>
 		</div>
 	</div>
 </section>

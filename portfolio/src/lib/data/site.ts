@@ -10,7 +10,7 @@ export const site: Site = siteSchema.parse({
 	email: 'hello@ayaanraza.demo',
 	phone: '+91 00000 00000',
 	location: 'India (Demo)',
-	baseUrl: 'https://ayaanraza.demo',
+	baseUrl: 'https://ayaan-raza-portfolio.pages.dev',
 	nav: [
 		{ label: 'Home', href: '/#home' },
 		{ label: 'About', href: '/#about' },

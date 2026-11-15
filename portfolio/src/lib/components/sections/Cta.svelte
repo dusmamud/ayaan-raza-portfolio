@@ -2,7 +2,6 @@
 	import { ArrowRight } from '@lucide/svelte';
 	import { reveal } from '#lib/actions/reveal';
 	import Button from '#lib/components/ui/Button.svelte';
-	import CtaArt from '#lib/components/ui/CtaArt.svelte';
 	import Highlight from '#lib/components/ui/Highlight.svelte';
 	import WaveDivider from '#lib/components/ui/WaveDivider.svelte';
 </script>
@@ -27,7 +26,15 @@
 			</div>
 		</div>
 		<div use:reveal={{ delay: 100 }}>
-			<CtaArt />
+			<img
+				src="/images/cta-illustration.png"
+				alt=""
+				width="1920"
+				height="1280"
+				loading="lazy"
+				decoding="async"
+				class="h-auto w-full rounded-[2rem] shadow-lg ring-1 ring-ink/5"
+			/>
 		</div>
 	</div>
 </section>
