@@ -61,8 +61,8 @@
 		<h2 class="font-display text-xl font-bold text-ink">Contact</h2>
 		<p class="mt-2 leading-relaxed text-body">
 			Questions about this policy? Reach out via the
-			<a href="/contact" class="font-bold text-accent hover:text-accent-dark">contact page</a>. All
-			contact details on this site are demo details.
+			<a href="/contact" class="font-bold text-accent-darker hover:text-accent-dark">contact page</a
+			>. All contact details on this site are demo details.
 		</p>
 	</section>
 </div>

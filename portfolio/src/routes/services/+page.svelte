@@ -36,7 +36,9 @@
 	<p class="mt-12 max-w-2xl leading-relaxed text-body">
 		Not sure which service fits? Most projects combine two or more — start with a message and we'll
 		shape the scope together.
-		<a href="/#process" class="font-bold text-accent hover:text-accent-dark"> See how I work </a>.
+		<a href="/#process" class="font-bold text-accent-darker hover:text-accent-dark">
+			See how I work
+		</a>.
 	</p>
 </div>
 

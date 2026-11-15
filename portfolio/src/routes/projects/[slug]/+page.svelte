@@ -35,14 +35,14 @@
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
 	<a
 		href="/projects"
-		class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:text-accent-dark"
+		class="inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
 		<ArrowLeft size={16} aria-hidden="true" /> All Projects
 	</a>
 
 	<div class="mt-8 grid items-start gap-10 lg:grid-cols-2">
 		<div>
-			<p class="font-display text-sm font-bold tracking-wide text-accent uppercase">
+			<p class="font-display text-sm font-bold tracking-wide text-accent-darker uppercase">
 				{project.category}
 			</p>
 			<h1

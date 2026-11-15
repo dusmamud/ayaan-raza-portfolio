@@ -26,7 +26,7 @@
 <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
 	<a
 		href="/blog"
-		class="inline-flex items-center gap-1.5 text-sm font-bold text-accent hover:text-accent-dark"
+		class="inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
 		<ArrowLeft size={16} aria-hidden="true" /> All posts
 	</a>
@@ -60,7 +60,10 @@
 	<ul class="mt-3 space-y-2">
 		{#each data.others as other (other.slug)}
 			<li>
-				<a href="/blog/{other.slug}" class="font-bold text-accent hover:text-accent-dark">
+				<a
+					href="/blog/{other.slug}"
+					class="inline-block py-1 font-bold text-accent-darker hover:text-accent-dark"
+				>
 					{other.title}
 				</a>
 			</li>

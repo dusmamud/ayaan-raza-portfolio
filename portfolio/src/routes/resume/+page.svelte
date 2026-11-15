@@ -39,7 +39,7 @@
 			>
 				{data.site.name}
 			</h1>
-			<p class="mt-1 font-display text-lg font-bold text-accent">{data.site.role}</p>
+			<p class="mt-1 font-display text-lg font-bold text-accent-darker">{data.site.role}</p>
 			<ul class="mt-4 space-y-1.5 text-sm text-body">
 				<li class="flex items-center gap-2">
 					<Mail size={15} aria-hidden="true" />
@@ -77,7 +77,7 @@
 				<li>
 					<div class="flex flex-wrap items-baseline justify-between gap-2">
 						<h3 class="font-display font-bold text-ink">
-							{job.role} · <span class="text-accent">{job.company}</span>
+							{job.role} · <span class="text-accent-darker">{job.company}</span>
 						</h3>
 						<p class="text-sm font-bold text-body">{job.period}</p>
 					</div>
@@ -94,7 +94,7 @@
 				<li>
 					<div class="flex flex-wrap items-baseline justify-between gap-2">
 						<h3 class="font-display font-bold text-ink">
-							{item.degree} · <span class="text-accent">{item.school}</span>
+							{item.degree} · <span class="text-accent-darker">{item.school}</span>
 						</h3>
 						<p class="text-sm font-bold text-body">{item.period}</p>
 					</div>

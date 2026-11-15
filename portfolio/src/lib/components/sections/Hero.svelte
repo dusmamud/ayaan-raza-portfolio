@@ -28,7 +28,6 @@
 				<Button href="/#projects">
 					View My Work <ArrowRight size={18} aria-hidden="true" />
 				</Button>
-				<!-- Demo only: no CV file exists in Phase 1. -->
 				<Button href="/resume" variant="secondary" ariaLabel="View CV">
 					Download CV <Download size={18} aria-hidden="true" />
 				</Button>

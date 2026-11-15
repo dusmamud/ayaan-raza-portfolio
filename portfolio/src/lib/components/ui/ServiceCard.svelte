@@ -24,7 +24,7 @@
 	<p class="mt-2 text-sm leading-relaxed text-body">{service.description}</p>
 	<a
 		href={service.href}
-		class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-accent hover:text-accent-dark"
+		class="mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
 		Read more <ArrowRight size={16} aria-hidden="true" />
 	</a>

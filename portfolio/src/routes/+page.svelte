@@ -13,6 +13,25 @@
 	import Testimonials from '#lib/components/sections/Testimonials.svelte';
 
 	let { data }: { data: PageData } = $props();
+
+	// The whole tag is injected raw: Svelte does not evaluate
+	// expressions inside <script> elements in markup, so a plain
+	// {JSON.stringify(...)} there would ship literally and the
+	// structured data would be invalid. The closing tag is escaped
+	// so it cannot terminate this component <script> block.
+	/* eslint-disable no-useless-escape -- \/ keeps the literal closing tag out of this file */
+	const jsonLd = $derived(
+		`<script type="application/ld+json">${JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'Person',
+			name: data.site.name,
+			jobTitle: data.site.role,
+			url: data.site.baseUrl,
+			description:
+				'Ayaan Raza builds fast, scalable and beautiful web and mobile applications. Demo portfolio — all content is fictional.'
+		}).replaceAll('<', '\\u003c')}<\/script>`
+	);
+	/* eslint-enable no-useless-escape */
 </script>
 
 <svelte:head>
@@ -28,17 +47,8 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/" />
 	<link rel="canonical" href="{data.site.baseUrl}/" />
-	<script type="application/ld+json">
-		{JSON.stringify({
-			'@context': 'https://schema.org',
-			'@type': 'Person',
-			name: data.site.name,
-			jobTitle: data.site.role,
-			url: data.site.baseUrl,
-			description:
-				'Ayaan Raza builds fast, scalable and beautiful web and mobile applications. Demo portfolio — all content is fictional.'
-		})}
-	</script>
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -- jsonLd is built above from static site data, no user input -->
+	{@html jsonLd}
 </svelte:head>
 
 <Hero site={data.site} />

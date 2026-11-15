@@ -104,7 +104,7 @@
 	<p class="mt-12 text-center">
 		<a
 			href="/#experience"
-			class="inline-flex items-center gap-1 font-bold text-accent hover:text-accent-dark"
+			class="inline-flex items-center gap-1 py-1 font-bold text-accent-darker hover:text-accent-dark"
 		>
 			See the full career journey <ArrowRight size={18} aria-hidden="true" />
 		</a>

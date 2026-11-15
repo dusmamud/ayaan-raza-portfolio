@@ -6,7 +6,10 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { sveltekit } from '@sveltejs/kit/vite';
 
 export default defineConfig({
-	plugins: [tailwindcss(), sveltekit({ adapter: adapter(), preprocess: vitePreprocess() })],
+	plugins: [
+		tailwindcss(),
+		sveltekit({ adapter: adapter({ fallback: '404.html' }), preprocess: vitePreprocess() })
+	],
 	test: {
 		expect: { requireAssertions: true },
 		projects: [

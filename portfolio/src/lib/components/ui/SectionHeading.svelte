@@ -17,7 +17,7 @@
 </script>
 
 <div class={align === 'center' ? 'text-center' : undefined}>
-	<p class="font-display text-sm font-bold tracking-wide text-accent uppercase">{eyebrow}</p>
+	<p class="font-display text-sm font-bold tracking-wide text-accent-darker uppercase">{eyebrow}</p>
 	<h2
 		{id}
 		class="mt-2 font-display text-[clamp(1.75rem,4vw,2.5rem)] leading-tight font-extrabold tracking-tight text-ink"

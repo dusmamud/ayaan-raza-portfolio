@@ -20,7 +20,7 @@
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
 	<a
 		href="/services"
-		class="inline-flex items-center gap-1 text-sm font-bold text-accent hover:text-accent-dark"
+		class="inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
 		<ArrowLeft size={16} aria-hidden="true" /> All services
 	</a>
@@ -73,7 +73,7 @@
 				<li>
 					<a
 						href={other.href}
-						class="inline-block rounded-full border border-ink/10 bg-card px-4 py-2 text-sm font-bold text-ink shadow-sm transition-colors hover:border-accent hover:text-accent"
+						class="inline-block rounded-full border border-ink/10 bg-card px-4 py-2 text-sm font-bold text-ink shadow-sm transition-colors hover:border-accent-darker hover:text-accent-darker"
 					>
 						{other.title}
 					</a>

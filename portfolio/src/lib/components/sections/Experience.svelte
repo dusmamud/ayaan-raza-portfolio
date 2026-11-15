@@ -29,7 +29,7 @@
 						{job.period}
 					</p>
 					<h3 class="mt-3 font-display text-xl font-bold text-ink">{job.role}</h3>
-					<p class="mt-1 text-sm font-bold text-accent">{job.company}</p>
+					<p class="mt-1 text-sm font-bold text-accent-darker">{job.company}</p>
 					<p class="mt-2 leading-relaxed text-body">{job.description}</p>
 					<ul class="mt-3 flex flex-wrap gap-2">
 						{#each job.tags as tag (tag)}

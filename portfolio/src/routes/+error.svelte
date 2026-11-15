@@ -41,10 +41,10 @@
 	</div>
 	<p class="mt-10 text-sm text-body">
 		Looking for something?
-		<a href="/projects" class="font-bold text-accent hover:text-accent-dark">Projects</a>
+		<a href="/projects" class="font-bold text-accent-darker hover:text-accent-dark">Projects</a>
 		·
-		<a href="/blog" class="font-bold text-accent hover:text-accent-dark">Blog</a>
+		<a href="/blog" class="font-bold text-accent-darker hover:text-accent-dark">Blog</a>
 		·
-		<a href="/services" class="font-bold text-accent hover:text-accent-dark">Services</a>
+		<a href="/services" class="font-bold text-accent-darker hover:text-accent-dark">Services</a>
 	</p>
 </div>

@@ -7,10 +7,10 @@
 		base: 'inline-flex items-center justify-center gap-2 font-display font-bold transition-colors',
 		variants: {
 			variant: {
-				primary: 'bg-accent text-white hover:bg-accent-dark',
+				primary: 'bg-accent-dark text-white hover:bg-accent-darker',
 				secondary: 'border-2 border-ink bg-transparent text-ink hover:bg-ink hover:text-white',
 				dark: 'bg-ink text-white hover:bg-footer',
-				ghost: 'text-accent hover:text-accent-dark'
+				ghost: 'text-accent-darker hover:text-accent-dark'
 			},
 			size: {
 				sm: 'rounded-full px-4 py-2 text-sm',

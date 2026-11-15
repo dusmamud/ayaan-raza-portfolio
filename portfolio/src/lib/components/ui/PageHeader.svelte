@@ -5,7 +5,9 @@
 
 <div class="max-w-3xl">
 	{#if eyebrow}
-		<p class="font-display text-sm font-bold tracking-wide text-accent uppercase">{eyebrow}</p>
+		<p class="font-display text-sm font-bold tracking-wide text-accent-darker uppercase">
+			{eyebrow}
+		</p>
 	{/if}
 	<h1
 		class="mt-2 font-display text-[clamp(2rem,5vw,3rem)] leading-tight font-extrabold tracking-tight text-ink"

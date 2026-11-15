@@ -437,3 +437,30 @@ Nothing is recorded here yet: setup has not run.)
   page.status / page.error from $app/state instead. Gates green:
   check 0/0, lint pass, Vitest 16/16, Playwright 6/6. Verified via
   qa/v8-*.png (6 pages, desktop + mobile, overflow 0).
+
+### 2026-11-15 — Full-site debug audit (v9)
+
+- Crawled all 19 pages with qa/audit.mjs (Playwright): links,
+  anchors, console errors, failed requests, h1/title/meta/
+  canonical, duplicate ids, image alt + dimensions, form labels,
+  JSON-LD validity, overflow at 1440 + 390, target sizes.
+- Problems found and fixed: (1) robots.txt sitemap URL still
+  pointed at the placeholder ayaanraza.demo domain — now the live
+  Pages URL. (2) Home JSON-LD was invalid: Svelte does not
+  evaluate expressions inside <script> markup, so the template
+  shipped literally — now built in the instance script as
+  $derived and the whole tag injected via {@html}. (3) No
+  404.html in the build, so unknown URLs showed Cloudflare's
+  generic page — adapter fallback '404.html' added. (4) Contrast:
+  accent #F43F5E text/buttons were 3.67:1, failing WCAG AA 4.5:1
+  — new accent-darker #BE123C token (5.3-6.3:1) for small text,
+  primary buttons now bg-accent-dark (4.70:1). (5) Standalone
+  links under the 24px WCAG 2.2 target minimum got py-1
+  (footer, card links, back links). (6) Images losslessly
+  re-compressed with PIL (4.91MB -> 4.72MB, pixels verified
+  identical; cta file reverted as it grew 1KB).
+- Re-audit after fixes: 0 problems. Remaining notes are false
+  positives (hidden skip link) and intentional demo "#" social
+  links plus inline-prose links (WCAG inline exception).
+  Gates green: check 0/0, lint pass, Vitest 16/16, Playwright
+  6/6. Verified via qa/v9-home-hero-desktop.png.

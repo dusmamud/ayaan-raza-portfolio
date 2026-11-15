@@ -51,10 +51,16 @@
 				<ul class="mt-4 space-y-2.5 text-sm">
 					{#each quickLinks as link (link.href)}
 						<li>
-							<a href={link.href} class="transition-colors hover:text-white">{link.label}</a>
+							<a href={link.href} class="inline-block py-1 transition-colors hover:text-white"
+								>{link.label}</a
+							>
 						</li>
 					{/each}
-					<li><a href="/contact" class="transition-colors hover:text-white">Contact</a></li>
+					<li>
+						<a href="/contact" class="inline-block py-1 transition-colors hover:text-white"
+							>Contact</a
+						>
+					</li>
 				</ul>
 			</nav>
 
@@ -63,7 +69,9 @@
 				<ul class="mt-4 space-y-2.5 text-sm">
 					{#each services as service (service.id)}
 						<li>
-							<a href={service.href} class="transition-colors hover:text-white">{service.title}</a>
+							<a href={service.href} class="inline-block py-1 transition-colors hover:text-white"
+								>{service.title}</a
+							>
 						</li>
 					{/each}
 				</ul>
@@ -86,7 +94,9 @@
 				<ul class="mt-4 space-y-2.5 text-sm">
 					<li class="flex items-center gap-2.5">
 						<Mail size={16} aria-hidden="true" />
-						<a href="mailto:{site.email}" class="transition-colors hover:text-white">{site.email}</a
+						<a
+							href="mailto:{site.email}"
+							class="inline-block py-1 transition-colors hover:text-white">{site.email}</a
 						>
 					</li>
 					<li class="flex items-center gap-2.5">
@@ -107,11 +117,13 @@
 		>
 			<p>© 2026 {site.name} — Demo portfolio. All content is fictional.</p>
 			<div class="flex items-center gap-5">
-				<a href="/privacy" class="transition-colors hover:text-white">Privacy Policy</a>
+				<a href="/privacy" class="inline-block py-1 transition-colors hover:text-white"
+					>Privacy Policy</a
+				>
 				<p class="text-white/50">Built with SvelteKit</p>
 				<a
 					href="/#home"
-					class="inline-flex items-center gap-1 font-bold text-white/80 transition-colors hover:text-white"
+					class="inline-flex items-center gap-1 py-1 font-bold text-white/80 transition-colors hover:text-white"
 				>
 					Back to top <ArrowUp size={16} aria-hidden="true" />
 				</a>
