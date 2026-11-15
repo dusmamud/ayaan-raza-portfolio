@@ -296,9 +296,12 @@ Nothing is recorded here yet: setup has not run.)
   build / secrets staged); SSH via ssh.github.com:443 re-verified
   (`Hi dusmamud!`) after re-mirroring `/home/hatch/.ssh/config` to
   `/root/.ssh/config` (the mirror was missing after a VM replacement).
-  NOT pushed yet: repo + project name locked as `ayaan-raza-portfolio`
-  (no such repo existed on GitHub as of 2026-11-15); the user said on
-  2026-11-15 he will handle the rest himself (repo creation, the two
-  Cloudflare secrets, push). Remote `origin` set locally to the SSH
-  URL for `dusmamud/ayaan-raza-portfolio`; no push attempted. Site `baseUrl` still the `https://ayaanraza.demo`
+  Repo created 2026-11-15 via the PAT API (`POST /user/repos`,
+  private, empty, default branch `main`):
+  https://github.com/dusmamud/ayaan-raza-portfolio — the user first
+  said he would handle the rest himself, then asked Muse to do
+  everything except the secrets. Pushed the same day over SSH
+  (ssh.github.com:443). The two Cloudflare secrets are added by the
+  user; the first workflow run stops at the secrets guard until then,
+  then a re-run deploys. Site `baseUrl` still the `https://ayaanraza.demo`
   placeholder until the live Pages URL is known.
