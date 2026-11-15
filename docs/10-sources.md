@@ -492,3 +492,50 @@ Nothing is recorded here yet: setup has not run.)
   problems. Gates green: check 0/0, lint pass, Vitest 16/16,
   Playwright 6/6 (one e2e run failed on a stale port-4173
   server left by a prior run; clean re-run passed).
+
+### 2026-11-15 — A-to-Z gap round: pages, branding, SEO, features, dark mode (v11)
+
+- Cross-verified against 2026 portfolio checklists (web search)
+  and the codebase: 30 gaps found, all built except blog
+  comments (needs backend + moderation), analytics (against
+  the privacy page) and a video hero (hurts performance).
+- New pages: /testimonials, /terms, /uses, /sitemap,
+  /accessibility, /search (client-side index, ?q= read on
+  mount — url.searchParams is unavailable on prerendered
+  pages). New home sections: client wordmarks, open-source
+  strip; hero availability badge; services show demo
+  starting prices; 2 new projects (Wanderly, TaskFlow) with
+  generated full-bleed screens in all 3 formats + timeline
+  and metrics on every case study; 3 new blog posts (6
+  total); certifications on /about and /resume.
+- Branding: favicon.ico, apple-touch-icon, manifest +
+  192/512/maskable icons, standalone logo.svg, shared Logo
+  component; 29 per-page OG title cards (qa/og-images.mjs,
+  1200x630 JPG) wired per page + twitter:title/description
+  everywhere; home keeps og.png.
+- SEO/technical: JsonLd component (FAQPage on home,
+  BlogPosting on posts, BreadcrumbList on detail pages);
+  visible breadcrumbs on all sub-pages; sitemap lastmod
+  (30 URLs); RSS feed at /rss.xml; _headers (security
+  headers + immutable image caching, CSP allows SvelteKit
+  inline scripts); llms.txt; downloadable resume PDF
+  (qa/resume-pdf.mjs, Chromium print — the file must exist
+  in static/ before build or the prerender crawl 404s).
+- Functionality: project category filter, blog tag filter +
+  search, newsletter demo signup, share buttons + copy
+  link, prev/next post nav, reading progress bar, contact
+  response-time/timezone/booking note.
+- Dark mode: Tailwind 4 @custom-variant + semantic token
+  overrides under .dark (accents stay, accent-darker
+  lightens); toggle + localStorage + system default, with
+  a no-flash inline script in app.html; illustrations get
+  rounded cards in dark mode; print forces light tokens.
+  Button variants fixed for dark hover states.
+- Verified: check 0/0, lint pass, Vitest 18/18, Playwright
+  6/6, audit 0 problems over 30 pages, 0 overflow at 1440
+  + 390, all JSON-LD parses, all 29 OG files resolve,
+  interactions tested (toggle persistence, filters,
+  search, newsletter, copy link). Visual QA qa/v11-*.png
+  (light + dark, incl. section clips). One fix found in
+  QA: OpenSource icon chips stretched in flex-col cards —
+  self-start added.

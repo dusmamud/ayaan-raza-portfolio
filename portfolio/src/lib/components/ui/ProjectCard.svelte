@@ -10,7 +10,9 @@
 		green: 'bg-tile-green',
 		pink: 'bg-tile-pink',
 		yellow: 'bg-tile-yellow',
-		purple: 'bg-tile-purple'
+		purple: 'bg-tile-purple',
+		blue: 'bg-tile-blue',
+		orange: 'bg-tile-orange'
 	};
 </script>
 

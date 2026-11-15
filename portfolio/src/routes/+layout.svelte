@@ -24,16 +24,14 @@
 </script>
 
 <svelte:head>
-	<meta name="theme-color" content="#fff7f1" />
 	<meta property="og:site_name" content="{site.name} — {site.role}" />
 	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="og:image" content="{site.baseUrl}/og.png" />
 </svelte:head>
 
 <a
 	href="#content"
-	class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:font-bold focus:text-white"
+	class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:rounded-full focus:bg-footer focus:px-4 focus:py-2 focus:font-bold focus:text-white"
 >
 	Skip to content
 </a>

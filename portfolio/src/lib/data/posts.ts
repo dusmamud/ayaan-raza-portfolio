@@ -3,6 +3,33 @@ import { postSchema, type Post } from '#lib/schemas/post';
 // Demo blog posts — placeholder content for Phase 1. Real posts are Phase 3.
 export const posts: Post[] = postSchema.array().parse([
 	{
+		slug: 'design-systems-that-scale',
+		title: 'Design systems that scale past one project',
+		excerpt:
+			'Tokens, not one-off colors. How a small system keeps six demos looking like one brand.',
+		date: '2025-11-02',
+		readTime: '4 min read',
+		tags: ['Design', 'Systems'],
+		body: [
+			'This is demo placeholder content. The real post will explain how this site stays consistent — one set of color tokens, one type scale, and components that read from them instead of hard-coding values.',
+			'A second paragraph would show the payoff: a new page inherits the whole brand for free, and a rebrand is a token change, not a rewrite.',
+			'Until the real posts land, treat this page as a layout demo: headings, paragraphs, tags and dates, all in the site’s real typography.'
+		]
+	},
+	{
+		slug: 'forms-that-forgive',
+		title: 'Forms that forgive mistakes',
+		excerpt: 'Keep the input, explain the fix, and never punish a typo with a blank form.',
+		date: '2025-10-19',
+		readTime: '5 min read',
+		tags: ['Forms', 'UX'],
+		body: [
+			'This is demo placeholder content. The real post will walk through the contact form on this site — inline errors, preserved input, and a success state that shows what was sent.',
+			'A second paragraph would cover the details people miss: error text that names the fix, not the rule, and a submit button that stays reachable on small screens.',
+			'Until the real posts land, treat this page as a layout demo: headings, paragraphs, tags and dates, all in the site’s real typography.'
+		]
+	},
+	{
 		slug: 'mobile-first-portfolios',
 		title: 'Designing mobile-first portfolios',
 		excerpt: 'Most people will meet your work on a phone. Start small, then earn the big screen.',
@@ -38,6 +65,19 @@ export const posts: Post[] = postSchema.array().parse([
 		body: [
 			'This is demo placeholder content. The real post will walk through the small details on this site — visible focus states, skip links, and forms that keep your input when validation fails.',
 			'A second paragraph would explain why these details are not polish added at the end, but the experience itself for keyboard and screen reader users.',
+			'Until the real posts land, treat this page as a layout demo: headings, paragraphs, tags and dates, all in the site’s real typography.'
+		]
+	},
+	{
+		slug: 'performance-budgets-demo',
+		title: 'Performance budgets for demo sites',
+		excerpt: 'A demo that loads slowly teaches the wrong lesson. Budgets keep it honest.',
+		date: '2025-08-15',
+		readTime: '6 min read',
+		tags: ['Performance', 'Web'],
+		body: [
+			'This is demo placeholder content. The real post will set budgets for this site — image weight, font count, JavaScript size — and show how the AVIF/WebP/JPG waterfall fits inside them.',
+			'A second paragraph would explain the measurement habit: check the budgets on every build, so a slow page is caught before it ships, not after someone complains.',
 			'Until the real posts land, treat this page as a layout demo: headings, paragraphs, tags and dates, all in the site’s real typography.'
 		]
 	}

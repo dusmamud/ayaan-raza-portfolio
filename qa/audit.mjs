@@ -17,13 +17,24 @@ const PAGES = [
 	'/projects/shopio',
 	'/projects/walletwise',
 	'/projects/fittrack',
+	'/projects/wanderly',
+	'/projects/taskflow',
 	'/blog',
+	'/blog/design-systems-that-scale',
+	'/blog/forms-that-forgive',
 	'/blog/mobile-first-portfolios',
 	'/blog/flutter-vs-native-demo',
 	'/blog/small-details-big-ux',
+	'/blog/performance-budgets-demo',
 	'/contact',
 	'/privacy',
-	'/resume'
+	'/resume',
+	'/testimonials',
+	'/terms',
+	'/uses',
+	'/sitemap',
+	'/accessibility',
+	'/search'
 ];
 
 const browser = await chromium.launch();

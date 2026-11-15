@@ -1,0 +1,16 @@
+# Cloudflare Pages headers: security headers on every response, long
+# immutable caching for fingerprinted and versioned image assets.
+# The CSP allows the inline scripts SvelteKit needs for hydration and
+# the inline theme script in app.html; everything else is same-origin.
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/_app/immutable/*
+  Cache-Control: public, max-age=31536000, immutable

@@ -7,10 +7,13 @@
 		base: 'inline-flex items-center justify-center gap-2 font-display font-bold transition-colors',
 		variants: {
 			variant: {
-				primary: 'bg-accent-dark text-white hover:bg-accent-darker',
-				secondary: 'border-2 border-ink bg-transparent text-ink hover:bg-ink hover:text-white',
-				dark: 'bg-ink text-white hover:bg-footer',
-				ghost: 'text-accent-darker hover:text-accent-dark'
+				// Dark-mode hover keeps the dark rose: the token flips light
+				// for text, which would fail contrast under white button text.
+				primary: 'bg-accent-dark text-white hover:bg-accent-darker dark:hover:bg-[#be123c]',
+				secondary:
+					'border-2 border-ink bg-transparent text-ink hover:bg-ink hover:text-white dark:hover:bg-[#f5f2ff] dark:hover:text-[#1b1740]',
+				dark: 'bg-ink text-white hover:bg-footer dark:bg-[#f5f2ff] dark:text-[#1b1740] dark:hover:bg-white',
+				ghost: 'text-accent-darker hover:text-accent-dark dark:hover:text-accent'
 			},
 			size: {
 				sm: 'rounded-full px-4 py-2 text-sm',
@@ -22,6 +25,7 @@
 
 	type ButtonProps = VariantProps<typeof button> & {
 		href?: string;
+		download?: boolean | string;
 		type?: 'button' | 'submit' | 'reset';
 		class?: string;
 		ariaLabel?: string;
@@ -31,6 +35,7 @@
 
 	let {
 		href,
+		download,
 		variant,
 		size,
 		type = 'button',
@@ -42,7 +47,13 @@
 </script>
 
 {#if href}
-	<a {href} class={cn(button({ variant, size }), className)} aria-label={ariaLabel} {onclick}>
+	<a
+		{href}
+		{download}
+		class={cn(button({ variant, size }), className)}
+		aria-label={ariaLabel}
+		{onclick}
+	>
 		{@render children()}
 	</a>
 {:else}

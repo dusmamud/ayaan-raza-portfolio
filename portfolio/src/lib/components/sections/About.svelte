@@ -21,7 +21,7 @@
 					width={1920}
 					height={1280}
 					loading="lazy"
-					class="h-auto w-full"
+					class="h-auto w-full dark:rounded-3xl"
 				/>
 			</div>
 			<div use:reveal={{ delay: 100 }}>

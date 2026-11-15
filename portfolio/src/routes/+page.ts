@@ -1,4 +1,4 @@
-import { experience, faqs, processSteps, testimonials } from '#lib/data/home';
+import { experience, faqs, processSteps, repos, testimonials } from '#lib/data/home';
 import { posts } from '#lib/data/posts';
 import { projects } from '#lib/data/projects';
 import { services, stats } from '#lib/data/services';
@@ -16,5 +16,6 @@ export const load: PageLoad = () => ({
 	testimonials,
 	faqs,
 	posts,
-	tech
+	tech,
+	repos
 });

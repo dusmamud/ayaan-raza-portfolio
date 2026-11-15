@@ -1,14 +1,20 @@
 import {
+	certificationSchema,
 	educationSchema,
 	experienceSchema,
 	faqSchema,
 	processStepSchema,
+	repoSchema,
 	testimonialSchema,
+	useItemSchema,
+	type Certification,
 	type Education,
 	type Experience,
 	type Faq,
 	type ProcessStep,
-	type Testimonial
+	type Repo,
+	type Testimonial,
+	type UseItem
 } from '#lib/schemas/home';
 
 // Demo career history — fictional companies and roles for the UI/UX demo.
@@ -149,5 +155,122 @@ export const education: Education[] = educationSchema.array().parse([
 		school: 'Online (Demo)',
 		period: '2022',
 		note: 'Intensive program covering modern web stacks, APIs and mobile development.'
+	}
+]);
+
+// Demo certifications — fictional entries for the UI/UX demo.
+export const certifications: Certification[] = certificationSchema.array().parse([
+	{
+		id: 'flutter',
+		title: 'Flutter & Dart — The Complete Guide',
+		issuer: 'Online course (Demo)',
+		year: '2023',
+		note: 'Cross-platform apps, state management and app-store releases.'
+	},
+	{
+		id: 'ux-design',
+		title: 'UX Design Professional Certificate',
+		issuer: 'Online course (Demo)',
+		year: '2023',
+		note: 'Research, wireframing, prototyping and usability testing.'
+	},
+	{
+		id: 'cloud',
+		title: 'Cloud Practitioner Essentials',
+		issuer: 'Online course (Demo)',
+		year: '2024',
+		note: 'Cloud fundamentals, deployment pipelines and hosting basics.'
+	}
+]);
+
+// Demo "uses" list — the tools behind this fictional setup.
+export const uses: UseItem[] = useItemSchema.array().parse([
+	{
+		id: 'vscode',
+		name: 'VS Code',
+		description: 'Daily editor, with the Svelte and Flutter extensions.',
+		group: 'development'
+	},
+	{
+		id: 'sveltekit',
+		name: 'SvelteKit + Svelte 5',
+		description: 'The framework this very site is built with.',
+		group: 'development'
+	},
+	{
+		id: 'flutter',
+		name: 'Flutter & Dart',
+		description: 'Cross-platform mobile apps from one codebase.',
+		group: 'development'
+	},
+	{
+		id: 'github',
+		name: 'Git & GitHub',
+		description: 'Version control, reviews and automated deploys.',
+		group: 'development'
+	},
+	{
+		id: 'figma',
+		name: 'Figma',
+		description: 'Interface design, prototypes and developer handoff.',
+		group: 'design'
+	},
+	{
+		id: 'pen-paper',
+		name: 'Pen & paper',
+		description: 'First sketches always start offline, away from the screen.',
+		group: 'design'
+	},
+	{
+		id: 'notion',
+		name: 'Notion',
+		description: 'Project notes, briefs and the demo content calendar.',
+		group: 'productivity'
+	},
+	{
+		id: 'focus-timer',
+		name: 'A focus timer',
+		description: 'Twenty-five minute sprints, with real breaks between them.',
+		group: 'productivity'
+	},
+	{
+		id: 'laptop',
+		name: 'Laptop (Demo)',
+		description: 'The daily driver for builds, design and video calls.',
+		group: 'hardware'
+	},
+	{
+		id: 'phone',
+		name: 'Android & iPhone (Demo)',
+		description: 'Real devices for testing — emulators never tell the whole story.',
+		group: 'hardware'
+	}
+]);
+
+// Demo open-source projects — fictional repositories for the UI/UX demo.
+export const repos: Repo[] = repoSchema.array().parse([
+	{
+		id: 'svelte-picture',
+		name: 'svelte-picture',
+		description: 'Tiny <picture> helper for AVIF/WebP fallbacks in Svelte apps.',
+		language: 'TypeScript',
+		stars: 128,
+		forks: 12
+	},
+	{
+		id: 'flutter-empty-states',
+		name: 'flutter-empty-states',
+		description: 'Friendly empty-state widgets for Flutter apps, with illustrations.',
+		language: 'Dart',
+		stars: 96,
+		forks: 8
+	},
+	{
+		id: 'a11y-checklist',
+		name: 'a11y-checklist',
+		description: 'A plain-language accessibility checklist for small teams.',
+		language: 'Markdown',
+		stars: 214,
+		forks: 31
 	}
 ]);

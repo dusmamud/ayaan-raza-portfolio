@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { education, experience, faqs, processSteps, testimonials } from '#lib/data/home';
+import {
+	certifications,
+	education,
+	experience,
+	faqs,
+	processSteps,
+	repos,
+	testimonials,
+	uses
+} from '#lib/data/home';
 import { site } from '#lib/data/site';
 import { getProject, projects } from '#lib/data/projects';
 import { posts } from '#lib/data/posts';
@@ -9,8 +18,8 @@ import { tech } from '#lib/data/tech';
 // Importing the data modules runs their Zod validation, so these tests
 // prove the demo data is valid, complete and internally consistent.
 describe('demo data', () => {
-	it('has four projects with unique slugs that all resolve', () => {
-		expect(projects).toHaveLength(4);
+	it('has six projects with unique slugs that all resolve', () => {
+		expect(projects).toHaveLength(6);
 		const slugs = projects.map((project) => project.slug);
 		expect(new Set(slugs).size).toBe(slugs.length);
 		for (const slug of slugs) {
@@ -31,8 +40,8 @@ describe('demo data', () => {
 		expect(site.phone).toContain('00000');
 	});
 
-	it('has three blog posts with unique slugs', () => {
-		expect(posts).toHaveLength(3);
+	it('has six blog posts with unique slugs', () => {
+		expect(posts).toHaveLength(6);
 		const slugs = posts.map((post) => post.slug);
 		expect(new Set(slugs).size).toBe(slugs.length);
 	});
@@ -70,5 +79,26 @@ describe('demo data', () => {
 
 	it('has two education entries', () => {
 		expect(education).toHaveLength(2);
+	});
+
+	it('has certifications, uses items and demo repos', () => {
+		expect(certifications).toHaveLength(3);
+		expect(uses.length).toBeGreaterThan(0);
+		expect(new Set(uses.map((item) => item.id)).size).toBe(uses.length);
+		expect(repos).toHaveLength(3);
+		for (const repo of repos) {
+			expect(repo.stars).toBeGreaterThanOrEqual(0);
+			expect(repo.forks).toBeGreaterThanOrEqual(0);
+		}
+	});
+
+	it('has a starting price on every service and metrics on every project', () => {
+		for (const service of services) {
+			expect(service.price).toMatch(/^From \$/);
+		}
+		for (const project of projects) {
+			expect(project.timeline.length).toBeGreaterThan(0);
+			expect(project.metrics.length).toBeGreaterThan(0);
+		}
 	});
 });

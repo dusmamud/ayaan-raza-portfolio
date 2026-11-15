@@ -14,7 +14,18 @@
 		class="mx-auto grid max-w-7xl items-center gap-12 px-4 pt-10 pb-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:pt-16 lg:pb-20"
 	>
 		<div use:reveal>
-			<p class="font-display text-lg font-bold text-ink">Hi, I'm Ayaan 👋</p>
+			<p
+				class="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-card px-3.5 py-1.5 text-sm font-bold text-ink shadow-sm"
+			>
+				<span class="relative flex h-2.5 w-2.5">
+					<span
+						class="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 motion-safe:animate-ping"
+					></span>
+					<span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+				</span>
+				Available for new projects
+			</p>
+			<p class="mt-4 font-display text-lg font-bold text-ink">Hi, I'm Ayaan 👋</p>
 			<h1
 				id="hero-heading"
 				class="mt-3 font-display text-[clamp(2.25rem,6vw,3.75rem)] leading-[1.08] font-extrabold tracking-tight text-ink"
@@ -41,7 +52,7 @@
 							<a
 								href={social.href}
 								aria-label={social.label}
-								class="flex h-9 w-9 items-center justify-center rounded-full border border-ink/10 bg-white text-ink transition-colors hover:border-accent hover:bg-accent hover:text-white"
+								class="flex h-9 w-9 items-center justify-center rounded-full border border-ink/10 bg-card text-ink transition-colors hover:border-accent hover:bg-accent hover:text-white"
 							>
 								<SocialIcon id={social.id} />
 							</a>
@@ -58,7 +69,7 @@
 				width={1920}
 				height={1280}
 				fetchPriority="high"
-				class="h-auto w-full"
+				class="h-auto w-full dark:rounded-3xl"
 			/>
 		</div>
 	</div>

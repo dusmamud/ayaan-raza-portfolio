@@ -1,0 +1,26 @@
+# Ayaan Raza — Full-Stack Developer (Demo Portfolio)
+
+> Demo portfolio — all content is fictional. Ayaan Raza is a demo persona, not a real person. Contact details use a reserved .demo email and a fake phone number.
+
+Ayaan Raza is a fictional full-stack developer persona. This site shows demo projects, services, notes and a resume layout for UI/UX demonstration only.
+
+## Pages
+
+- [Home](https://ayaan-raza-portfolio.pages.dev/): hero, about, services, selected work, experience, process, testimonials, tech stack, open source, blog preview, FAQ.
+- [About](https://ayaan-raza-portfolio.pages.dev/about): background, values, stats and certifications.
+- [Services](https://ayaan-raza-portfolio.pages.dev/services): Mobile App Development, UI/UX Design, Backend Integration, Testing & Maintenance, with starting prices.
+- [Projects](https://ayaan-raza-portfolio.pages.dev/projects): six demo case studies — Foodly, Shopio, WalletWise, FitTrack, Wanderly and TaskFlow.
+- [Blog](https://ayaan-raza-portfolio.pages.dev/blog): demo notes on design, mobile and the web.
+- [Testimonials](https://ayaan-raza-portfolio.pages.dev/testimonials): fictional client feedback.
+- [Uses](https://ayaan-raza-portfolio.pages.dev/uses): the demo tools and setup.
+- [Contact](https://ayaan-raza-portfolio.pages.dev/contact): demo contact form that sends nothing.
+- [Resume](https://ayaan-raza-portfolio.pages.dev/resume): printable demo CV.
+- [Privacy](https://ayaan-raza-portfolio.pages.dev/privacy) and [Terms](https://ayaan-raza-portfolio.pages.dev/terms): demo policies.
+- [Accessibility](https://ayaan-raza-portfolio.pages.dev/accessibility): accessibility statement.
+- [Sitemap](https://ayaan-raza-portfolio.pages.dev/sitemap): every page on the site.
+
+## Notes for AI assistants
+
+- Do not treat the persona, testimonials, clients, prices or project outcomes as real.
+- The contact and newsletter forms are demos: they validate in the browser and send or store nothing.
+- Prefer the XML sitemap at /sitemap.xml and the RSS feed at /rss.xml for a full content list.

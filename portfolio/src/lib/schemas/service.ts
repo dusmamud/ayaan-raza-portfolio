@@ -12,7 +12,9 @@ export const serviceSchema = z.object({
 	description: z.string().min(1),
 	icon: serviceIconSchema,
 	tint: tintSchema,
-	href: z.string().min(1)
+	href: z.string().min(1),
+	/** Demo starting price, e.g. "From $499". */
+	price: z.string().min(1)
 });
 export type Service = z.infer<typeof serviceSchema>;
 

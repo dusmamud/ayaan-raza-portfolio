@@ -1,9 +1,10 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { Check, Mail, MapPin, Phone, Send } from '@lucide/svelte';
+	import { Calendar, Check, Clock, Globe, Mail, MapPin, Phone, Send } from '@lucide/svelte';
 	import { superForm } from 'sveltekit-superforms/client';
 	import { zod4Client } from 'sveltekit-superforms/adapters';
 	import { contactSchema } from '#lib/schemas/contact';
+	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import Button from '#lib/components/ui/Button.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 	import SocialIcon from '#lib/components/ui/SocialIcon.svelte';
@@ -38,7 +39,7 @@
 	}
 
 	const inputClass =
-		'w-full rounded-xl border border-ink/15 bg-white px-4 py-3 text-ink placeholder:text-body/60 focus:border-accent';
+		'w-full rounded-xl border border-ink/15 bg-card px-4 py-3 text-ink placeholder:text-body/60 focus:border-accent';
 </script>
 
 <svelte:head>
@@ -53,15 +54,24 @@
 		content="Contact Ayaan Raza about your project idea. Demo form — nothing is sent anywhere."
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/contact" />
+	<meta property="og:image" content="{data.site.baseUrl}/og/contact.jpg" />
+	<meta name="twitter:title" content="Contact — Ayaan Raza" />
+	<meta
+		name="twitter:description"
+		content="Contact Ayaan Raza about your project idea. Demo form — nothing is sent anywhere."
+	/>
 	<link rel="canonical" href="{data.site.baseUrl}/contact" />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-	<PageHeader
-		eyebrow="Contact"
-		title="Let's talk"
-		description="Tell me about your idea — this demo form validates in the browser and never sends anything anywhere."
-	/>
+	<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Contact' }]} />
+	<div class="mt-6">
+		<PageHeader
+			eyebrow="Contact"
+			title="Let's talk"
+			description="Tell me about your idea — this demo form validates in the browser and never sends anything anywhere."
+		/>
+	</div>
 
 	<div class="mt-10 grid gap-8 lg:grid-cols-[1fr_1.4fr]">
 		<div class="rounded-3xl bg-blush p-6 sm:p-8">
@@ -69,7 +79,7 @@
 			<ul class="mt-5 space-y-4 text-body">
 				<li class="flex items-center gap-3">
 					<span
-						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-ink"
+						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-card text-ink"
 					>
 						<Mail size={18} aria-hidden="true" />
 					</span>
@@ -79,7 +89,7 @@
 				</li>
 				<li class="flex items-center gap-3">
 					<span
-						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-ink"
+						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-card text-ink"
 					>
 						<Phone size={18} aria-hidden="true" />
 					</span>
@@ -87,7 +97,7 @@
 				</li>
 				<li class="flex items-center gap-3">
 					<span
-						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-ink"
+						class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-card text-ink"
 					>
 						<MapPin size={18} aria-hidden="true" />
 					</span>
@@ -103,13 +113,33 @@
 						<a
 							href={social.href}
 							aria-label={social.label}
-							class="flex h-9 w-9 items-center justify-center rounded-full border border-ink/10 bg-white text-ink transition-colors hover:border-accent hover:bg-accent hover:text-white"
+							class="flex h-9 w-9 items-center justify-center rounded-full border border-ink/10 bg-card text-ink transition-colors hover:border-accent hover:bg-accent hover:text-white"
 						>
 							<SocialIcon id={social.id} />
 						</a>
 					</li>
 				{/each}
 			</ul>
+			<div class="mt-6 border-t border-ink/10 pt-6">
+				<h3 class="font-display font-bold text-ink">Before you write</h3>
+				<ul class="mt-4 space-y-3 text-sm leading-relaxed">
+					<li class="flex items-start gap-2.5">
+						<Clock size={17} class="mt-0.5 shrink-0" aria-hidden="true" />
+						<span>Usually replies within 24 hours, Monday to Friday (demo).</span>
+					</li>
+					<li class="flex items-start gap-2.5">
+						<Globe size={17} class="mt-0.5 shrink-0" aria-hidden="true" />
+						<span>Based in India — IST (UTC+5:30).</span>
+					</li>
+					<li class="flex items-start gap-2.5">
+						<Calendar size={17} class="mt-0.5 shrink-0" aria-hidden="true" />
+						<span>
+							Prefer a call? Mention a time that suits you in your message and it will be confirmed
+							by email — no booking tool is connected in this demo.
+						</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 		<div class="rounded-3xl bg-card p-6 shadow-sm sm:p-8">

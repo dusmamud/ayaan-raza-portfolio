@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { ArrowRight, Compass, Gem, HeartHandshake } from '@lucide/svelte';
+	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 	import Picture from '#lib/components/ui/Picture.svelte';
@@ -42,15 +43,24 @@
 		content="About Ayaan Raza, full-stack developer. Demo portfolio — all content is fictional."
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/about" />
+	<meta property="og:image" content="{data.site.baseUrl}/og/about.jpg" />
+	<meta name="twitter:title" content="About — Ayaan Raza" />
+	<meta
+		name="twitter:description"
+		content="About Ayaan Raza, full-stack developer. Demo portfolio — all content is fictional."
+	/>
 	<link rel="canonical" href="{data.site.baseUrl}/about" />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-	<PageHeader
-		eyebrow="About me"
-		title="Hi, I'm Ayaan — I build products people love"
-		description="A full-stack developer with 3+ years of experience turning ideas into fast, beautiful web and mobile apps."
-	/>
+	<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
+	<div class="mt-6">
+		<PageHeader
+			eyebrow="About me"
+			title="Hi, I'm Ayaan — I build products people love"
+			description="A full-stack developer with 3+ years of experience turning ideas into fast, beautiful web and mobile apps."
+		/>
+	</div>
 
 	<div class="mt-10 grid items-center gap-10 rounded-3xl bg-blush p-6 sm:p-10 lg:grid-cols-2">
 		<Picture
@@ -59,7 +69,7 @@
 			width={1920}
 			height={1280}
 			loading="lazy"
-			class="h-auto w-full"
+			class="h-auto w-full dark:rounded-3xl"
 		/>
 		<div>
 			<p class="leading-relaxed text-body">
@@ -108,6 +118,26 @@
 		>
 			See the full career journey <ArrowRight size={18} aria-hidden="true" />
 		</a>
+	</p>
+
+	<h2
+		class="mt-16 font-display text-[clamp(1.5rem,3vw,2rem)] font-extrabold tracking-tight text-ink"
+	>
+		Certifications
+	</h2>
+	<div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+		{#each data.certifications as cert (cert.id)}
+			<article class="rounded-3xl bg-card p-6 shadow-sm">
+				<p class="text-xs font-bold tracking-wide text-accent-darker uppercase">
+					{cert.issuer} · {cert.year}
+				</p>
+				<h3 class="mt-2 font-display text-lg font-bold text-ink">{cert.title}</h3>
+				<p class="mt-2 text-sm leading-relaxed text-body">{cert.note}</p>
+			</article>
+		{/each}
+	</div>
+	<p class="mt-6 text-center text-sm text-body">
+		Demo certifications — fictional entries for the UI/UX demo.
 	</p>
 </div>
 

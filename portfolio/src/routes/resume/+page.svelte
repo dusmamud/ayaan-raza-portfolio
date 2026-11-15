@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { Mail, MapPin, Phone, Printer } from '@lucide/svelte';
+	import { Download, Mail, MapPin, Phone, Printer } from '@lucide/svelte';
+	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import Button from '#lib/components/ui/Button.svelte';
 
 	let { data }: { data: PageData } = $props();
@@ -28,11 +29,20 @@
 		content="CV of Ayaan Raza, full-stack developer. Demo resume — all content is fictional."
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/resume" />
+	<meta property="og:image" content="{data.site.baseUrl}/og/resume.jpg" />
+	<meta name="twitter:title" content="CV / Resume — Ayaan Raza" />
+	<meta
+		name="twitter:description"
+		content="CV of Ayaan Raza, full-stack developer. Demo resume — all content is fictional."
+	/>
 	<link rel="canonical" href="{data.site.baseUrl}/resume" />
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-	<div class="flex flex-wrap items-start justify-between gap-6">
+	<div class="print:hidden">
+		<Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Resume' }]} />
+	</div>
+	<div class="mt-6 flex flex-wrap items-start justify-between gap-6">
 		<div>
 			<h1
 				class="font-display text-[clamp(2rem,5vw,3rem)] leading-tight font-extrabold tracking-tight text-ink"
@@ -55,9 +65,12 @@
 				</li>
 			</ul>
 		</div>
-		<div class="print:hidden">
+		<div class="flex flex-col gap-3 print:hidden">
 			<Button onclick={printPage} variant="secondary" size="sm">
 				<Printer size={16} aria-hidden="true" /> Print / Save as PDF
+			</Button>
+			<Button href="/ayaan-raza-resume.pdf" download variant="secondary" size="sm">
+				<Download size={16} aria-hidden="true" /> Download PDF
 			</Button>
 		</div>
 	</div>
@@ -99,6 +112,25 @@
 						<p class="text-sm font-bold text-body">{item.period}</p>
 					</div>
 					<p class="mt-1 leading-relaxed text-body">{item.note}</p>
+				</li>
+			{/each}
+		</ul>
+	</section>
+
+	<section class="mt-10" aria-labelledby="resume-certifications">
+		<h2 id="resume-certifications" class="font-display text-xl font-bold text-ink">
+			Certifications
+		</h2>
+		<ul class="mt-4 space-y-4">
+			{#each data.certifications as cert (cert.id)}
+				<li>
+					<div class="flex flex-wrap items-baseline justify-between gap-2">
+						<h3 class="font-display font-bold text-ink">
+							{cert.title} · <span class="text-accent-darker">{cert.issuer}</span>
+						</h3>
+						<p class="text-sm font-bold text-body">{cert.year}</p>
+					</div>
+					<p class="mt-1 leading-relaxed text-body">{cert.note}</p>
 				</li>
 			{/each}
 		</ul>

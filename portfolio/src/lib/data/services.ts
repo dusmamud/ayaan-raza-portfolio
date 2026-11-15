@@ -16,7 +16,8 @@ export const services: Service[] = serviceSchema.array().parse([
 		description: 'Cross-platform mobile apps using Flutter for Android and iOS.',
 		icon: 'smartphone',
 		tint: 'icon-lavender',
-		href: '/services/mobile'
+		href: '/services/mobile',
+		price: 'From $899'
 	},
 	{
 		id: 'design',
@@ -24,7 +25,8 @@ export const services: Service[] = serviceSchema.array().parse([
 		description: 'Beautiful, intuitive and user-friendly designs that engage users.',
 		icon: 'palette',
 		tint: 'icon-pink',
-		href: '/services/design'
+		href: '/services/design',
+		price: 'From $499'
 	},
 	{
 		id: 'backend',
@@ -32,7 +34,8 @@ export const services: Service[] = serviceSchema.array().parse([
 		description: 'REST APIs, Firebase and third-party service integrations.',
 		icon: 'cloud',
 		tint: 'icon-yellow',
-		href: '/services/backend'
+		href: '/services/backend',
+		price: 'From $699'
 	},
 	{
 		id: 'testing',
@@ -40,7 +43,8 @@ export const services: Service[] = serviceSchema.array().parse([
 		description: 'Bug fixing, performance optimization and ongoing maintenance.',
 		icon: 'bug',
 		tint: 'icon-green',
-		href: '/services/testing'
+		href: '/services/testing',
+		price: 'From $199/mo'
 	}
 ]);
 

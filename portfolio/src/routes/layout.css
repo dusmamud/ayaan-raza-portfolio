@@ -2,6 +2,8 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
 	--color-cream: #fff7f1;
 	--color-blush: #fde8ee;
@@ -17,12 +19,41 @@
 	--color-tile-pink: #fbdce6;
 	--color-tile-yellow: #fdebc0;
 	--color-tile-purple: #dcd6f7;
+	--color-tile-blue: #dce9fd;
+	--color-tile-orange: #ffe4cc;
 	--color-icon-lavender: #e6e1ff;
 	--color-icon-pink: #ffd9e2;
 	--color-icon-yellow: #fff0c2;
 	--color-icon-green: #dff3da;
 	--font-display: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
 	--font-body: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Dark theme: the semantic tokens flip values under .dark, so every
+   component using token classes follows automatically. The accent
+   tones stay put (buttons keep white text on the same rose); only
+   accent-darker lightens, so small accent text stays readable on
+   dark backgrounds. */
+.dark {
+	color-scheme: dark;
+	--color-cream: #12102b;
+	--color-blush: #1b1838;
+	--color-lilac: #221e4a;
+	--color-ink: #f5f2ff;
+	--color-body: #c9c5e0;
+	--color-accent-darker: #fda4af;
+	--color-footer: #0b0919;
+	--color-card: #1e1b45;
+	--color-tile-green: #1f3d2b;
+	--color-tile-pink: #4a2432;
+	--color-tile-yellow: #4a3a1f;
+	--color-tile-purple: #2e2a5c;
+	--color-tile-blue: #1f3350;
+	--color-tile-orange: #4a2f1f;
+	--color-icon-lavender: #2e2a5c;
+	--color-icon-pink: #4a2432;
+	--color-icon-yellow: #4a3a1f;
+	--color-icon-green: #1f3d2b;
 }
 
 @layer base {
@@ -76,6 +107,18 @@
 
 	body {
 		background-color: #fff;
+	}
+
+	/* Print always uses the light tokens, even in dark mode. */
+	.dark {
+		color-scheme: light;
+		--color-cream: #fff7f1;
+		--color-blush: #fde8ee;
+		--color-lilac: #edeaff;
+		--color-ink: #1b1740;
+		--color-body: #4a4763;
+		--color-accent-darker: #be123c;
+		--color-card: #ffffff;
 	}
 }
 

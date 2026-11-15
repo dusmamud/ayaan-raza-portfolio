@@ -13,7 +13,9 @@
 		food: { base: '/images/screen-foodly', width: 1008, height: 2128 },
 		shop: { base: '/images/screen-shopio', width: 1008, height: 2128 },
 		finance: { base: '/images/screen-walletwise', width: 1008, height: 2128 },
-		fitness: { base: '/images/screen-fittrack', width: 970, height: 2048 }
+		fitness: { base: '/images/screen-fittrack', width: 970, height: 2048 },
+		travel: { base: '/images/screen-wanderly', width: 1008, height: 2128 },
+		tasks: { base: '/images/screen-taskflow', width: 1008, height: 2128 }
 	};
 	const screen = $derived(screens[variant]);
 </script>

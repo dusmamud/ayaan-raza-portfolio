@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { ArrowRight, Menu, X } from '@lucide/svelte';
+	import { ArrowRight, Menu, Search, X } from '@lucide/svelte';
 	import { site } from '#lib/data/site';
 	import Button from '#lib/components/ui/Button.svelte';
+	import Logo from '#lib/components/ui/Logo.svelte';
+	import ThemeToggle from '#lib/components/ui/ThemeToggle.svelte';
 	import MobileMenu from './MobileMenu.svelte';
 
 	let menuOpen = $state(false);
@@ -52,9 +54,7 @@
 		class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-20 lg:px-8"
 	>
 		<a href="/#home" class="flex items-center gap-2.5" aria-label="Ayaan Raza — home">
-			<span class="font-display text-[1.5rem] leading-none font-extrabold tracking-tight text-ink">
-				AR<span class="text-accent">.</span>
-			</span>
+			<Logo />
 			<span class="hidden flex-col leading-tight sm:flex">
 				<span class="font-display font-bold text-ink">{site.name}</span>
 				<span class="text-xs text-body">{site.role}</span>
@@ -81,7 +81,15 @@
 			</ul>
 		</nav>
 
-		<div class="flex items-center gap-3">
+		<div class="flex items-center gap-1.5 sm:gap-3">
+			<ThemeToggle />
+			<a
+				href="/search"
+				aria-label="Search the site"
+				class="inline-flex h-10 w-10 items-center justify-center rounded-full text-ink hover:bg-ink/5"
+			>
+				<Search size={20} aria-hidden="true" />
+			</a>
 			<span class="hidden md:inline-flex">
 				<Button href="/contact" size="sm">
 					Let's Talk <ArrowRight size={16} aria-hidden="true" />

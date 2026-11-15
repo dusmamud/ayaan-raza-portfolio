@@ -44,3 +44,33 @@ export const educationSchema = z.object({
 	note: z.string().min(1)
 });
 export type Education = z.infer<typeof educationSchema>;
+
+export const certificationSchema = z.object({
+	id: z.string().min(1),
+	title: z.string().min(1),
+	issuer: z.string().min(1),
+	year: z.string().regex(/^\d{4}$/),
+	note: z.string().min(1)
+});
+export type Certification = z.infer<typeof certificationSchema>;
+
+export const useGroupSchema = z.enum(['development', 'design', 'productivity', 'hardware']);
+export type UseGroup = z.infer<typeof useGroupSchema>;
+
+export const useItemSchema = z.object({
+	id: z.string().min(1),
+	name: z.string().min(1),
+	description: z.string().min(1),
+	group: useGroupSchema
+});
+export type UseItem = z.infer<typeof useItemSchema>;
+
+export const repoSchema = z.object({
+	id: z.string().min(1),
+	name: z.string().min(1),
+	description: z.string().min(1),
+	language: z.string().min(1),
+	stars: z.number().int().min(0),
+	forks: z.number().int().min(0)
+});
+export type Repo = z.infer<typeof repoSchema>;

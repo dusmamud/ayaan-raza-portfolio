@@ -3,6 +3,7 @@
 	import { ArrowUp, Mail, MapPin, Phone } from '@lucide/svelte';
 	import { site } from '#lib/data/site';
 	import { services } from '#lib/data/services';
+	import Logo from '#lib/components/ui/Logo.svelte';
 	import SocialIcon from '#lib/components/ui/SocialIcon.svelte';
 	import WaveDivider from '#lib/components/ui/WaveDivider.svelte';
 
@@ -18,11 +19,7 @@
 		<div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1.2fr]">
 			<div>
 				<a href="/#home" class="flex items-center gap-2.5" aria-label="Ayaan Raza — home">
-					<span
-						class="font-display text-[1.5rem] leading-none font-extrabold tracking-tight text-white"
-					>
-						AR<span class="text-accent">.</span>
-					</span>
+					<Logo light />
 					<span class="flex flex-col leading-tight">
 						<span class="font-display font-bold text-white">{site.name}</span>
 						<span class="text-xs text-white/60">{site.role}</span>
@@ -59,6 +56,19 @@
 					<li>
 						<a href="/contact" class="inline-block py-1 transition-colors hover:text-white"
 							>Contact</a
+						>
+					</li>
+					<li>
+						<a href="/testimonials" class="inline-block py-1 transition-colors hover:text-white"
+							>Testimonials</a
+						>
+					</li>
+					<li>
+						<a href="/uses" class="inline-block py-1 transition-colors hover:text-white">Uses</a>
+					</li>
+					<li>
+						<a href="/sitemap" class="inline-block py-1 transition-colors hover:text-white"
+							>Sitemap</a
 						>
 					</li>
 				</ul>
@@ -116,10 +126,15 @@
 			class="mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between"
 		>
 			<p>© 2026 {site.name} — Demo portfolio. All content is fictional.</p>
-			<div class="flex items-center gap-5">
+			<div class="flex flex-wrap items-center gap-5">
 				<a href="/privacy" class="inline-block py-1 transition-colors hover:text-white"
 					>Privacy Policy</a
 				>
+				<a href="/terms" class="inline-block py-1 transition-colors hover:text-white">Terms</a>
+				<a href="/accessibility" class="inline-block py-1 transition-colors hover:text-white"
+					>Accessibility</a
+				>
+				<a href="/rss.xml" class="inline-block py-1 transition-colors hover:text-white">RSS</a>
 				<p class="text-white/50">Built with SvelteKit</p>
 				<a
 					href="/#home"

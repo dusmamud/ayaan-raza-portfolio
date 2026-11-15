@@ -1,11 +1,25 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { ArrowLeft, Check } from '@lucide/svelte';
+	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 	import ProjectCard from '#lib/components/ui/ProjectCard.svelte';
 
 	let { data }: { data: PageData } = $props();
+
+	const pageUrl = $derived(`${data.site.baseUrl}/services/${data.service.id}`);
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Services', item: `${data.site.baseUrl}/services` },
+			{ '@type': 'ListItem', position: 3, name: data.service.title, item: pageUrl }
+		]
+	});
 </script>
 
 <svelte:head>
@@ -13,14 +27,25 @@
 	<meta name="description" content={data.detail.longDescription} />
 	<meta property="og:title" content="{data.service.title} — Ayaan Raza" />
 	<meta property="og:description" content={data.detail.longDescription} />
-	<meta property="og:url" content="{data.site.baseUrl}/services/{data.service.id}" />
-	<link rel="canonical" href="{data.site.baseUrl}/services/{data.service.id}" />
+	<meta property="og:url" content={pageUrl} />
+	<meta property="og:image" content="{data.site.baseUrl}/og/service-{data.service.id}.jpg" />
+	<meta name="twitter:title" content="{data.service.title} — Ayaan Raza" />
+	<meta name="twitter:description" content={data.detail.longDescription} />
+	<link rel="canonical" href={pageUrl} />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+	<Breadcrumbs
+		items={[
+			{ label: 'Home', href: '/' },
+			{ label: 'Services', href: '/services' },
+			{ label: data.service.title }
+		]}
+	/>
 	<a
 		href="/services"
-		class="inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
+		class="mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
 		<ArrowLeft size={16} aria-hidden="true" /> All services
 	</a>
@@ -30,6 +55,9 @@
 			title={data.service.title}
 			description={data.detail.longDescription}
 		/>
+		<p class="mt-4 text-lg font-bold text-ink">
+			{data.service.price} <span class="text-sm font-normal text-body">(demo starting price)</span>
+		</p>
 	</div>
 
 	<h2

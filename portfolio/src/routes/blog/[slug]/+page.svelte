@@ -1,6 +1,10 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { ArrowLeft } from '@lucide/svelte';
+	import { ArrowLeft, ArrowRight } from '@lucide/svelte';
+	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
+	import ReadingProgress from '#lib/components/ui/ReadingProgress.svelte';
+	import ShareButtons from '#lib/components/ui/ShareButtons.svelte';
 
 	let { data }: { data: PageData } = $props();
 	const post = $derived(data.post);
@@ -12,6 +16,28 @@
 			year: 'numeric'
 		})
 	);
+
+	const pageUrl = $derived(`${data.site.baseUrl}/blog/${post.slug}`);
+
+	const blogPostingLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BlogPosting',
+		headline: post.title,
+		description: post.excerpt,
+		datePublished: post.date,
+		author: { '@type': 'Person', name: data.site.name, url: data.site.baseUrl },
+		url: pageUrl
+	});
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Blog', item: `${data.site.baseUrl}/blog` },
+			{ '@type': 'ListItem', position: 3, name: post.title, item: pageUrl }
+		]
+	});
 </script>
 
 <svelte:head>
@@ -19,14 +45,24 @@
 	<meta name="description" content={post.excerpt} />
 	<meta property="og:title" content="{post.title} — Ayaan Raza" />
 	<meta property="og:description" content={post.excerpt} />
-	<meta property="og:url" content="{data.site.baseUrl}/blog/{post.slug}" />
-	<link rel="canonical" href="{data.site.baseUrl}/blog/{post.slug}" />
+	<meta property="og:url" content={pageUrl} />
+	<meta property="og:image" content="{data.site.baseUrl}/og/post-{post.slug}.jpg" />
+	<meta name="twitter:title" content="{post.title} — Ayaan Raza" />
+	<meta name="twitter:description" content={post.excerpt} />
+	<link rel="canonical" href={pageUrl} />
+	<JsonLd data={blogPostingLd} />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
+<ReadingProgress />
+
 <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+	<Breadcrumbs
+		items={[{ label: 'Home', href: '/' }, { label: 'Blog', href: '/blog' }, { label: post.title }]}
+	/>
 	<a
 		href="/blog"
-		class="inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
+		class="mt-4 inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
 		<ArrowLeft size={16} aria-hidden="true" /> All posts
 	</a>
@@ -52,9 +88,39 @@
 		</div>
 	</article>
 
+	<div class="mt-10 border-t border-ink/10 pt-6">
+		<ShareButtons url={pageUrl} title="{post.title} — Ayaan Raza" />
+	</div>
+
 	<p class="mt-10 border-t border-ink/10 pt-6 text-sm text-body">
 		Demo post — placeholder content for the UI/UX demo.
 	</p>
+
+	<nav
+		aria-label="More posts"
+		class="mt-10 flex flex-col gap-3 border-t border-ink/10 pt-6 sm:flex-row sm:justify-between"
+	>
+		{#if data.prevPost}
+			<a
+				href="/blog/{data.prevPost.slug}"
+				class="inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
+			>
+				<ArrowLeft size={16} aria-hidden="true" />
+				{data.prevPost.title}
+			</a>
+		{:else}
+			<span></span>
+		{/if}
+		{#if data.nextPost}
+			<a
+				href="/blog/{data.nextPost.slug}"
+				class="inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark sm:text-right"
+			>
+				{data.nextPost.title}
+				<ArrowRight size={16} aria-hidden="true" />
+			</a>
+		{/if}
+	</nav>
 
 	<h2 class="mt-10 font-display text-xl font-bold text-ink">More posts</h2>
 	<ul class="mt-3 space-y-2">
