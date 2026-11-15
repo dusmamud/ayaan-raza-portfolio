@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "bundler",
+		"paths": {
+			"#lib": ["./src/lib"],
+			"#lib/*": ["./src/lib/*"]
+		},
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"types": ["$app/types", "node"]
+	},
+	"exclude": ["src/service-worker"],
+	"extends": "$app/tsconfig",
+	"include": [
+		"src",
+		"test",
+		"e2e",
+		"*",
+		"prettier.config.js",
+		"eslint.config.js",
+		"playwright.config.ts"
+	]
+}
