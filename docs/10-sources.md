@@ -311,5 +311,12 @@ Nothing is recorded here yet: setup has not run.)
   intended `ayaan-raza-portfolio`. Renamed via `PATCH /repos/...`
   to `dusmamud/ayaan-raza-portfolio` (verified: private, main,
   empty); workflow `PAGES_PROJECT_NAME` fixed to `ayaan-raza-portfolio`
-  in the fix commit. Nothing was deleted. Site `baseUrl` still the `https://ayaanraza.demo`
+  in the fix commit. Nothing was deleted.
+- Workflow parse fix (same day): a step-level `if:` cannot reference
+  the `secrets` context — GitHub rejected the whole workflow at parse
+  time (dispatch API 422: "Unrecognized named-value: 'secrets'"), so
+  the first push run failed instantly with 0 jobs. The secrets guard
+  was rewritten to check presence via env vars in a shell step (values
+  never printed); a manual dispatch then verified the workflow parses
+  and runs. Site `baseUrl` still the `https://ayaanraza.demo`
   placeholder until the live Pages URL is known.
