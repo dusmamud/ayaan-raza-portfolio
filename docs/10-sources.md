@@ -286,9 +286,9 @@ Nothing is recorded here yet: setup has not run.)
   per ref with cancel-in-progress.
 - Secrets (repo Settings -> Secrets and variables -> Actions):
   `CLOUDFLARE_API_TOKEN` (Edit Cloudflare Pages permission),
-  `CLOUDFLARE_ACCOUNT_ID`. Project name `ayaan-raza-portfolio` is a
-  proposed default in the workflow env — must match the Cloudflare
-  dashboard project name exactly; confirm before the first push.
+  `CLOUDFLARE_ACCOUNT_ID`. Project name `ayaan-raza-portfolio` was
+  confirmed by the user 2026-11-15 (same name for the GitHub repo);
+  it must match the Cloudflare dashboard project name exactly.
 - Verification 2026-11-15: workflow YAML parses (12 steps, triggers
   push + workflow_dispatch); every referenced pnpm script exists;
   `pnpm build` exit 0 (adapter-static, site in `build/`). Git repo
@@ -296,6 +296,9 @@ Nothing is recorded here yet: setup has not run.)
   build / secrets staged); SSH via ssh.github.com:443 re-verified
   (`Hi dusmamud!`) after re-mirroring `/home/hatch/.ssh/config` to
   `/root/.ssh/config` (the mirror was missing after a VM replacement).
-  NOT pushed yet: needs a GitHub repo name + the two Cloudflare
-  secrets. Site `baseUrl` still the `https://ayaanraza.demo`
+  NOT pushed yet: repo + project name locked as `ayaan-raza-portfolio`
+  (no such repo existed on GitHub as of 2026-11-15); the user said on
+  2026-11-15 he will handle the rest himself (repo creation, the two
+  Cloudflare secrets, push). Remote `origin` set locally to the SSH
+  URL for `dusmamud/ayaan-raza-portfolio`; no push attempted. Site `baseUrl` still the `https://ayaanraza.demo`
   placeholder until the live Pages URL is known.
