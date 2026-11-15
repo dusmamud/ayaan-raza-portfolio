@@ -303,5 +303,13 @@ Nothing is recorded here yet: setup has not run.)
   everything except the secrets. Pushed the same day over SSH
   (ssh.github.com:443). The two Cloudflare secrets are added by the
   user; the first workflow run stops at the secrets guard until then,
-  then a re-run deploys. Site `baseUrl` still the `https://ayaanraza.demo`
+  then a re-run deploys.
+- Spelling correction (same day): the repo was first created via the
+  API as `ayan-raza-portfolio` (one 'a' — typo in the create call,
+  matching a typo in the workflow env), which made the first push
+  fail with "Repository not found" because the remote used the
+  intended `ayaan-raza-portfolio`. Renamed via `PATCH /repos/...`
+  to `dusmamud/ayaan-raza-portfolio` (verified: private, main,
+  empty); workflow `PAGES_PROJECT_NAME` fixed to `ayaan-raza-portfolio`
+  in the fix commit. Nothing was deleted. Site `baseUrl` still the `https://ayaanraza.demo`
   placeholder until the live Pages URL is known.

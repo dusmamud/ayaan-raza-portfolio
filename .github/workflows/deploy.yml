@@ -33,7 +33,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  PAGES_PROJECT_NAME: ayan-raza-portfolio
+  PAGES_PROJECT_NAME: ayaan-raza-portfolio
   NODE_VERSION: "26"
   PNPM_VERSION: "12"
 
