@@ -91,7 +91,7 @@
 				<Search size={20} aria-hidden="true" />
 			</a>
 			<span class="hidden md:inline-flex">
-				<Button href="/contact" size="sm">
+				<Button href="/contact" size="sm" magnetic>
 					Let's Talk <ArrowRight size={16} aria-hidden="true" />
 				</Button>
 			</span>

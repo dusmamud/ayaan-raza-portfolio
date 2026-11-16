@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ArrowRight } from '@lucide/svelte';
 	import type { Project, ProjectTint } from '#lib/schemas/project';
+	import { spotlight } from '#lib/actions/spotlight';
 	import { cn } from '#lib/utils/cn';
 	import PhoneMockup from './PhoneMockup.svelte';
 
@@ -17,7 +18,9 @@
 </script>
 
 <article
-	class="overflow-hidden rounded-3xl bg-card shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
+	use:spotlight
+	data-cursor-label="View"
+	class="spotlight overflow-hidden rounded-3xl bg-card shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 >
 	<div class={cn('overflow-hidden px-6 pt-8', tiles[project.tint])}>
 		<div class="-mb-5">

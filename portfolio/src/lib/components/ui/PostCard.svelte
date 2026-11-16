@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ArrowRight } from '@lucide/svelte';
 	import type { Post } from '#lib/schemas/post';
+	import { spotlight } from '#lib/actions/spotlight';
 
 	let { post }: { post: Post } = $props();
 
@@ -14,7 +15,9 @@
 </script>
 
 <article
-	class="flex flex-col rounded-3xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
+	use:spotlight
+	data-cursor-label="Read"
+	class="spotlight flex flex-col rounded-3xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 >
 	<p class="text-xs font-bold tracking-wide text-body uppercase">
 		{formatDate(post.date)} · {post.readTime}

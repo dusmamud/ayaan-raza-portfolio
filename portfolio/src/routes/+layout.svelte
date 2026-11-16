@@ -5,6 +5,7 @@
 	import './layout.css';
 	import Header from '#lib/components/layout/Header.svelte';
 	import Footer from '#lib/components/layout/Footer.svelte';
+	import CustomCursor from '#lib/components/ui/CustomCursor.svelte';
 	import { site } from '#lib/data/site';
 
 	let { children } = $props();
@@ -40,3 +41,4 @@
 	{@render children()}
 </main>
 <Footer />
+<CustomCursor />

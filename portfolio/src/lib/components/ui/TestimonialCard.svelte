@@ -2,6 +2,7 @@
 	import { Quote, Star } from '@lucide/svelte';
 	import type { Testimonial } from '#lib/schemas/home';
 	import type { TintName } from '#lib/schemas/service';
+	import { spotlight } from '#lib/actions/spotlight';
 	import { cn } from '#lib/utils/cn';
 
 	let { testimonial }: { testimonial: Testimonial } = $props();
@@ -15,7 +16,8 @@
 </script>
 
 <figure
-	class="flex flex-col rounded-3xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
+	use:spotlight
+	class="spotlight flex flex-col rounded-3xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 >
 	<Quote size={28} class="text-accent" aria-hidden="true" />
 	<div class="mt-3 flex gap-1 text-accent" aria-label="5 out of 5 stars">

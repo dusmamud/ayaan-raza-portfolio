@@ -37,10 +37,10 @@
 				applications that solve real-world problems.
 			</p>
 			<div class="mt-7 flex flex-wrap gap-3">
-				<Button href="/#projects">
+				<Button href="/#projects" magnetic>
 					View My Work <ArrowRight size={18} aria-hidden="true" />
 				</Button>
-				<Button href="/resume" variant="secondary" ariaLabel="View CV">
+				<Button href="/resume" variant="secondary" ariaLabel="View CV" magnetic>
 					Download CV <Download size={18} aria-hidden="true" />
 				</Button>
 			</div>

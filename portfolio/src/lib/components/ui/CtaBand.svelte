@@ -19,10 +19,10 @@
 			</p>
 		</div>
 		<div class="flex flex-wrap gap-3">
-			<Button href="/contact">
+			<Button href="/contact" magnetic>
 				Start a Project <ArrowRight size={18} aria-hidden="true" />
 			</Button>
-			<Button href="/#projects" variant="secondary">View my work</Button>
+			<Button href="/#projects" variant="secondary" magnetic>View my work</Button>
 		</div>
 	</div>
 </div>

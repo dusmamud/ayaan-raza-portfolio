@@ -589,3 +589,43 @@ Nothing is recorded here yet: setup has not run.)
   duration and full height instantly. Gates green:
   check 0/0, lint pass, Vitest 18/18, Playwright 6/6.
   Screenshot qa/v13-faq-open.png.
+
+### 2026-11-16 — Mouse behaviors: custom cursor, magnetic buttons, spotlight cards (v14)
+
+- Web-searched 2026 cursor practice first: dot + trailing
+  ring via requestAnimationFrame with lerp is the
+  standard; gate on (hover: hover) and (pointer: fine),
+  respect prefers-reduced-motion, keep native cursors
+  on form fields, pointer-events: none + will-change:
+  transform on the cursor elements, aria-hidden.
+- CustomCursor.svelte (mounted in +layout): 8px accent
+  dot + 36px ring, ring lerps behind at 0.16 while the
+  dot snaps at 0.6; ring grows to 48px over links and
+  buttons, becomes a 76px filled "VIEW"/"READ" badge
+  over [data-cursor-label] cards, shrinks on press,
+  hides over text fields (CSS restores the native
+  cursor there) and when the mouse leaves the window.
+  Positions are written to the DOM in rAF, never
+  through reactive state. Native cursor is hidden only
+  via the .has-custom-cursor class JS adds when the
+  gates pass, so no-JS/touch/reduced-motion users are
+  unaffected.
+- magnetic action + Button `magnetic` prop: buttons
+  drift toward the cursor (25% of center offset,
+  clamped) and spring back on leave; inline transition
+  cleared on transitionend so Button color fades keep
+  working. Wired to hero, CTA, CtaBand and header CTAs.
+- spotlight action + .spotlight CSS: a soft accent
+  radial glow follows the cursor inside cards via
+  --mx/--my; defaults to center when tracking is off.
+  Wired to project, service, post, testimonial and
+  open-source cards.
+- Verified with qa/mouse-qa.mjs: ring trails the dot
+  after a jump, 48px over links, 76px VIEW badge over
+  project cards, magnetic translate(12px) at the button
+  edge + cleared after leave, spotlight vars track the
+  mouse, dot hidden + native cursor over text fields,
+  and the touch + reduced-motion contexts get no cursor
+  at all. Gates green: check 0/0, lint pass, Vitest
+  18/18, Playwright 6/6, audit 0 problems. Screenshots
+  qa/v14-cursor-*.png.

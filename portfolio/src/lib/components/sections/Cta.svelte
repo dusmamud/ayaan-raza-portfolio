@@ -21,7 +21,7 @@
 				Let's build <Highlight>something</Highlight> great together!
 			</h2>
 			<div class="mt-7">
-				<Button href="/contact" variant="dark">
+				<Button href="/contact" variant="dark" magnetic>
 					Start a Project <ArrowRight size={18} aria-hidden="true" />
 				</Button>
 			</div>

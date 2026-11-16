@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 	import { tv, type VariantProps } from 'tailwind-variants';
+	import { magnetic } from '#lib/actions/magnetic';
 	import { cn } from '#lib/utils/cn';
 
 	const button = tv({
@@ -29,6 +30,8 @@
 		type?: 'button' | 'submit' | 'reset';
 		class?: string;
 		ariaLabel?: string;
+		/** Magnetic pull toward the cursor (hero/CTA buttons only). */
+		magnetic?: boolean;
 		onclick?: (event: MouseEvent) => void;
 		children: Snippet;
 	};
@@ -41,6 +44,7 @@
 		type = 'button',
 		class: className,
 		ariaLabel,
+		magnetic: magneticEnabled = false,
 		onclick,
 		children
 	}: ButtonProps = $props();
@@ -50,6 +54,7 @@
 	<a
 		{href}
 		{download}
+		use:magnetic={magneticEnabled}
 		class={cn(button({ variant, size }), className)}
 		aria-label={ariaLabel}
 		{onclick}
@@ -57,7 +62,13 @@
 		{@render children()}
 	</a>
 {:else}
-	<button {type} class={cn(button({ variant, size }), className)} aria-label={ariaLabel} {onclick}>
+	<button
+		{type}
+		use:magnetic={magneticEnabled}
+		class={cn(button({ variant, size }), className)}
+		aria-label={ariaLabel}
+		{onclick}
+	>
 		{@render children()}
 	</button>
 {/if}

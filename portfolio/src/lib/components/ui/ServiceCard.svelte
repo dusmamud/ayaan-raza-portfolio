@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ArrowRight } from '@lucide/svelte';
 	import type { Service, TintName } from '#lib/schemas/service';
+	import { spotlight } from '#lib/actions/spotlight';
 	import { cn } from '#lib/utils/cn';
 	import Icon from './Icon.svelte';
 
@@ -15,7 +16,8 @@
 </script>
 
 <article
-	class="rounded-2xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
+	use:spotlight
+	class="spotlight rounded-2xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 >
 	<span class={cn('inline-flex rounded-xl p-3 text-ink', tints[service.tint])}>
 		<Icon name={service.icon} size={24} />

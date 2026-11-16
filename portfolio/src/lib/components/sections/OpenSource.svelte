@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Code2, GitFork, Star } from '@lucide/svelte';
 	import { reveal } from '#lib/actions/reveal';
+	import { spotlight } from '#lib/actions/spotlight';
 	import type { Repo } from '#lib/schemas/home';
 	import Highlight from '#lib/components/ui/Highlight.svelte';
 	import SectionHeading from '#lib/components/ui/SectionHeading.svelte';
@@ -28,7 +29,8 @@
 		<div class="mt-10 grid gap-6 md:grid-cols-3" use:reveal={{ delay: 100 }}>
 			{#each repos as repo (repo.id)}
 				<article
-					class="flex flex-col rounded-3xl bg-cream p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
+					use:spotlight
+					class="spotlight flex flex-col rounded-3xl bg-cream p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 				>
 					<span class="inline-flex self-start rounded-xl bg-lilac p-3 text-ink">
 						<Code2 size={24} aria-hidden="true" />
