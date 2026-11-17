@@ -1,6 +1,16 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { Calendar, Check, Clock, Globe, Mail, MapPin, Phone, Send } from '@lucide/svelte';
+	import {
+		Calendar,
+		Check,
+		Clock,
+		Globe,
+		LoaderCircle,
+		Mail,
+		MapPin,
+		Phone,
+		Send
+	} from '@lucide/svelte';
 	import { superForm } from 'sveltekit-superforms/client';
 	import { zod4Client } from 'sveltekit-superforms/adapters';
 	import { contactSchema } from '#lib/schemas/contact';
@@ -13,11 +23,13 @@
 
 	let submitted = $state(false);
 	let submittedName = $state('');
+	let sending = $state(false);
 
 	// SPA mode: validates in the browser with the shared Zod schema and
 	// sends nothing. Server delivery arrives in Phase 2. resetForm is off
 	// so the success state can greet the user by name; "Send another"
-	// clears the form by hand.
+	// clears the form by hand. A valid submit shows a brief "Sending…"
+	// state first, so the button gives tactile feedback like a real send.
 	const { form, errors, enhance } = superForm(
 		{ name: '', email: '', message: '' },
 		{
@@ -25,9 +37,13 @@
 			resetForm: false,
 			validators: zod4Client(contactSchema),
 			onUpdate({ form: updated }) {
-				if (updated.valid) {
+				if (updated.valid && !submitted) {
 					submittedName = updated.data.name;
-					submitted = true;
+					sending = true;
+					setTimeout(() => {
+						sending = false;
+						submitted = true;
+					}, 600);
 				}
 			}
 		}
@@ -134,8 +150,11 @@
 					<li class="flex items-start gap-2.5">
 						<Calendar size={17} class="mt-0.5 shrink-0" aria-hidden="true" />
 						<span>
-							Prefer a call? Mention a time that suits you in your message and it will be confirmed
-							by email — no booking tool is connected in this demo.
+							Prefer a call?
+							<a href="/book" class="font-bold text-accent-darker hover:text-accent-dark"
+								>Book a free intro call</a
+							> — pick a day and time that suits you. No booking tool is connected in this demo; nothing
+							is scheduled or sent.
 						</span>
 					</li>
 				</ul>
@@ -241,8 +260,13 @@
 							</p>
 						{/if}
 					</div>
-					<Button type="submit">
-						Send message <Send size={18} aria-hidden="true" />
+					<Button type="submit" disabled={sending}>
+						{#if sending}
+							Sending…
+							<LoaderCircle size={18} aria-hidden="true" class="motion-safe:animate-spin" />
+						{:else}
+							Send message <Send size={18} aria-hidden="true" />
+						{/if}
 					</Button>
 				</form>
 			{/if}

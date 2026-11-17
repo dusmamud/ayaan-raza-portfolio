@@ -27,6 +27,53 @@
 	--color-icon-green: #dff3da;
 	--font-display: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
 	--font-body: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+	/* Motion tokens: one easing + duration language for every animation.
+	   Durations stay at or under 400ms except the slow ambient loops. */
+	--ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+	--ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+	--animate-hero-in: hero-in 0.7s var(--ease-out-soft) both;
+	--animate-hero-img: hero-img 0.9s var(--ease-out-soft) both;
+	--animate-float: float 6s ease-in-out infinite;
+	--animate-marquee: marquee 36s linear infinite;
+
+	@keyframes hero-in {
+		from {
+			opacity: 0;
+			transform: translateY(16px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes hero-img {
+		from {
+			opacity: 0;
+			transform: scale(0.96) translateY(10px);
+		}
+		to {
+			opacity: 1;
+			transform: scale(1) translateY(0);
+		}
+	}
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-8px);
+		}
+	}
+
+	@keyframes marquee {
+		to {
+			transform: translateX(-50%);
+		}
+	}
 }
 
 /* Dark theme: the semantic tokens flip values under .dark, so every
@@ -146,6 +193,47 @@
 
 	.spotlight::after {
 		transition: none;
+	}
+}
+
+/* View Transitions: page changes fade and rise slightly instead of
+   hard-cutting. The navigation is only wrapped in a transition when
+   the API exists and reduced motion is off (see +layout.svelte), so
+   this CSS can never trap a user on a half-rendered page. */
+@media (prefers-reduced-motion: no-preference) {
+	::view-transition-old(root) {
+		animation: 180ms ease-out both view-fade-out;
+	}
+
+	::view-transition-new(root) {
+		animation: 280ms var(--ease-out-soft) both view-fade-in;
+	}
+
+	@keyframes view-fade-out {
+		to {
+			opacity: 0;
+		}
+	}
+
+	@keyframes view-fade-in {
+		from {
+			opacity: 0;
+			transform: translateY(8px);
+		}
+	}
+}
+
+/* Client marquee (see ClientLogos.svelte). The track holds two
+   identical copies and translates -50%, so the loop is seamless.
+   Under reduced motion the animation is off and the duplicate copy
+   is hidden, leaving the original static centered row. */
+.marquee-track {
+	width: max-content;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.marquee-track {
+		width: auto;
 	}
 }
 

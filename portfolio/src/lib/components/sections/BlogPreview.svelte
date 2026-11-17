@@ -24,9 +24,11 @@
 				View all posts <ArrowRight size={18} aria-hidden="true" />
 			</Button>
 		</div>
-		<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" use:reveal={{ delay: 100 }}>
-			{#each posts as post (post.slug)}
-				<PostCard {post} />
+		<div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+			{#each posts as post, i (post.slug)}
+				<div use:reveal={{ delay: i * 75 }}>
+					<PostCard {post} />
+				</div>
 			{/each}
 		</div>
 	</div>

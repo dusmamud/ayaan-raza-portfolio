@@ -18,9 +18,11 @@
 				Clients <Highlight>love</Highlight> the work
 			</SectionHeading>
 		</div>
-		<div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3" use:reveal={{ delay: 100 }}>
-			{#each testimonials as testimonial (testimonial.id)}
-				<TestimonialCard {testimonial} />
+		<div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+			{#each testimonials as testimonial, i (testimonial.id)}
+				<div use:reveal={{ delay: i * 75 }}>
+					<TestimonialCard {testimonial} />
+				</div>
 			{/each}
 		</div>
 		<p class="mt-8 text-center text-sm text-body">

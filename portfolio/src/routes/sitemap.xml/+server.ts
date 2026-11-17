@@ -30,7 +30,10 @@ export function GET() {
 		'/uses',
 		'/sitemap',
 		'/accessibility',
-		'/search'
+		'/search',
+		'/now',
+		'/pricing',
+		'/book'
 	];
 	const urls = [
 		...staticPaths.map(

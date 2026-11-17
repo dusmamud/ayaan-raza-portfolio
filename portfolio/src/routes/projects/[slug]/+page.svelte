@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import { ArrowLeft } from '@lucide/svelte';
+	import { ArrowLeft, ArrowRight } from '@lucide/svelte';
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PhoneMockup from '#lib/components/ui/PhoneMockup.svelte';
@@ -144,6 +144,40 @@
 	<div class="mt-10 border-t border-ink/10 pt-6">
 		<ShareButtons url={pageUrl} title="{project.title} — Ayaan Raza" />
 	</div>
+
+	<nav
+		aria-label="More case studies"
+		class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-between"
+	>
+		{#if data.prevProject}
+			<a
+				href="/projects/{data.prevProject.slug}"
+				class="group/link inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
+			>
+				<ArrowLeft
+					size={16}
+					aria-hidden="true"
+					class="motion-safe:transition-transform motion-safe:group-hover/link:-translate-x-0.5"
+				/>
+				{data.prevProject.title}
+			</a>
+		{:else}
+			<span></span>
+		{/if}
+		{#if data.nextProject}
+			<a
+				href="/projects/{data.nextProject.slug}"
+				class="group/link inline-flex items-center gap-1.5 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark sm:text-right"
+			>
+				{data.nextProject.title}
+				<ArrowRight
+					size={16}
+					aria-hidden="true"
+					class="motion-safe:transition-transform motion-safe:group-hover/link:translate-x-0.5"
+				/>
+			</a>
+		{/if}
+	</nav>
 
 	<h2 class="mt-16 font-display text-2xl font-extrabold tracking-tight text-ink">More projects</h2>
 	<div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

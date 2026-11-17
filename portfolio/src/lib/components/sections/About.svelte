@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { reveal } from '#lib/actions/reveal';
+	import { parallax } from '#lib/actions/parallax';
 	import type { Stat as StatData } from '#lib/schemas/service';
 	import Highlight from '#lib/components/ui/Highlight.svelte';
 	import Picture from '#lib/components/ui/Picture.svelte';
@@ -15,14 +16,16 @@
 	<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
 		<div class="grid items-center gap-10 lg:grid-cols-2">
 			<div use:reveal>
-				<Picture
-					base="/images/about-illustration"
-					alt=""
-					width={1920}
-					height={1280}
-					loading="lazy"
-					class="h-auto w-full dark:rounded-3xl"
-				/>
+				<div use:parallax>
+					<Picture
+						base="/images/about-illustration"
+						alt=""
+						width={1920}
+						height={1280}
+						loading="lazy"
+						class="h-auto w-full dark:rounded-3xl"
+					/>
+				</div>
 			</div>
 			<div use:reveal={{ delay: 100 }}>
 				<SectionHeading eyebrow="About me" id="about-heading">

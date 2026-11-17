@@ -14,6 +14,9 @@
 		{ label: 'Blog', href: '/blog' },
 		{ label: 'Testimonials', href: '/testimonials' },
 		{ label: 'Uses', href: '/uses' },
+		{ label: 'Now', href: '/now' },
+		{ label: 'Pricing', href: '/pricing' },
+		{ label: 'Book a call', href: '/book' },
 		{ label: 'Contact', href: '/contact' },
 		{ label: 'Resume', href: '/resume' },
 		{ label: 'Search', href: '/search' }

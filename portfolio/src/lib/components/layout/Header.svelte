@@ -10,6 +10,18 @@
 	let menuOpen = $state(false);
 	let menuButton: HTMLButtonElement | undefined = $state();
 	let activeId = $state('home');
+	let scrolled = $state(false);
+
+	// A soft shadow once the page moves, so the sticky header reads as
+	// a layer above the content instead of part of the page.
+	$effect(() => {
+		const onScroll = () => {
+			scrolled = window.scrollY > 8;
+		};
+		onScroll();
+		window.addEventListener('scroll', onScroll, { passive: true });
+		return () => window.removeEventListener('scroll', onScroll);
+	});
 
 	const sectionIds = ['home', 'about', 'services', 'projects', 'stack'];
 
@@ -49,7 +61,11 @@
 	}
 </script>
 
-<header class="sticky top-0 z-50 border-b border-ink/5 bg-cream/85 backdrop-blur-sm">
+<header
+	class="sticky top-0 z-50 border-b border-ink/5 bg-cream/85 backdrop-blur-sm transition-shadow duration-300 {scrolled
+		? 'shadow-[0_8px_30px_rgb(27_23_64/0.08)]'
+		: ''}"
+>
 	<div
 		class="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:h-20 lg:px-8"
 	>

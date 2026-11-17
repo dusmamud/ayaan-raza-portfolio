@@ -24,13 +24,15 @@
 	</span>
 	<h3 class="mt-4 font-display text-lg font-bold text-ink">{service.title}</h3>
 	<p class="mt-2 text-sm leading-relaxed text-body">{service.description}</p>
-	<p class="mt-3 text-sm font-bold text-ink">
-		{service.price} <span class="font-normal text-body">(demo)</span>
-	</p>
 	<a
 		href={service.href}
-		class="mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
+		class="group/link mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
-		Read more <ArrowRight size={16} aria-hidden="true" />
+		Read more
+		<ArrowRight
+			size={16}
+			aria-hidden="true"
+			class="motion-safe:transition-transform motion-safe:group-hover/link:translate-x-0.5"
+		/>
 	</a>
 </article>

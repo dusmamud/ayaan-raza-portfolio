@@ -42,7 +42,10 @@ const CARDS = [
 	{ file: 'uses.jpg', eyebrow: 'Uses', title: 'Tools I use' },
 	{ file: 'sitemap.jpg', eyebrow: 'Sitemap', title: 'Every page, in one place' },
 	{ file: 'accessibility.jpg', eyebrow: 'Accessibility', title: 'Accessibility statement' },
-	{ file: 'search.jpg', eyebrow: 'Search', title: 'Search the site' }
+	{ file: 'search.jpg', eyebrow: 'Search', title: 'Search the site' },
+	{ file: 'now.jpg', eyebrow: 'Now', title: 'What I’m focused on now' },
+	{ file: 'pricing.jpg', eyebrow: 'Pricing', title: 'Simple, honest pricing' },
+	{ file: 'book.jpg', eyebrow: 'Book a call', title: 'Book a free intro call' }
 ];
 
 function htmlFor(card) {

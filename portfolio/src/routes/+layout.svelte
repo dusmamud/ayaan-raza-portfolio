@@ -1,14 +1,37 @@
 <script lang="ts">
-	import { afterNavigate } from '$app/navigation';
+	import { afterNavigate, onNavigate } from '$app/navigation';
 	import '@fontsource-variable/inter';
 	import '@fontsource-variable/plus-jakarta-sans';
 	import './layout.css';
 	import Header from '#lib/components/layout/Header.svelte';
 	import Footer from '#lib/components/layout/Footer.svelte';
 	import CustomCursor from '#lib/components/ui/CustomCursor.svelte';
+	import ScrollProgress from '#lib/components/ui/ScrollProgress.svelte';
 	import { site } from '#lib/data/site';
 
 	let { children } = $props();
+
+	// Page transitions: wrap navigations in a View Transition so pages
+	// fade and rise instead of hard-cutting. Skipped when the API is
+	// missing or the user prefers reduced motion — then navigation
+	// behaves exactly as before.
+	type ViewTransitionDocument = Document & {
+		startViewTransition?: (update: () => Promise<void> | void) => {
+			ready: Promise<void>;
+		};
+	};
+
+	onNavigate((navigation) => {
+		const doc = document as ViewTransitionDocument;
+		if (!doc.startViewTransition) return;
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+		return new Promise<void>((resolve) => {
+			doc.startViewTransition?.(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 
 	// After navigating to a #hash, move keyboard focus to the target
 	// section so keyboard and screen reader users land where sighted
@@ -36,6 +59,7 @@
 >
 	Skip to content
 </a>
+<ScrollProgress />
 <Header />
 <main id="content">
 	{@render children()}

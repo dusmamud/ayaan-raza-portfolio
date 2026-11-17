@@ -103,6 +103,27 @@ const pages: SearchEntry[] = [
 		description: 'Every page on the site, in one place.',
 		kind: 'Page',
 		keywords: 'sitemap map pages'
+	},
+	{
+		title: 'Now',
+		href: '/now',
+		description: 'What Ayaan is focused on right now: building, learning, reading.',
+		kind: 'Page',
+		keywords: 'now current focus learning reading'
+	},
+	{
+		title: 'Pricing',
+		href: '/pricing',
+		description: 'Demo pricing: three plans from $499, plus add-ons.',
+		kind: 'Page',
+		keywords: 'pricing plans cost quote rates packages'
+	},
+	{
+		title: 'Book a call',
+		href: '/book',
+		description: 'Book a free 30-minute intro call. Demo booking — nothing is sent.',
+		kind: 'Page',
+		keywords: 'book call meeting schedule appointment intro'
 	}
 ];
 

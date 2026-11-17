@@ -5,7 +5,7 @@
 	import { cn } from '#lib/utils/cn';
 
 	const button = tv({
-		base: 'inline-flex items-center justify-center gap-2 font-display font-bold transition-colors',
+		base: 'inline-flex items-center justify-center gap-2 font-display font-bold transition-all duration-150 motion-safe:active:scale-[0.97] disabled:cursor-not-allowed disabled:opacity-60',
 		variants: {
 			variant: {
 				// Dark-mode hover keeps the dark rose: the token flips light
@@ -32,6 +32,8 @@
 		ariaLabel?: string;
 		/** Magnetic pull toward the cursor (hero/CTA buttons only). */
 		magnetic?: boolean;
+		/** Buttons only; ignored for links. */
+		disabled?: boolean;
 		onclick?: (event: MouseEvent) => void;
 		children: Snippet;
 	};
@@ -45,6 +47,7 @@
 		class: className,
 		ariaLabel,
 		magnetic: magneticEnabled = false,
+		disabled = false,
 		onclick,
 		children
 	}: ButtonProps = $props();
@@ -64,6 +67,7 @@
 {:else}
 	<button
 		{type}
+		{disabled}
 		use:magnetic={magneticEnabled}
 		class={cn(button({ variant, size }), className)}
 		aria-label={ariaLabel}

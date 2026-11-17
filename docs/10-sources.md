@@ -629,3 +629,56 @@ Nothing is recorded here yet: setup has not run.)
   at all. Gates green: check 0/0, lint pass, Vitest
   18/18, Playwright 6/6, audit 0 problems. Screenshots
   qa/v14-cursor-*.png.
+
+### 2026-11-17 — Gap round 2: fidelity, motion system, 3 new pages (v15)
+
+- Web-searched 2026 portfolio structure (6 guides) and
+  motion trends (5 sources): case studies need stack
+  tags + next-project links; "if your portfolio is
+  static in 2026, it reads as dated" — entrance
+  choreography, scroll narratives, physics-based
+  interaction, page transitions, motion tokens
+  (150/300/500ms), nothing over 400ms except ambient
+  loops. Full analysis in docs/11-gap-round-2.md.
+- Fidelity, verified section-by-section against the
+  reference (qa/r2-*.png): hero/about/work/CTA already
+  matched; fixed the two deviations — price lines
+  removed from ServiceCard (pricing moved to /pricing)
+  and the giant footer wordmark removed (compact
+  reference-like footer kept with the v12 grid).
+- Motion system: motion tokens + keyframes in
+  layout.css; hero entrance choreography (staggered
+  rise, illustration fade/scale); ClientLogos infinite
+  marquee (pause on hover/focus, static row under
+  reduced motion); ScrollProgress bar; View Transitions
+  page fades via onNavigate (API + reduced-motion
+  gated); header shadow on scroll; button press scale;
+  arrow-nudge link hovers; ProjectCard phone zoom;
+  parallax action on hero/about/CTA art (nested so it
+  never fights reveal/entrance transforms) + float loop
+  on the hero image; staggered grids everywhere;
+  contact form "Sending…" state. Stat count-up already
+  existed and was left alone.
+- New pages: /now (focus/learning/reading snapshot),
+  /pricing (3 demo plans, add-ons, per-service starting
+  prices), /book (demo intro-call booking: day chips
+  generated client-side skipping Sundays, deterministic
+  taken slots, confirm state, all local). Plus stack
+  tags on project cards and prev/next navigation on
+  case studies. Wired into sitemap.xml (33 URLs), HTML
+  sitemap, search index, 3 new OG cards (32 total),
+  llms.txt, footer Resources, contact + services pages.
+- Deliberately NOT added: blog comments, analytics,
+  video hero, live-demo/source buttons (no real
+  deployments behind the demo projects), floating
+  back-to-top, word-split kinetic type, Resume in the
+  header nav (reference has 7 items).
+- Verified with qa/v15-qa.mjs: hero-in/float
+  animations, marquee transform moves, progress scaleX
+  grows, header shadow appears, parallax caps at 30px,
+  0 price lines, 0 wordmarks, 12 stack tags, book flow
+  reaches the confirm state, prev/next links present,
+  "Sending…" shows then the success state. Gates green:
+  check 0/0, lint pass, Vitest 18/18, Playwright 6/6,
+  audit 0 problems, 0 overflow at 390. Screenshots
+  qa/v15-*.png.

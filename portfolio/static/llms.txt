@@ -13,6 +13,9 @@ Ayaan Raza is a fictional full-stack developer persona. This site shows demo pro
 - [Blog](https://ayaan-raza-portfolio.pages.dev/blog): demo notes on design, mobile and the web.
 - [Testimonials](https://ayaan-raza-portfolio.pages.dev/testimonials): fictional client feedback.
 - [Uses](https://ayaan-raza-portfolio.pages.dev/uses): the demo tools and setup.
+- [Now](https://ayaan-raza-portfolio.pages.dev/now): current focus, learning and reading (demo snapshot).
+- [Pricing](https://ayaan-raza-portfolio.pages.dev/pricing): three demo plans from $499, add-ons, per-service starting prices.
+- [Book a call](https://ayaan-raza-portfolio.pages.dev/book): demo intro-call booking — day and time pickers, nothing scheduled or sent.
 - [Contact](https://ayaan-raza-portfolio.pages.dev/contact): demo contact form that sends nothing.
 - [Resume](https://ayaan-raza-portfolio.pages.dev/resume): printable demo CV.
 - [Privacy](https://ayaan-raza-portfolio.pages.dev/privacy) and [Terms](https://ayaan-raza-portfolio.pages.dev/terms): demo policies.

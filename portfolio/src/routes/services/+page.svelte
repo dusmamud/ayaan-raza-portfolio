@@ -48,7 +48,11 @@
 		shape the scope together.
 		<a href="/#process" class="font-bold text-accent-darker hover:text-accent-dark">
 			See how I work
-		</a>.
+		</a>
+		or
+		<a href="/pricing" class="font-bold text-accent-darker hover:text-accent-dark">
+			compare plans and prices</a
+		>.
 	</p>
 </div>
 

@@ -17,7 +17,7 @@
 <article
 	use:spotlight
 	data-cursor-label="Read"
-	class="spotlight flex flex-col rounded-3xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
+	class="spotlight flex h-full flex-col rounded-3xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 >
 	<p class="text-xs font-bold tracking-wide text-body uppercase">
 		{formatDate(post.date)} · {post.readTime}

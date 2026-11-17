@@ -20,10 +20,12 @@
 <article
 	use:spotlight
 	data-cursor-label="View"
-	class="spotlight overflow-hidden rounded-3xl bg-card shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
+	class="spotlight group overflow-hidden rounded-3xl bg-card shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 >
 	<div class={cn('overflow-hidden px-6 pt-8', tiles[project.tint])}>
-		<div class="-mb-5">
+		<div
+			class="-mb-5 origin-bottom motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-[1.04]"
+		>
 			<PhoneMockup variant={project.mockup} />
 		</div>
 	</div>
@@ -33,11 +35,21 @@
 			<a href="/projects/{project.slug}" class="hover:text-accent-dark">{project.title}</a>
 		</h3>
 		<p class="mt-2 text-sm leading-relaxed text-body">{project.description}</p>
+		<ul class="mt-3 flex flex-wrap gap-1.5" aria-label="Technologies used">
+			{#each project.tags.slice(0, 3) as tag (tag)}
+				<li class="rounded-full bg-lilac px-2.5 py-0.5 text-xs font-bold text-ink">{tag}</li>
+			{/each}
+		</ul>
 		<a
 			href="/projects/{project.slug}"
-			class="mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
+			class="group/link mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 		>
-			View Case Study <ArrowRight size={16} aria-hidden="true" />
+			View Case Study
+			<ArrowRight
+				size={16}
+				aria-hidden="true"
+				class="motion-safe:transition-transform motion-safe:group-hover/link:translate-x-0.5"
+			/>
 		</a>
 	</div>
 </article>

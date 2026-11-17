@@ -11,16 +11,18 @@
 	// on the home page (CTA section), cream everywhere else.
 	const waveFill = $derived(page.url.pathname === '/' ? 'fill-blush' : 'fill-cream');
 
-	// Short, scannable columns: 5-6 links each, grouped by intent. The old
+	// Short, scannable columns: 5-8 links each, grouped by intent. The old
 	// single "Quick Links" column held 10 links and dwarfed the rest.
 	const exploreLinks = site.nav.filter((link) => link.href !== '/#stack');
 	const resourceLinks = [
 		{ label: 'Tech Stack', href: '/#stack' },
 		{ label: 'Testimonials', href: '/testimonials' },
+		{ label: 'Pricing', href: '/pricing' },
+		{ label: 'Book a Call', href: '/book' },
+		{ label: 'Now', href: '/now' },
 		{ label: 'Uses', href: '/uses' },
 		{ label: 'Resume', href: '/resume' },
-		{ label: 'Sitemap', href: '/sitemap' },
-		{ label: 'Search', href: '/search' }
+		{ label: 'Sitemap', href: '/sitemap' }
 	];
 	const linkClass =
 		'inline-block py-1 transition-colors hover:text-white hover:underline hover:underline-offset-4';
@@ -124,15 +126,8 @@
 			</address>
 		</div>
 
-		<p
-			aria-hidden="true"
-			class="pointer-events-none mt-12 [mask-image:linear-gradient(to_bottom,black_55%,transparent_95%)] text-center font-display text-[clamp(2.5rem,11.5vw,10rem)] leading-[0.85] font-extrabold tracking-tight whitespace-nowrap text-white/[0.08] uppercase select-none"
-		>
-			Ayaan Raza<span class="text-accent/25">.</span>
-		</p>
-
 		<div
-			class="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between"
+			class="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between"
 		>
 			<p>© 2026 {site.name} — Demo portfolio. All content is fictional.</p>
 			<nav aria-label="Legal" class="flex flex-wrap items-center gap-x-5 gap-y-1">

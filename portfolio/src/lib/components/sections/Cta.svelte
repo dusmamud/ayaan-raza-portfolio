@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowRight } from '@lucide/svelte';
+	import { parallax } from '#lib/actions/parallax';
 	import { reveal } from '#lib/actions/reveal';
 	import Button from '#lib/components/ui/Button.svelte';
 	import Highlight from '#lib/components/ui/Highlight.svelte';
@@ -27,14 +28,16 @@
 			</div>
 		</div>
 		<div use:reveal={{ delay: 100 }} class="mx-[-1rem] sm:mx-[-1.5rem] lg:mx-0">
-			<Picture
-				base="/images/cta-illustration"
-				alt=""
-				width={1920}
-				height={1280}
-				loading="lazy"
-				class="h-auto w-full dark:rounded-3xl"
-			/>
+			<div use:parallax>
+				<Picture
+					base="/images/cta-illustration"
+					alt=""
+					width={1920}
+					height={1280}
+					loading="lazy"
+					class="h-auto w-full dark:rounded-3xl"
+				/>
+			</div>
 		</div>
 	</div>
 </section>
