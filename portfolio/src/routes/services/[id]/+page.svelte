@@ -20,19 +20,34 @@
 			{ '@type': 'ListItem', position: 3, name: data.service.title, item: pageUrl }
 		]
 	});
+
+	const serviceLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'Service',
+		name: data.service.title,
+		description: data.detail.longDescription,
+		provider: { '@type': 'Person', '@id': `${data.site.baseUrl}/about#person` },
+		url: pageUrl
+	});
 </script>
 
 <svelte:head>
 	<title>{data.service.title} — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta name="description" content={data.detail.longDescription} />
 	<meta property="og:title" content="{data.service.title} — Ayaan Raza" />
 	<meta property="og:description" content={data.detail.longDescription} />
 	<meta property="og:url" content={pageUrl} />
 	<meta property="og:image" content="{data.site.baseUrl}/og/service-{data.service.id}.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="{data.service.title} — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/service-{data.service.id}.jpg" />
 	<meta name="twitter:title" content="{data.service.title} — Ayaan Raza" />
 	<meta name="twitter:description" content={data.detail.longDescription} />
 	<link rel="canonical" href={pageUrl} />
 	<JsonLd data={breadcrumbLd} />
+	<JsonLd data={serviceLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">

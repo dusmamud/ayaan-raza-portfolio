@@ -20,11 +20,21 @@
 	const personLd = $derived({
 		'@context': 'https://schema.org',
 		'@type': 'Person',
+		'@id': `${data.site.baseUrl}/about#person`,
 		name: data.site.name,
 		jobTitle: data.site.role,
 		url: data.site.baseUrl,
 		description:
 			'Ayaan Raza builds fast, scalable and beautiful web and mobile applications. Demo portfolio — all content is fictional.'
+	});
+
+	const websiteLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		'@id': `${data.site.baseUrl}/#website`,
+		name: data.site.name,
+		alternateName: 'AR.',
+		url: data.site.baseUrl
 	});
 
 	const faqLd = $derived({
@@ -40,6 +50,7 @@
 
 <svelte:head>
 	<title>Ayaan Raza — Full-Stack Developer</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="Ayaan Raza builds fast, scalable and beautiful web & mobile applications. Demo portfolio — all content is fictional."
@@ -51,6 +62,10 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/" />
 	<meta property="og:image" content="{data.site.baseUrl}/og.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Ayaan Raza — Full-Stack Developer" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og.png" />
 	<meta name="twitter:title" content="Ayaan Raza — Full-Stack Developer" />
 	<meta
 		name="twitter:description"
@@ -58,6 +73,7 @@
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/" />
 	<JsonLd data={personLd} />
+	<JsonLd data={websiteLd} />
 	<JsonLd data={faqLd} />
 </svelte:head>
 

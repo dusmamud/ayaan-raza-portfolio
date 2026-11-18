@@ -34,7 +34,10 @@ const PAGES = [
 	'/uses',
 	'/sitemap',
 	'/accessibility',
-	'/search'
+	'/search',
+	'/now',
+	'/pricing',
+	'/book'
 ];
 
 const browser = await chromium.launch();

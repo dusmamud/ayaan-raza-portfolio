@@ -28,6 +28,8 @@
 
 <svelte:head>
 	<title>Search — Ayaan Raza</title>
+	<meta name="robots" content="noindex, follow" />
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="Search every page, project, post and service on the Ayaan Raza demo portfolio."
@@ -39,6 +41,10 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/search" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/search.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Search — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/search.jpg" />
 	<meta name="twitter:title" content="Search — Ayaan Raza" />
 	<meta
 		name="twitter:description"

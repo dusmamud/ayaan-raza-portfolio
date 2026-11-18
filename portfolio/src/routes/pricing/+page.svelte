@@ -6,10 +6,20 @@
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import Button from '#lib/components/ui/Button.svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 	import { cn } from '#lib/utils/cn';
 
 	let { data }: { data: PageData } = $props();
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Pricing', item: `${data.site.baseUrl}/pricing` }
+		]
+	});
 
 	// Demo pricing — fictional numbers for the UI/UX demo. The per-service
 	// starting prices from the service cards moved here in the v15 round.
@@ -82,6 +92,7 @@
 
 <svelte:head>
 	<title>Pricing — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="Demo pricing for design and development work: three plans from $499, plus add-ons. Demo content — all fictional."
@@ -93,12 +104,17 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/pricing" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/pricing.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Pricing — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/pricing.jpg" />
 	<meta name="twitter:title" content="Pricing — Ayaan Raza" />
 	<meta
 		name="twitter:description"
 		content="Demo pricing for design and development work: three plans from $499, plus add-ons. Demo content — all fictional."
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/pricing" />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
@@ -123,7 +139,7 @@
 					<div class="flex items-center justify-between gap-3">
 						<h2 class="font-display text-xl font-bold text-ink">{plan.name}</h2>
 						{#if plan.featured}
-							<span class="rounded-full bg-accent px-3 py-1 text-xs font-bold text-white">
+							<span class="rounded-full bg-accent-dark px-3 py-1 text-xs font-bold text-white">
 								Most popular
 							</span>
 						{/if}

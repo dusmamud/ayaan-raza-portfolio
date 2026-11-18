@@ -3,9 +3,19 @@
 	import { Check } from '@lucide/svelte';
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 
 	let { data }: { data: PageData } = $props();
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Accessibility', item: `${data.site.baseUrl}/accessibility` }
+		]
+	});
 
 	const features = [
 		'Skip link on every page, jumping straight to the main content.',
@@ -20,6 +30,7 @@
 
 <svelte:head>
 	<title>Accessibility — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="Accessibility statement for the Ayaan Raza demo portfolio: what is supported and what is known to be limited."
@@ -31,12 +42,17 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/accessibility" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/accessibility.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Accessibility — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/accessibility.jpg" />
 	<meta name="twitter:title" content="Accessibility — Ayaan Raza" />
 	<meta
 		name="twitter:description"
 		content="Accessibility statement for the Ayaan Raza demo portfolio: what is supported and what is known to be limited."
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/accessibility" />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">

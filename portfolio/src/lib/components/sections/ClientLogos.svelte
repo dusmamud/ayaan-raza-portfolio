@@ -20,7 +20,7 @@
 
 <section aria-label="Clients" class="bg-cream">
 	<div class="mx-auto max-w-7xl px-4 pt-2 pb-10 sm:px-6 lg:px-8">
-		<p class="text-center text-xs font-bold tracking-widest text-body/70 uppercase" use:reveal>
+		<p class="text-center text-xs font-bold tracking-widest text-body/80 uppercase" use:reveal>
 			Trusted by teams at
 		</p>
 		<div

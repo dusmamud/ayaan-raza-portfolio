@@ -22,13 +22,13 @@
 	<span class={cn('inline-flex rounded-xl p-3 text-ink', tints[service.tint])}>
 		<Icon name={service.icon} size={24} />
 	</span>
-	<h3 class="mt-4 font-display text-lg font-bold text-ink">{service.title}</h3>
+	<h2 class="mt-4 font-display text-lg font-bold text-ink">{service.title}</h2>
 	<p class="mt-2 text-sm leading-relaxed text-body">{service.description}</p>
 	<a
 		href={service.href}
 		class="group/link mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
-		Read more
+		Read more<span class="sr-only"> about {service.title}</span>
 		<ArrowRight
 			size={16}
 			aria-hidden="true"

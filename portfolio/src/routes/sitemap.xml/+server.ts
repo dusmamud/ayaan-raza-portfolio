@@ -5,7 +5,11 @@ import { services } from '#lib/data/services';
 
 export const prerender = true;
 
-const SITE_LASTMOD = '2026-11-15';
+// Last significant change to the static pages: this deploy changed every
+// page's head tags or structured data. Update on any deploy that changes
+// page content, head tags or structured data — never the build date.
+// Blog posts keep their publication dates (their content is unchanged).
+const SITE_LASTMOD = '2026-11-18';
 
 function escapeXml(value: string): string {
 	return value
@@ -30,7 +34,6 @@ export function GET() {
 		'/uses',
 		'/sitemap',
 		'/accessibility',
-		'/search',
 		'/now',
 		'/pricing',
 		'/book'

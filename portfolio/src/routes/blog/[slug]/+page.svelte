@@ -19,13 +19,22 @@
 
 	const pageUrl = $derived(`${data.site.baseUrl}/blog/${post.slug}`);
 
+	// Structured dates need a timezone: midnight IST on the displayed date (the visible byline shows the date only).
+	const publishedTime = $derived(`${post.date}T00:00:00+05:30`);
+
 	const blogPostingLd = $derived({
 		'@context': 'https://schema.org',
 		'@type': 'BlogPosting',
 		headline: post.title,
 		description: post.excerpt,
-		datePublished: post.date,
-		author: { '@type': 'Person', name: data.site.name, url: data.site.baseUrl },
+		datePublished: publishedTime,
+		dateModified: publishedTime,
+		author: {
+			'@type': 'Person',
+			'@id': `${data.site.baseUrl}/about#person`,
+			name: data.site.name,
+			url: data.site.baseUrl
+		},
 		url: pageUrl
 	});
 
@@ -42,11 +51,23 @@
 
 <svelte:head>
 	<title>{post.title} — Ayaan Raza</title>
+	<meta property="og:type" content="article" />
 	<meta name="description" content={post.excerpt} />
 	<meta property="og:title" content="{post.title} — Ayaan Raza" />
 	<meta property="og:description" content={post.excerpt} />
 	<meta property="og:url" content={pageUrl} />
 	<meta property="og:image" content="{data.site.baseUrl}/og/post-{post.slug}.jpg" />
+	<meta property="article:published_time" content={publishedTime} />
+	<meta property="article:modified_time" content={publishedTime} />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="{post.title} — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/post-{post.slug}.jpg" />
+	<meta property="article:author" content="{data.site.baseUrl}/about" />
+	<meta property="article:section" content="Blog" />
+	{#each post.tags as tag (tag)}
+		<meta property="article:tag" content={tag} />
+	{/each}
 	<meta name="twitter:title" content="{post.title} — Ayaan Raza" />
 	<meta name="twitter:description" content={post.excerpt} />
 	<link rel="canonical" href={pageUrl} />

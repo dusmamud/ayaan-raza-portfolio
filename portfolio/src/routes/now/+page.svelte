@@ -4,9 +4,19 @@
 	import { reveal } from '#lib/actions/reveal';
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 
 	let { data }: { data: PageData } = $props();
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Now', item: `${data.site.baseUrl}/now` }
+		]
+	});
 
 	// Demo "now" content, in the spirit of nownownow.com: what the
 	// fictional persona is focused on, learning, reading and open to.
@@ -56,6 +66,7 @@
 
 <svelte:head>
 	<title>Now — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="What Ayaan Raza is focused on right now: building, learning, reading. Demo content — all fictional."
@@ -67,12 +78,17 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/now" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/now.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Now — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/now.jpg" />
 	<meta name="twitter:title" content="Now — Ayaan Raza" />
 	<meta
 		name="twitter:description"
 		content="What Ayaan Raza is focused on right now: building, learning, reading. Demo content — all fictional."
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/now" />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">

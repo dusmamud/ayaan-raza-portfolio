@@ -37,6 +37,6 @@
 		href="/blog/{post.slug}"
 		class="mt-5 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 	>
-		Read post <ArrowRight size={16} aria-hidden="true" />
+		Read post<span class="sr-only">: {post.title}</span> <ArrowRight size={16} aria-hidden="true" />
 	</a>
 </article>

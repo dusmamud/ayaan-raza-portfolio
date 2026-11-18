@@ -682,3 +682,55 @@ Nothing is recorded here yet: setup has not run.)
   check 0/0, lint pass, Vitest 18/18, Playwright 6/6,
   audit 0 problems, 0 overflow at 390. Screenshots
   qa/v15-*.png.
+
+### 2026-11-18 — Audit fix round (v16, UI unchanged)
+
+- Trigger: the A-to-Z audit (qa/audit-2026-11-18/
+  REPORT.md, 66 PSI runs + validator + Rich Results,
+  33 pages) found real but specific defects; the user
+  said fix everything, cross-verified, best practice,
+  UI untouched. Full account in docs/12-audit-fixes.md.
+- Method: 5 fresh PSI runs with failing audits
+  expanded to name exact elements; 14 fix patterns
+  cross-verified in 26 web searches (web.dev, Google
+  Search Central, schema.org, MDN, ogp.me, Cloudflare
+  docs first); every audit claim re-checked against
+  source before fixing. Two claims did not survive:
+  the alt-text finding (PhoneMockup is aria-hidden
+  with adjacent card text; illustrations decorative)
+  and 3 Rich Results descriptions that do not match
+  the live JSON-LD (warnings corroborated, wording
+  not — do not quote them).
+- Root causes: SEO 92 = 4 bare "Read more" links;
+  contrast = TRUSTED BY label 3.82:1 + Most popular
+  badge 3.67:1; console error = one @fontsource
+  subset Vite inlined as a data: URI, blocked by CSP
+  font-src 'self' (confirmed in the live CSS).
+- Fixes: sr-only destination context on card links;
+  card h3→h2; role="img" on star ratings; contrast
+  tokens /80 + accent-dark (only visible deltas,
+  minimal, on-token); vite assetsInlineLimit never
+  inlines .woff2; HSTS + COOP headers, immutable
+  dropped from unhashed /images/*; /search noindex +
+  out of the sitemap (32 URLs), lastmod 2026-11-18;
+  per-page og:type, OG width/height/alt,
+  twitter:image, article:* tags; WebSite (home),
+  ProfilePage (/about, stable Person @id
+  …/about#person), BreadcrumbList on 18 pages,
+  Service on 4 detail pages, BlogPosting dates with
+  timezone + dateModified; project meta descriptions
+  from overviews. Social # links kept (no scored
+  failure; real URLs are the only clean fix); CSP
+  hash-mode, Trusted Types, Review/Offer markup,
+  BlogPosting image, critical CSS all evaluated and
+  deliberately not applied — reasons in docs/12.
+- Sandbox write failure (EPERM, recurring) blocked
+  local builds/gates/image generation for this
+  round: edits via file tools, push via the Git Data
+  API helper, gates run in CI. Responsive images
+  (qa/generate-responsive.py written, masters in
+  qa/masters/) + home og.jpg are queued until writes
+  clear; do not deploy the Picture change without
+  the generated files. Local HEAD lags remote after
+  the API push — reconcile carefully once git writes
+  work (see docs/12 §6).

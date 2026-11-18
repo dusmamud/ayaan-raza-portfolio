@@ -31,9 +31,9 @@
 	</div>
 	<div class="p-6">
 		<p class="text-xs font-bold tracking-wide text-body uppercase">{project.category}</p>
-		<h3 class="mt-1 font-display text-xl font-bold text-ink">
+		<h2 class="mt-1 font-display text-xl font-bold text-ink">
 			<a href="/projects/{project.slug}" class="hover:text-accent-dark">{project.title}</a>
-		</h3>
+		</h2>
 		<p class="mt-2 text-sm leading-relaxed text-body">{project.description}</p>
 		<ul class="mt-3 flex flex-wrap gap-1.5" aria-label="Technologies used">
 			{#each project.tags.slice(0, 3) as tag (tag)}
@@ -44,7 +44,7 @@
 			href="/projects/{project.slug}"
 			class="group/link mt-4 inline-flex items-center gap-1 py-1 text-sm font-bold text-accent-darker hover:text-accent-dark"
 		>
-			View Case Study
+			View Case Study<span class="sr-only"> for {project.title}</span>
 			<ArrowRight
 				size={16}
 				aria-hidden="true"

@@ -42,13 +42,18 @@
 
 <svelte:head>
 	<title>{project.title} — Ayaan Raza</title>
-	<meta name="description" content={project.description} />
+	<meta property="og:type" content="website" />
+	<meta name="description" content={project.overview} />
 	<meta property="og:title" content="{project.title} — Ayaan Raza" />
-	<meta property="og:description" content={project.description} />
+	<meta property="og:description" content={project.overview} />
 	<meta property="og:url" content={pageUrl} />
 	<meta property="og:image" content="{data.site.baseUrl}/og/project-{project.slug}.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="{project.title} — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/project-{project.slug}.jpg" />
 	<meta name="twitter:title" content="{project.title} — Ayaan Raza" />
-	<meta name="twitter:description" content={project.description} />
+	<meta name="twitter:description" content={project.overview} />
 	<link rel="canonical" href={pageUrl} />
 	<JsonLd data={breadcrumbLd} />
 </svelte:head>

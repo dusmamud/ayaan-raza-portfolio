@@ -2,10 +2,20 @@
 	import type { PageData } from './$types';
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 	import type { UseGroup } from '#lib/schemas/home';
 
 	let { data }: { data: PageData } = $props();
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Uses', item: `${data.site.baseUrl}/uses` }
+		]
+	});
 
 	const groups: { id: UseGroup; label: string }[] = [
 		{ id: 'development', label: 'Development' },
@@ -17,6 +27,7 @@
 
 <svelte:head>
 	<title>Uses — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="The tools and setup behind the Ayaan Raza demo portfolio. Demo content — all fictional."
@@ -28,12 +39,17 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/uses" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/uses.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Uses — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/uses.jpg" />
 	<meta name="twitter:title" content="Uses — Ayaan Raza" />
 	<meta
 		name="twitter:description"
 		content="The tools and setup behind the Ayaan Raza demo portfolio. Demo content — all fictional."
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/uses" />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">

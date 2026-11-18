@@ -1,0 +1,36 @@
+# Live-site extraction summary (2026-11-18, curl, no fixes)
+
+Pages: 33
+- `/` status=200 bytes=138846 title_len=33 desc_len=116 h1=1 ld_blocks=2 ld_types=['Person', 'FAQPage'] imgs=11 (no-alt=0, empty-alt=11, no-dims=0) css=1 scripts=2 hash_links=10
+- `/about` status=200 bytes=35337 title_len=18 desc_len=82 h1=1 ld_blocks=0 ld_types=[] imgs=1 (no-alt=0, empty-alt=1, no-dims=0) css=1 scripts=2 hash_links=5
+- `/services` status=200 bytes=33159 title_len=21 desc_len=139 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/projects` status=200 bytes=42322 title_len=21 desc_len=115 h1=1 ld_blocks=0 ld_types=[] imgs=12 (no-alt=0, empty-alt=12, no-dims=0) css=1 scripts=2 hash_links=5
+- `/blog` status=200 bytes=37747 title_len=17 desc_len=70 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/contact` status=200 bytes=33540 title_len=20 desc_len=81 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=10
+- `/privacy` status=200 bytes=27797 title_len=27 desc_len=82 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/resume` status=200 bytes=34381 title_len=24 desc_len=79 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/testimonials` status=200 bytes=40558 title_len=25 desc_len=84 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/terms` status=200 bytes=27470 title_len=18 desc_len=73 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/uses` status=200 bytes=28828 title_len=17 desc_len=87 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/sitemap` status=200 bytes=30688 title_len=20 desc_len=58 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/accessibility` status=200 bytes=30228 title_len=26 desc_len=109 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/search` status=200 bytes=41810 title_len=19 desc_len=78 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/now` status=200 bytes=30725 title_len=16 desc_len=99 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/pricing` status=200 bytes=44534 title_len=20 desc_len=112 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/book` status=200 bytes=34200 title_len=24 desc_len=94 h1=1 ld_blocks=0 ld_types=[] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/services/mobile` status=200 bytes=38456 title_len=35 desc_len=162 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=4 (no-alt=0, empty-alt=4, no-dims=0) css=1 scripts=2 hash_links=5
+- `/services/design` status=200 bytes=38252 title_len=25 desc_len=129 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=4 (no-alt=0, empty-alt=4, no-dims=0) css=1 scripts=2 hash_links=5
+- `/services/backend` status=200 bytes=38304 title_len=32 desc_len=132 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=4 (no-alt=0, empty-alt=4, no-dims=0) css=1 scripts=2 hash_links=5
+- `/services/testing` status=200 bytes=38357 title_len=34 desc_len=143 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=4 (no-alt=0, empty-alt=4, no-dims=0) css=1 scripts=2 hash_links=5
+- `/projects/foodly` status=200 bytes=47093 title_len=19 desc_len=64 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=12 (no-alt=0, empty-alt=12, no-dims=0) css=1 scripts=2 hash_links=5
+- `/projects/shopio` status=200 bytes=47677 title_len=19 desc_len=56 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=12 (no-alt=0, empty-alt=12, no-dims=0) css=1 scripts=2 hash_links=5
+- `/projects/walletwise` status=200 bytes=47727 title_len=23 desc_len=59 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=12 (no-alt=0, empty-alt=12, no-dims=0) css=1 scripts=2 hash_links=5
+- `/projects/fittrack` status=200 bytes=47658 title_len=21 desc_len=56 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=12 (no-alt=0, empty-alt=12, no-dims=0) css=1 scripts=2 hash_links=5
+- `/projects/wanderly` status=200 bytes=47681 title_len=21 desc_len=58 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=12 (no-alt=0, empty-alt=12, no-dims=0) css=1 scripts=2 hash_links=5
+- `/projects/taskflow` status=200 bytes=47030 title_len=21 desc_len=54 h1=1 ld_blocks=1 ld_types=['BreadcrumbList'] imgs=12 (no-alt=0, empty-alt=12, no-dims=0) css=1 scripts=2 hash_links=5
+- `/blog/design-systems-that-scale` status=200 bytes=31000 title_len=55 desc_len=86 h1=1 ld_blocks=2 ld_types=['BlogPosting', 'BreadcrumbList'] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/blog/forms-that-forgive` status=200 bytes=31369 title_len=40 desc_len=75 h1=1 ld_blocks=2 ld_types=['BlogPosting', 'BreadcrumbList'] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/blog/mobile-first-portfolios` status=200 bytes=31464 title_len=46 desc_len=82 h1=1 ld_blocks=2 ld_types=['BlogPosting', 'BreadcrumbList'] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/blog/flutter-vs-native-demo` status=200 bytes=31359 title_len=43 desc_len=63 h1=1 ld_blocks=2 ld_types=['BlogPosting', 'BreadcrumbList'] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/blog/small-details-big-ux` status=200 bytes=31345 title_len=39 desc_len=68 h1=1 ld_blocks=2 ld_types=['BlogPosting', 'BreadcrumbList'] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5
+- `/blog/performance-budgets-demo` status=200 bytes=30870 title_len=47 desc_len=74 h1=1 ld_blocks=2 ld_types=['BlogPosting', 'BreadcrumbList'] imgs=0 (no-alt=0, empty-alt=0, no-dims=0) css=1 scripts=2 hash_links=5

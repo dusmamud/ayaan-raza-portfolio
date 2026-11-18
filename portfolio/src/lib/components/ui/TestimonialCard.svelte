@@ -20,7 +20,7 @@
 	class="spotlight flex h-full flex-col rounded-3xl bg-card p-6 shadow-sm transition-all duration-300 motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-md"
 >
 	<Quote size={28} class="text-accent" aria-hidden="true" />
-	<div class="mt-3 flex gap-1 text-accent" aria-label="5 out of 5 stars">
+	<div class="mt-3 flex gap-1 text-accent" role="img" aria-label="5 out of 5 stars">
 		{#each [0, 1, 2, 3, 4] as i (i)}
 			<Star size={16} fill="currentColor" aria-hidden="true" />
 		{/each}

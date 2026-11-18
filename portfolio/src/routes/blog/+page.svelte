@@ -3,10 +3,20 @@
 	import { Rss, Search } from '@lucide/svelte';
 	import Newsletter from '#lib/components/sections/Newsletter.svelte';
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 	import PostCard from '#lib/components/ui/PostCard.svelte';
 
 	let { data }: { data: PageData } = $props();
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Blog', item: `${data.site.baseUrl}/blog` }
+		]
+	});
 
 	let query = $state('');
 	let activeTag = $state('All');
@@ -25,6 +35,7 @@
 
 <svelte:head>
 	<title>Blog — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="Demo blog posts by Ayaan Raza. Placeholder content for the UI/UX demo."
@@ -36,12 +47,17 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/blog" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/blog.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Blog — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/blog.jpg" />
 	<meta name="twitter:title" content="Blog — Ayaan Raza" />
 	<meta
 		name="twitter:description"
 		content="Demo blog posts by Ayaan Raza. Placeholder content for the UI/UX demo."
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/blog" />
+	<JsonLd data={breadcrumbLd} />
 	<link
 		rel="alternate"
 		type="application/rss+xml"

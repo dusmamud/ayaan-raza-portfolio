@@ -7,10 +7,20 @@
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import Button from '#lib/components/ui/Button.svelte';
 	import CtaBand from '#lib/components/ui/CtaBand.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 	import PageHeader from '#lib/components/ui/PageHeader.svelte';
 	import { cn } from '#lib/utils/cn';
 
 	let { data }: { data: PageData } = $props();
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Book a call', item: `${data.site.baseUrl}/book` }
+		]
+	});
 
 	// Demo booking widget: everything happens locally, nothing is
 	// scheduled or sent. Days are generated on the client (tomorrow
@@ -87,11 +97,12 @@
 	const inputClass =
 		'w-full rounded-xl border border-ink/15 bg-card px-4 py-3 text-ink placeholder:text-body/60 focus:border-accent';
 	const chipClass =
-		'cursor-pointer rounded-xl border px-3 py-2 text-center text-sm font-bold transition-colors peer-checked:border-accent peer-checked:bg-accent peer-checked:text-white hover:border-accent peer-disabled:cursor-not-allowed peer-disabled:border-ink/10 peer-disabled:bg-ink/5 peer-disabled:text-body/50 peer-disabled:line-through peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-accent';
+		'cursor-pointer rounded-xl border px-3 py-2 text-center text-sm font-bold transition-colors peer-checked:border-accent peer-checked:bg-accent-dark peer-checked:text-white hover:border-accent peer-disabled:cursor-not-allowed peer-disabled:border-ink/10 peer-disabled:bg-ink/5 peer-disabled:text-body/50 peer-disabled:line-through peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-accent';
 </script>
 
 <svelte:head>
 	<title>Book a call — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="Book a free 30-minute intro call with Ayaan Raza. Demo booking — nothing is scheduled or sent."
@@ -103,12 +114,17 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/book" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/book.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Book a call — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/book.jpg" />
 	<meta name="twitter:title" content="Book a call — Ayaan Raza" />
 	<meta
 		name="twitter:description"
 		content="Book a free 30-minute intro call with Ayaan Raza. Demo booking — nothing is scheduled or sent."
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/book" />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">

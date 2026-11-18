@@ -10,6 +10,14 @@ export default defineConfig({
 		tailwindcss(),
 		sveltekit({ adapter: adapter({ fallback: '404.html' }), preprocess: vitePreprocess() })
 	],
+	build: {
+		// Never inline font files: Vite's default 4 KiB limit inlined one
+		// tiny @fontsource subset as a data: URI, which the CSP font-src
+		// 'self' directive blocks (one console error on every page).
+		// Fonts always ship as files; other assets keep the 4 KiB rule.
+		assetsInlineLimit: (filePath, content) =>
+			filePath.endsWith('.woff2') ? false : content.length < 4096
+	},
 	test: {
 		expect: { requireAssertions: true },
 		projects: [

@@ -1,0 +1,2901 @@
+[
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev",
+  "path": "/",
+  "status": 200,
+  "html_bytes": 138846,
+  "fetch_time_s": 0.680557,
+  "title": "Ayaan Raza — Full-Stack Developer",
+  "title_len": 33,
+  "lang": "en",
+  "meta_description": "Ayaan Raza builds fast, scalable and beautiful web & mobile applications. Demo portfolio — all content is fictional.",
+  "meta_description_len": 116,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Ayaan Raza — Full-Stack Developer",
+   "og:description": "Ayaan Raza builds fast, scalable and beautiful web & mobile applications. Demo portfolio — all content is fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og.png",
+   "twitter:title": "Ayaan Raza — Full-Stack Developer",
+   "twitter:description": "Ayaan Raza builds fast, scalable and beautiful web & mobile applications. Demo portfolio — all content is fictional."
+  },
+  "h1": [
+   "I build digital products that people love"
+  ],
+  "jsonld_blocks": 2,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "Person"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "name",
+     "jobTitle",
+     "url",
+     "description"
+    ]
+   },
+   {
+    "parse": "OK",
+    "types": [
+     "FAQPage"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "mainEntity"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayaan Raza",
+    "jobTitle": "Full-Stack Developer",
+    "url": "https://ayaan-raza-portfolio.pages.dev",
+    "description": "Ayaan Raza builds fast, scalable and beautiful web and mobile applications. Demo portfolio — all content is fictional."
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+     {
+      "@type": "Question",
+      "name": "How long does a typical project take?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Most demo-sized builds take 2–6 weeks from brief to launch, depending on scope. You get a timeline with milestones before work starts."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Do you work with startups or only large companies?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Both. Most demo projects are early-stage startups that need a fast, polished first version."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "What does your design process look like?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Research first, then wireframes, then high-fidelity UI. You approve each stage before development begins."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "Can you maintain the app after launch?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Yes — bug fixes, performance tweaks and small feature updates are part of the testing & maintenance service."
+      }
+     },
+     {
+      "@type": "Question",
+      "name": "How do we get started?",
+      "acceptedAnswer": {
+       "@type": "Answer",
+       "text": "Send a message through the contact page with your idea. This demo form does not send anything yet — it shows the flow."
+      }
+     }
+    ]
+   }
+  ],
+  "img_total": 11,
+  "img_missing_alt": 0,
+  "img_empty_alt": 11,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/hero-illustration.jpg",
+   "/images/about-illustration.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/cta-illustration.jpg"
+  ],
+  "img_loading": [
+   "(none)",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "high",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 76,
+  "anchors_hash_only": 10
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/about",
+  "path": "/about",
+  "status": 200,
+  "html_bytes": 35337,
+  "fetch_time_s": 0.854413,
+  "title": "About — Ayaan Raza",
+  "title_len": 18,
+  "lang": "en",
+  "meta_description": "About Ayaan Raza, full-stack developer. Demo portfolio — all content is fictional.",
+  "meta_description_len": 82,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/about"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "About — Ayaan Raza",
+   "og:description": "About Ayaan Raza, full-stack developer. Demo portfolio — all content is fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/about",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/about.jpg",
+   "twitter:title": "About — Ayaan Raza",
+   "twitter:description": "About Ayaan Raza, full-stack developer. Demo portfolio — all content is fictional."
+  },
+  "h1": [
+   "Hi, I'm Ayaan — I build products people love"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 1,
+  "img_missing_alt": 0,
+  "img_empty_alt": 1,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/about-illustration.jpg"
+  ],
+  "img_loading": [
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 45,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/services",
+  "path": "/services",
+  "status": 200,
+  "html_bytes": 33159,
+  "fetch_time_s": 1.138258,
+  "title": "Services — Ayaan Raza",
+  "title_len": 21,
+  "lang": "en",
+  "meta_description": "Services by Ayaan Raza: mobile apps, UI/UX design, backend integration, testing and maintenance. Demo portfolio — all content is fictional.",
+  "meta_description_len": 139,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/services"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Services — Ayaan Raza",
+   "og:description": "Services by Ayaan Raza: mobile apps, UI/UX design, backend integration, testing and maintenance. Demo portfolio — all content is fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/services",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/services.jpg",
+   "twitter:title": "Services — Ayaan Raza",
+   "twitter:description": "Services by Ayaan Raza: mobile apps, UI/UX design, backend integration, testing and maintenance. Demo portfolio — all content is fictional."
+  },
+  "h1": [
+   "What I can do for you"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 50,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/projects",
+  "path": "/projects",
+  "status": 200,
+  "html_bytes": 42322,
+  "fetch_time_s": 0.758184,
+  "title": "Projects — Ayaan Raza",
+  "title_len": 21,
+  "lang": "en",
+  "meta_description": "Demo projects by Ayaan Raza: Foodly, Shopio, WalletWise, FitTrack, Wanderly and TaskFlow. All content is fictional.",
+  "meta_description_len": 115,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/projects"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Projects — Ayaan Raza",
+   "og:description": "Demo projects by Ayaan Raza: Foodly, Shopio, WalletWise, FitTrack, Wanderly and TaskFlow. All content is fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/projects",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/projects.jpg",
+   "twitter:title": "Projects — Ayaan Raza",
+   "twitter:description": "Demo projects by Ayaan Raza: Foodly, Shopio, WalletWise, FitTrack, Wanderly and TaskFlow. All content is fictional."
+  },
+  "h1": [
+   "All Projects"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 12,
+  "img_missing_alt": 0,
+  "img_empty_alt": 12,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-taskflow.jpg",
+   "/images/screen-taskflow.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 54,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/blog",
+  "path": "/blog",
+  "status": 200,
+  "html_bytes": 37747,
+  "fetch_time_s": 1.174175,
+  "title": "Blog — Ayaan Raza",
+  "title_len": 17,
+  "lang": "en",
+  "meta_description": "Demo blog posts by Ayaan Raza. Placeholder content for the UI/UX demo.",
+  "meta_description_len": 70,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/blog"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Blog — Ayaan Raza",
+   "og:description": "Demo blog posts by Ayaan Raza. Placeholder content for the UI/UX demo.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/blog",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/blog.jpg",
+   "twitter:title": "Blog — Ayaan Raza",
+   "twitter:description": "Demo blog posts by Ayaan Raza. Placeholder content for the UI/UX demo."
+  },
+  "h1": [
+   "Notes & ideas"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 55,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/contact",
+  "path": "/contact",
+  "status": 200,
+  "html_bytes": 33540,
+  "fetch_time_s": 1.172051,
+  "title": "Contact — Ayaan Raza",
+  "title_len": 20,
+  "lang": "en",
+  "meta_description": "Contact Ayaan Raza about your project idea. Demo form — nothing is sent anywhere.",
+  "meta_description_len": 81,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/contact"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Contact — Ayaan Raza",
+   "og:description": "Contact Ayaan Raza about your project idea. Demo form — nothing is sent anywhere.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/contact",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/contact.jpg",
+   "twitter:title": "Contact — Ayaan Raza",
+   "twitter:description": "Contact Ayaan Raza about your project idea. Demo form — nothing is sent anywhere."
+  },
+  "h1": [
+   "Let's talk"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 49,
+  "anchors_hash_only": 10
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/privacy",
+  "path": "/privacy",
+  "status": 200,
+  "html_bytes": 27797,
+  "fetch_time_s": 0.577669,
+  "title": "Privacy Policy — Ayaan Raza",
+  "title_len": 27,
+  "lang": "en",
+  "meta_description": "Privacy policy for the Ayaan Raza demo portfolio. No data collection, no tracking.",
+  "meta_description_len": 82,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/privacy"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Privacy Policy — Ayaan Raza",
+   "og:description": "Privacy policy for the Ayaan Raza demo portfolio. No data collection, no tracking.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/privacy",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/privacy.jpg",
+   "twitter:title": "Privacy Policy — Ayaan Raza",
+   "twitter:description": "Privacy policy for the Ayaan Raza demo portfolio. No data collection, no tracking."
+  },
+  "h1": [
+   "Privacy Policy"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 45,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/resume",
+  "path": "/resume",
+  "status": 200,
+  "html_bytes": 34381,
+  "fetch_time_s": 0.55618,
+  "title": "CV / Resume — Ayaan Raza",
+  "title_len": 24,
+  "lang": "en",
+  "meta_description": "CV of Ayaan Raza, full-stack developer. Demo resume — all content is fictional.",
+  "meta_description_len": 79,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/resume"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "CV / Resume — Ayaan Raza",
+   "og:description": "CV of Ayaan Raza, full-stack developer. Demo resume — all content is fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/resume",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/resume.jpg",
+   "twitter:title": "CV / Resume — Ayaan Raza",
+   "twitter:description": "CV of Ayaan Raza, full-stack developer. Demo resume — all content is fictional."
+  },
+  "h1": [
+   "Ayaan Raza"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 50,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/testimonials",
+  "path": "/testimonials",
+  "status": 200,
+  "html_bytes": 40558,
+  "fetch_time_s": 0.743585,
+  "title": "Testimonials — Ayaan Raza",
+  "title_len": 25,
+  "lang": "en",
+  "meta_description": "What demo clients say about working with Ayaan Raza. All testimonials are fictional.",
+  "meta_description_len": 84,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/testimonials"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Testimonials — Ayaan Raza",
+   "og:description": "What demo clients say about working with Ayaan Raza. All testimonials are fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/testimonials",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/testimonials.jpg",
+   "twitter:title": "Testimonials — Ayaan Raza",
+   "twitter:description": "What demo clients say about working with Ayaan Raza. All testimonials are fictional."
+  },
+  "h1": [
+   "Clients love the work"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 44,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/terms",
+  "path": "/terms",
+  "status": 200,
+  "html_bytes": 27470,
+  "fetch_time_s": 0.748995,
+  "title": "Terms — Ayaan Raza",
+  "title_len": 18,
+  "lang": "en",
+  "meta_description": "Demo terms of use for the Ayaan Raza portfolio. All content is fictional.",
+  "meta_description_len": 73,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/terms"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Terms — Ayaan Raza",
+   "og:description": "Demo terms of use for the Ayaan Raza portfolio. All content is fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/terms",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/terms.jpg",
+   "twitter:title": "Terms — Ayaan Raza",
+   "twitter:description": "Demo terms of use for the Ayaan Raza portfolio. All content is fictional."
+  },
+  "h1": [
+   "Terms of use"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 44,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/uses",
+  "path": "/uses",
+  "status": 200,
+  "html_bytes": 28828,
+  "fetch_time_s": 0.669336,
+  "title": "Uses — Ayaan Raza",
+  "title_len": 17,
+  "lang": "en",
+  "meta_description": "The tools and setup behind the Ayaan Raza demo portfolio. Demo content — all fictional.",
+  "meta_description_len": 87,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/uses"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Uses — Ayaan Raza",
+   "og:description": "The tools and setup behind the Ayaan Raza demo portfolio. Demo content — all fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/uses",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/uses.jpg",
+   "twitter:title": "Uses — Ayaan Raza",
+   "twitter:description": "The tools and setup behind the Ayaan Raza demo portfolio. Demo content — all fictional."
+  },
+  "h1": [
+   "Tools I use"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 44,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/sitemap",
+  "path": "/sitemap",
+  "status": 200,
+  "html_bytes": 30688,
+  "fetch_time_s": 0.568462,
+  "title": "Sitemap — Ayaan Raza",
+  "title_len": 20,
+  "lang": "en",
+  "meta_description": "Every page on the Ayaan Raza demo portfolio, in one place.",
+  "meta_description_len": 58,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/sitemap"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Sitemap — Ayaan Raza",
+   "og:description": "Every page on the Ayaan Raza demo portfolio, in one place.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/sitemap",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/sitemap.jpg",
+   "twitter:title": "Sitemap — Ayaan Raza",
+   "twitter:description": "Every page on the Ayaan Raza demo portfolio, in one place."
+  },
+  "h1": [
+   "Every page, in one place"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 77,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/accessibility",
+  "path": "/accessibility",
+  "status": 200,
+  "html_bytes": 30228,
+  "fetch_time_s": 1.247831,
+  "title": "Accessibility — Ayaan Raza",
+  "title_len": 26,
+  "lang": "en",
+  "meta_description": "Accessibility statement for the Ayaan Raza demo portfolio: what is supported and what is known to be limited.",
+  "meta_description_len": 109,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/accessibility"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Accessibility — Ayaan Raza",
+   "og:description": "Accessibility statement for the Ayaan Raza demo portfolio: what is supported and what is known to be limited.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/accessibility",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/accessibility.jpg",
+   "twitter:title": "Accessibility — Ayaan Raza",
+   "twitter:description": "Accessibility statement for the Ayaan Raza demo portfolio: what is supported and what is known to be limited."
+  },
+  "h1": [
+   "Accessibility statement"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 44,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/search",
+  "path": "/search",
+  "status": 200,
+  "html_bytes": 41810,
+  "fetch_time_s": 0.665448,
+  "title": "Search — Ayaan Raza",
+  "title_len": 19,
+  "lang": "en",
+  "meta_description": "Search every page, project, post and service on the Ayaan Raza demo portfolio.",
+  "meta_description_len": 78,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/search"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Search — Ayaan Raza",
+   "og:description": "Search every page, project, post and service on the Ayaan Raza demo portfolio.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/search",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/search.jpg",
+   "twitter:title": "Search — Ayaan Raza",
+   "twitter:description": "Search every page, project, post and service on the Ayaan Raza demo portfolio."
+  },
+  "h1": [
+   "Search the site"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 76,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/now",
+  "path": "/now",
+  "status": 200,
+  "html_bytes": 30725,
+  "fetch_time_s": 0.845989,
+  "title": "Now — Ayaan Raza",
+  "title_len": 16,
+  "lang": "en",
+  "meta_description": "What Ayaan Raza is focused on right now: building, learning, reading. Demo content — all fictional.",
+  "meta_description_len": 99,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/now"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Now — Ayaan Raza",
+   "og:description": "What Ayaan Raza is focused on right now: building, learning, reading. Demo content — all fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/now",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/now.jpg",
+   "twitter:title": "Now — Ayaan Raza",
+   "twitter:description": "What Ayaan Raza is focused on right now: building, learning, reading. Demo content — all fictional."
+  },
+  "h1": [
+   "What I'm focused on now"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 46,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/pricing",
+  "path": "/pricing",
+  "status": 200,
+  "html_bytes": 44534,
+  "fetch_time_s": 0.625028,
+  "title": "Pricing — Ayaan Raza",
+  "title_len": 20,
+  "lang": "en",
+  "meta_description": "Demo pricing for design and development work: three plans from $499, plus add-ons. Demo content — all fictional.",
+  "meta_description_len": 112,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/pricing"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Pricing — Ayaan Raza",
+   "og:description": "Demo pricing for design and development work: three plans from $499, plus add-ons. Demo content — all fictional.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/pricing",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/pricing.jpg",
+   "twitter:title": "Pricing — Ayaan Raza",
+   "twitter:description": "Demo pricing for design and development work: three plans from $499, plus add-ons. Demo content — all fictional."
+  },
+  "h1": [
+   "Simple, honest pricing"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 52,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/book",
+  "path": "/book",
+  "status": 200,
+  "html_bytes": 34200,
+  "fetch_time_s": 0.54073,
+  "title": "Book a call — Ayaan Raza",
+  "title_len": 24,
+  "lang": "en",
+  "meta_description": "Book a free 30-minute intro call with Ayaan Raza. Demo booking — nothing is scheduled or sent.",
+  "meta_description_len": 94,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/book"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Book a call — Ayaan Raza",
+   "og:description": "Book a free 30-minute intro call with Ayaan Raza. Demo booking — nothing is scheduled or sent.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/book",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/book.jpg",
+   "twitter:title": "Book a call — Ayaan Raza",
+   "twitter:description": "Book a free 30-minute intro call with Ayaan Raza. Demo booking — nothing is scheduled or sent."
+  },
+  "h1": [
+   "Book a free intro call"
+  ],
+  "jsonld_blocks": 0,
+  "jsonld": [],
+  "jsonld_objects": [],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 45,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/services/mobile",
+  "path": "/services/mobile",
+  "status": 200,
+  "html_bytes": 38456,
+  "fetch_time_s": 0.650001,
+  "title": "Mobile App Development — Ayaan Raza",
+  "title_len": 35,
+  "lang": "en",
+  "meta_description": "From first sketch to app-store release, I build cross-platform apps that feel native on both Android and iOS — one codebase, two stores, no compromises on polish.",
+  "meta_description_len": 162,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/services/mobile"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Mobile App Development — Ayaan Raza",
+   "og:description": "From first sketch to app-store release, I build cross-platform apps that feel native on both Android and iOS — one codebase, two stores, no compromises on polish.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/services/mobile",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/service-mobile.jpg",
+   "twitter:title": "Mobile App Development — Ayaan Raza",
+   "twitter:description": "From first sketch to app-store release, I build cross-platform apps that feel native on both Android and iOS — one codebase, two stores, no compromises on polish."
+  },
+  "h1": [
+   "Mobile App Development"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Mobile App Development",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services/mobile"
+     }
+    ]
+   }
+  ],
+  "img_total": 4,
+  "img_missing_alt": 0,
+  "img_empty_alt": 4,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/services/design",
+  "path": "/services/design",
+  "status": 200,
+  "html_bytes": 38252,
+  "fetch_time_s": 0.822807,
+  "title": "UI/UX Design — Ayaan Raza",
+  "title_len": 25,
+  "lang": "en",
+  "meta_description": "Interfaces people understand in seconds. I design with real content and real constraints, so what you approve is what gets built.",
+  "meta_description_len": 129,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/services/design"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "UI/UX Design — Ayaan Raza",
+   "og:description": "Interfaces people understand in seconds. I design with real content and real constraints, so what you approve is what gets built.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/services/design",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/service-design.jpg",
+   "twitter:title": "UI/UX Design — Ayaan Raza",
+   "twitter:description": "Interfaces people understand in seconds. I design with real content and real constraints, so what you approve is what gets built."
+  },
+  "h1": [
+   "UI/UX Design"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "UI/UX Design",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services/design"
+     }
+    ]
+   }
+  ],
+  "img_total": 4,
+  "img_missing_alt": 0,
+  "img_empty_alt": 4,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/services/backend",
+  "path": "/services/backend",
+  "status": 200,
+  "html_bytes": 38304,
+  "fetch_time_s": 0.908084,
+  "title": "Backend Integration — Ayaan Raza",
+  "title_len": 32,
+  "lang": "en",
+  "meta_description": "The invisible half of every app: reliable APIs, secure auth and data that stays in sync. Built to scale from demo day to real users.",
+  "meta_description_len": 132,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/services/backend"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Backend Integration — Ayaan Raza",
+   "og:description": "The invisible half of every app: reliable APIs, secure auth and data that stays in sync. Built to scale from demo day to real users.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/services/backend",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/service-backend.jpg",
+   "twitter:title": "Backend Integration — Ayaan Raza",
+   "twitter:description": "The invisible half of every app: reliable APIs, secure auth and data that stays in sync. Built to scale from demo day to real users."
+  },
+  "h1": [
+   "Backend Integration"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Backend Integration",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services/backend"
+     }
+    ]
+   }
+  ],
+  "img_total": 4,
+  "img_missing_alt": 0,
+  "img_empty_alt": 4,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/services/testing",
+  "path": "/services/testing",
+  "status": 200,
+  "html_bytes": 38357,
+  "fetch_time_s": 0.802124,
+  "title": "Testing & Maintenance — Ayaan Raza",
+  "title_len": 34,
+  "lang": "en",
+  "meta_description": "Launch day is the starting line. I keep apps fast, stable and up to date long after release, with tests that catch regressions before users do.",
+  "meta_description_len": 143,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/services/testing"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Testing & Maintenance — Ayaan Raza",
+   "og:description": "Launch day is the starting line. I keep apps fast, stable and up to date long after release, with tests that catch regressions before users do.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/services/testing",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/service-testing.jpg",
+   "twitter:title": "Testing & Maintenance — Ayaan Raza",
+   "twitter:description": "Launch day is the starting line. I keep apps fast, stable and up to date long after release, with tests that catch regressions before users do."
+  },
+  "h1": [
+   "Testing & Maintenance"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Testing & Maintenance",
+      "item": "https://ayaan-raza-portfolio.pages.dev/services/testing"
+     }
+    ]
+   }
+  ],
+  "img_total": 4,
+  "img_missing_alt": 0,
+  "img_empty_alt": 4,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/projects/foodly",
+  "path": "/projects/foodly",
+  "status": 200,
+  "html_bytes": 47093,
+  "fetch_time_s": 0.973705,
+  "title": "Foodly — Ayaan Raza",
+  "title_len": 19,
+  "lang": "en",
+  "meta_description": "A food delivery app with real-time tracking and secure payments.",
+  "meta_description_len": 64,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/projects/foodly"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Foodly — Ayaan Raza",
+   "og:description": "A food delivery app with real-time tracking and secure payments.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/projects/foodly",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/project-foodly.jpg",
+   "twitter:title": "Foodly — Ayaan Raza",
+   "twitter:description": "A food delivery app with real-time tracking and secure payments."
+  },
+  "h1": [
+   "Foodly"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Foodly",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects/foodly"
+     }
+    ]
+   }
+  ],
+  "img_total": 12,
+  "img_missing_alt": 0,
+  "img_empty_alt": 12,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-taskflow.jpg",
+   "/images/screen-taskflow.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 57,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/projects/shopio",
+  "path": "/projects/shopio",
+  "status": 200,
+  "html_bytes": 47677,
+  "fetch_time_s": 0.99398,
+  "title": "Shopio — Ayaan Raza",
+  "title_len": 19,
+  "lang": "en",
+  "meta_description": "A cross-platform shopping app with smooth checkout flow.",
+  "meta_description_len": 56,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/projects/shopio"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Shopio — Ayaan Raza",
+   "og:description": "A cross-platform shopping app with smooth checkout flow.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/projects/shopio",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/project-shopio.jpg",
+   "twitter:title": "Shopio — Ayaan Raza",
+   "twitter:description": "A cross-platform shopping app with smooth checkout flow."
+  },
+  "h1": [
+   "Shopio"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Shopio",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects/shopio"
+     }
+    ]
+   }
+  ],
+  "img_total": 12,
+  "img_missing_alt": 0,
+  "img_empty_alt": 12,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-taskflow.jpg",
+   "/images/screen-taskflow.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 58,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/projects/walletwise",
+  "path": "/projects/walletwise",
+  "status": 200,
+  "html_bytes": 47727,
+  "fetch_time_s": 1.283674,
+  "title": "WalletWise — Ayaan Raza",
+  "title_len": 23,
+  "lang": "en",
+  "meta_description": "Personal finance tracker with insights and budget planning.",
+  "meta_description_len": 59,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/projects/walletwise"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "WalletWise — Ayaan Raza",
+   "og:description": "Personal finance tracker with insights and budget planning.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/projects/walletwise",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/project-walletwise.jpg",
+   "twitter:title": "WalletWise — Ayaan Raza",
+   "twitter:description": "Personal finance tracker with insights and budget planning."
+  },
+  "h1": [
+   "WalletWise"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "WalletWise",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects/walletwise"
+     }
+    ]
+   }
+  ],
+  "img_total": 12,
+  "img_missing_alt": 0,
+  "img_empty_alt": 12,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-taskflow.jpg",
+   "/images/screen-taskflow.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 58,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/projects/fittrack",
+  "path": "/projects/fittrack",
+  "status": 200,
+  "html_bytes": 47658,
+  "fetch_time_s": 0.760368,
+  "title": "FitTrack — Ayaan Raza",
+  "title_len": 21,
+  "lang": "en",
+  "meta_description": "Workout tracker and health companion for everyday goals.",
+  "meta_description_len": 56,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/projects/fittrack"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "FitTrack — Ayaan Raza",
+   "og:description": "Workout tracker and health companion for everyday goals.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/projects/fittrack",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/project-fittrack.jpg",
+   "twitter:title": "FitTrack — Ayaan Raza",
+   "twitter:description": "Workout tracker and health companion for everyday goals."
+  },
+  "h1": [
+   "FitTrack"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "FitTrack",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects/fittrack"
+     }
+    ]
+   }
+  ],
+  "img_total": 12,
+  "img_missing_alt": 0,
+  "img_empty_alt": 12,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-taskflow.jpg",
+   "/images/screen-taskflow.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 58,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/projects/wanderly",
+  "path": "/projects/wanderly",
+  "status": 200,
+  "html_bytes": 47681,
+  "fetch_time_s": 0.759347,
+  "title": "Wanderly — Ayaan Raza",
+  "title_len": 21,
+  "lang": "en",
+  "meta_description": "Trip planner with offline maps and day-by-day itineraries.",
+  "meta_description_len": 58,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/projects/wanderly"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Wanderly — Ayaan Raza",
+   "og:description": "Trip planner with offline maps and day-by-day itineraries.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/projects/wanderly",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/project-wanderly.jpg",
+   "twitter:title": "Wanderly — Ayaan Raza",
+   "twitter:description": "Trip planner with offline maps and day-by-day itineraries."
+  },
+  "h1": [
+   "Wanderly"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Wanderly",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects/wanderly"
+     }
+    ]
+   }
+  ],
+  "img_total": 12,
+  "img_missing_alt": 0,
+  "img_empty_alt": 12,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-wanderly.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-taskflow.jpg",
+   "/images/screen-taskflow.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 58,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/projects/taskflow",
+  "path": "/projects/taskflow",
+  "status": 200,
+  "html_bytes": 47030,
+  "fetch_time_s": 0.681461,
+  "title": "TaskFlow — Ayaan Raza",
+  "title_len": 21,
+  "lang": "en",
+  "meta_description": "Calm task manager with focus sessions and team boards.",
+  "meta_description_len": 54,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/projects/taskflow"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "TaskFlow — Ayaan Raza",
+   "og:description": "Calm task manager with focus sessions and team boards.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/projects/taskflow",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/project-taskflow.jpg",
+   "twitter:title": "TaskFlow — Ayaan Raza",
+   "twitter:description": "Calm task manager with focus sessions and team boards."
+  },
+  "h1": [
+   "TaskFlow"
+  ],
+  "jsonld_blocks": 1,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Projects",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "TaskFlow",
+      "item": "https://ayaan-raza-portfolio.pages.dev/projects/taskflow"
+     }
+    ]
+   }
+  ],
+  "img_total": 12,
+  "img_missing_alt": 0,
+  "img_empty_alt": 12,
+  "img_no_dims": 0,
+  "img_srcs": [
+   "/images/screen-taskflow.jpg",
+   "/images/screen-taskflow.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-foodly.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-shopio.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-walletwise.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-fittrack.jpg",
+   "/images/screen-wanderly.jpg",
+   "/images/screen-wanderly.jpg"
+  ],
+  "img_loading": [
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy",
+   "lazy"
+  ],
+  "img_fetchpriority": [
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)",
+   "(none)"
+  ],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 57,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/blog/design-systems-that-scale",
+  "path": "/blog/design-systems-that-scale",
+  "status": 200,
+  "html_bytes": 31000,
+  "fetch_time_s": 0.706762,
+  "title": "Design systems that scale past one project — Ayaan Raza",
+  "title_len": 55,
+  "lang": "en",
+  "meta_description": "Tokens, not one-off colors. How a small system keeps six demos looking like one brand.",
+  "meta_description_len": 86,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/blog/design-systems-that-scale"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Design systems that scale past one project — Ayaan Raza",
+   "og:description": "Tokens, not one-off colors. How a small system keeps six demos looking like one brand.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/blog/design-systems-that-scale",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/post-design-systems-that-scale.jpg",
+   "twitter:title": "Design systems that scale past one project — Ayaan Raza",
+   "twitter:description": "Tokens, not one-off colors. How a small system keeps six demos looking like one brand."
+  },
+  "h1": [
+   "Design systems that scale past one project"
+  ],
+  "jsonld_blocks": 2,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BlogPosting"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "headline",
+     "description",
+     "datePublished",
+     "author",
+     "url"
+    ]
+   },
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Design systems that scale past one project",
+    "description": "Tokens, not one-off colors. How a small system keeps six demos looking like one brand.",
+    "datePublished": "2025-11-02",
+    "author": {
+     "@type": "Person",
+     "name": "Ayaan Raza",
+     "url": "https://ayaan-raza-portfolio.pages.dev"
+    },
+    "url": "https://ayaan-raza-portfolio.pages.dev/blog/design-systems-that-scale"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Design systems that scale past one project",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog/design-systems-that-scale"
+     }
+    ]
+   }
+  ],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 52,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/blog/forms-that-forgive",
+  "path": "/blog/forms-that-forgive",
+  "status": 200,
+  "html_bytes": 31369,
+  "fetch_time_s": 0.574778,
+  "title": "Forms that forgive mistakes — Ayaan Raza",
+  "title_len": 40,
+  "lang": "en",
+  "meta_description": "Keep the input, explain the fix, and never punish a typo with a blank form.",
+  "meta_description_len": 75,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/blog/forms-that-forgive"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Forms that forgive mistakes — Ayaan Raza",
+   "og:description": "Keep the input, explain the fix, and never punish a typo with a blank form.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/blog/forms-that-forgive",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/post-forms-that-forgive.jpg",
+   "twitter:title": "Forms that forgive mistakes — Ayaan Raza",
+   "twitter:description": "Keep the input, explain the fix, and never punish a typo with a blank form."
+  },
+  "h1": [
+   "Forms that forgive mistakes"
+  ],
+  "jsonld_blocks": 2,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BlogPosting"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "headline",
+     "description",
+     "datePublished",
+     "author",
+     "url"
+    ]
+   },
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Forms that forgive mistakes",
+    "description": "Keep the input, explain the fix, and never punish a typo with a blank form.",
+    "datePublished": "2025-10-19",
+    "author": {
+     "@type": "Person",
+     "name": "Ayaan Raza",
+     "url": "https://ayaan-raza-portfolio.pages.dev"
+    },
+    "url": "https://ayaan-raza-portfolio.pages.dev/blog/forms-that-forgive"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Forms that forgive mistakes",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog/forms-that-forgive"
+     }
+    ]
+   }
+  ],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/blog/mobile-first-portfolios",
+  "path": "/blog/mobile-first-portfolios",
+  "status": 200,
+  "html_bytes": 31464,
+  "fetch_time_s": 0.714946,
+  "title": "Designing mobile-first portfolios — Ayaan Raza",
+  "title_len": 46,
+  "lang": "en",
+  "meta_description": "Most people will meet your work on a phone. Start small, then earn the big screen.",
+  "meta_description_len": 82,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/blog/mobile-first-portfolios"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Designing mobile-first portfolios — Ayaan Raza",
+   "og:description": "Most people will meet your work on a phone. Start small, then earn the big screen.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/blog/mobile-first-portfolios",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/post-mobile-first-portfolios.jpg",
+   "twitter:title": "Designing mobile-first portfolios — Ayaan Raza",
+   "twitter:description": "Most people will meet your work on a phone. Start small, then earn the big screen."
+  },
+  "h1": [
+   "Designing mobile-first portfolios"
+  ],
+  "jsonld_blocks": 2,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BlogPosting"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "headline",
+     "description",
+     "datePublished",
+     "author",
+     "url"
+    ]
+   },
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Designing mobile-first portfolios",
+    "description": "Most people will meet your work on a phone. Start small, then earn the big screen.",
+    "datePublished": "2025-10-12",
+    "author": {
+     "@type": "Person",
+     "name": "Ayaan Raza",
+     "url": "https://ayaan-raza-portfolio.pages.dev"
+    },
+    "url": "https://ayaan-raza-portfolio.pages.dev/blog/mobile-first-portfolios"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Designing mobile-first portfolios",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog/mobile-first-portfolios"
+     }
+    ]
+   }
+  ],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/blog/flutter-vs-native-demo",
+  "path": "/blog/flutter-vs-native-demo",
+  "status": 200,
+  "html_bytes": 31359,
+  "fetch_time_s": 0.58422,
+  "title": "Flutter vs native: a demo take — Ayaan Raza",
+  "title_len": 43,
+  "lang": "en",
+  "meta_description": "A short, honest comparison from demo projects — not a holy war.",
+  "meta_description_len": 63,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/blog/flutter-vs-native-demo"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Flutter vs native: a demo take — Ayaan Raza",
+   "og:description": "A short, honest comparison from demo projects — not a holy war.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/blog/flutter-vs-native-demo",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/post-flutter-vs-native-demo.jpg",
+   "twitter:title": "Flutter vs native: a demo take — Ayaan Raza",
+   "twitter:description": "A short, honest comparison from demo projects — not a holy war."
+  },
+  "h1": [
+   "Flutter vs native: a demo take"
+  ],
+  "jsonld_blocks": 2,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BlogPosting"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "headline",
+     "description",
+     "datePublished",
+     "author",
+     "url"
+    ]
+   },
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Flutter vs native: a demo take",
+    "description": "A short, honest comparison from demo projects — not a holy war.",
+    "datePublished": "2025-09-28",
+    "author": {
+     "@type": "Person",
+     "name": "Ayaan Raza",
+     "url": "https://ayaan-raza-portfolio.pages.dev"
+    },
+    "url": "https://ayaan-raza-portfolio.pages.dev/blog/flutter-vs-native-demo"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Flutter vs native: a demo take",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog/flutter-vs-native-demo"
+     }
+    ]
+   }
+  ],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/blog/small-details-big-ux",
+  "path": "/blog/small-details-big-ux",
+  "status": 200,
+  "html_bytes": 31345,
+  "fetch_time_s": 0.639021,
+  "title": "Small details, big UX wins — Ayaan Raza",
+  "title_len": 39,
+  "lang": "en",
+  "meta_description": "Focus rings, empty states and honest loading messages do quiet work.",
+  "meta_description_len": 68,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/blog/small-details-big-ux"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Small details, big UX wins — Ayaan Raza",
+   "og:description": "Focus rings, empty states and honest loading messages do quiet work.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/blog/small-details-big-ux",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/post-small-details-big-ux.jpg",
+   "twitter:title": "Small details, big UX wins — Ayaan Raza",
+   "twitter:description": "Focus rings, empty states and honest loading messages do quiet work."
+  },
+  "h1": [
+   "Small details, big UX wins"
+  ],
+  "jsonld_blocks": 2,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BlogPosting"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "headline",
+     "description",
+     "datePublished",
+     "author",
+     "url"
+    ]
+   },
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Small details, big UX wins",
+    "description": "Focus rings, empty states and honest loading messages do quiet work.",
+    "datePublished": "2025-09-03",
+    "author": {
+     "@type": "Person",
+     "name": "Ayaan Raza",
+     "url": "https://ayaan-raza-portfolio.pages.dev"
+    },
+    "url": "https://ayaan-raza-portfolio.pages.dev/blog/small-details-big-ux"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Small details, big UX wins",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog/small-details-big-ux"
+     }
+    ]
+   }
+  ],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 53,
+  "anchors_hash_only": 5
+ },
+ {
+  "url": "https://ayaan-raza-portfolio.pages.dev/blog/performance-budgets-demo",
+  "path": "/blog/performance-budgets-demo",
+  "status": 200,
+  "html_bytes": 30870,
+  "fetch_time_s": 0.988593,
+  "title": "Performance budgets for demo sites — Ayaan Raza",
+  "title_len": 47,
+  "lang": "en",
+  "meta_description": "A demo that loads slowly teaches the wrong lesson. Budgets keep it honest.",
+  "meta_description_len": 74,
+  "robots_meta": "",
+  "viewport": "width=device-width, initial-scale=1",
+  "canonical": [
+   "https://ayaan-raza-portfolio.pages.dev/blog/performance-budgets-demo"
+  ],
+  "og": {
+   "og:site_name": "Ayaan Raza — Full-Stack Developer",
+   "og:type": "website",
+   "twitter:card": "summary_large_image",
+   "og:title": "Performance budgets for demo sites — Ayaan Raza",
+   "og:description": "A demo that loads slowly teaches the wrong lesson. Budgets keep it honest.",
+   "og:url": "https://ayaan-raza-portfolio.pages.dev/blog/performance-budgets-demo",
+   "og:image": "https://ayaan-raza-portfolio.pages.dev/og/post-performance-budgets-demo.jpg",
+   "twitter:title": "Performance budgets for demo sites — Ayaan Raza",
+   "twitter:description": "A demo that loads slowly teaches the wrong lesson. Budgets keep it honest."
+  },
+  "h1": [
+   "Performance budgets for demo sites"
+  ],
+  "jsonld_blocks": 2,
+  "jsonld": [
+   {
+    "parse": "OK",
+    "types": [
+     "BlogPosting"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "headline",
+     "description",
+     "datePublished",
+     "author",
+     "url"
+    ]
+   },
+   {
+    "parse": "OK",
+    "types": [
+     "BreadcrumbList"
+    ],
+    "keys": [
+     "@context",
+     "@type",
+     "itemListElement"
+    ]
+   }
+  ],
+  "jsonld_objects": [
+   {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Performance budgets for demo sites",
+    "description": "A demo that loads slowly teaches the wrong lesson. Budgets keep it honest.",
+    "datePublished": "2025-08-15",
+    "author": {
+     "@type": "Person",
+     "name": "Ayaan Raza",
+     "url": "https://ayaan-raza-portfolio.pages.dev"
+    },
+    "url": "https://ayaan-raza-portfolio.pages.dev/blog/performance-budgets-demo"
+   },
+   {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+     {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ayaan-raza-portfolio.pages.dev"
+     },
+     {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog"
+     },
+     {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Performance budgets for demo sites",
+      "item": "https://ayaan-raza-portfolio.pages.dev/blog/performance-budgets-demo"
+     }
+    ]
+   }
+  ],
+  "img_total": 0,
+  "img_missing_alt": 0,
+  "img_empty_alt": 0,
+  "img_no_dims": 0,
+  "img_srcs": [],
+  "img_loading": [],
+  "img_fetchpriority": [],
+  "css_links": 1,
+  "preload_links": 0,
+  "preload_hrefs": [],
+  "script_tags": 2,
+  "script_srcs": [
+   "(inline)",
+   "(inline)"
+  ],
+  "anchors_total": 52,
+  "anchors_hash_only": 5
+ }
+]

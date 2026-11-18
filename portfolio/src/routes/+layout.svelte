@@ -49,7 +49,6 @@
 
 <svelte:head>
 	<meta property="og:site_name" content="{site.name} — {site.role}" />
-	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary_large_image" />
 </svelte:head>
 

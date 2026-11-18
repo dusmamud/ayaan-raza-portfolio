@@ -3,8 +3,18 @@
 	import { Download, Mail, MapPin, Phone, Printer } from '@lucide/svelte';
 	import Breadcrumbs from '#lib/components/ui/Breadcrumbs.svelte';
 	import Button from '#lib/components/ui/Button.svelte';
+	import JsonLd from '#lib/components/ui/JsonLd.svelte';
 
 	let { data }: { data: PageData } = $props();
+
+	const breadcrumbLd = $derived({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
+			{ '@type': 'ListItem', position: 2, name: 'Resume', item: `${data.site.baseUrl}/resume` }
+		]
+	});
 
 	const groups = [
 		{ id: 'frontend', label: 'Frontend' },
@@ -19,6 +29,7 @@
 
 <svelte:head>
 	<title>CV / Resume — Ayaan Raza</title>
+	<meta property="og:type" content="website" />
 	<meta
 		name="description"
 		content="CV of Ayaan Raza, full-stack developer. Demo resume — all content is fictional."
@@ -30,12 +41,17 @@
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/resume" />
 	<meta property="og:image" content="{data.site.baseUrl}/og/resume.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="CV / Resume — Ayaan Raza" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og/resume.jpg" />
 	<meta name="twitter:title" content="CV / Resume — Ayaan Raza" />
 	<meta
 		name="twitter:description"
 		content="CV of Ayaan Raza, full-stack developer. Demo resume — all content is fictional."
 	/>
 	<link rel="canonical" href="{data.site.baseUrl}/resume" />
+	<JsonLd data={breadcrumbLd} />
 </svelte:head>
 
 <div class="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
