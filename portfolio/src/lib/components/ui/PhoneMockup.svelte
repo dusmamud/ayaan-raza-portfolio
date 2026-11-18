@@ -30,6 +30,8 @@
 			alt=""
 			width={screen.width}
 			height={screen.height}
+			widths={[320, 480, 720, screen.width]}
+			sizes="144px"
 			loading="lazy"
 			class="block h-full w-full object-cover object-top"
 		/>
@@ -44,6 +46,8 @@
 			alt=""
 			width={screen.width}
 			height={screen.height}
+			widths={[320, 480, 720, screen.width]}
+			sizes="144px"
 			loading="lazy"
 			class="block h-full w-full object-cover object-top"
 		/>

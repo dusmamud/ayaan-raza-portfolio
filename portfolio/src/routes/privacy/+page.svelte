@@ -12,7 +12,12 @@
 		'@type': 'BreadcrumbList',
 		itemListElement: [
 			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
-			{ '@type': 'ListItem', position: 2, name: 'Privacy Policy', item: `${data.site.baseUrl}/privacy` }
+			{
+				'@type': 'ListItem',
+				position: 2,
+				name: 'Privacy Policy',
+				item: `${data.site.baseUrl}/privacy`
+			}
 		]
 	});
 

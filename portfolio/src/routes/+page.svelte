@@ -61,11 +61,11 @@
 		content="Ayaan Raza builds fast, scalable and beautiful web & mobile applications. Demo portfolio — all content is fictional."
 	/>
 	<meta property="og:url" content="{data.site.baseUrl}/" />
-	<meta property="og:image" content="{data.site.baseUrl}/og.png" />
+	<meta property="og:image" content="{data.site.baseUrl}/og.jpg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta property="og:image:alt" content="Ayaan Raza — Full-Stack Developer" />
-	<meta name="twitter:image" content="{data.site.baseUrl}/og.png" />
+	<meta name="twitter:image" content="{data.site.baseUrl}/og.jpg" />
 	<meta name="twitter:title" content="Ayaan Raza — Full-Stack Developer" />
 	<meta
 		name="twitter:description"

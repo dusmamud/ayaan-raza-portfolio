@@ -87,6 +87,8 @@
 					alt=""
 					width={1920}
 					height={1280}
+					widths={[640, 960, 1280, 1920]}
+					sizes="(max-width: 1023px) 100vw, 592px"
 					fetchPriority="high"
 					class="h-auto w-full motion-safe:animate-float dark:rounded-3xl"
 				/>

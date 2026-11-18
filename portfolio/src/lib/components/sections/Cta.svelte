@@ -34,6 +34,8 @@
 					alt=""
 					width={1920}
 					height={1280}
+					widths={[640, 960, 1280, 1920]}
+					sizes="(max-width: 1023px) 100vw, 592px"
 					loading="lazy"
 					class="h-auto w-full dark:rounded-3xl"
 				/>

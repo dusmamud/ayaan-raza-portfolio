@@ -725,12 +725,15 @@ Nothing is recorded here yet: setup has not run.)
   BlogPosting image, critical CSS all evaluated and
   deliberately not applied — reasons in docs/12.
 - Sandbox write failure (EPERM, recurring) blocked
-  local builds/gates/image generation for this
-  round: edits via file tools, push via the Git Data
-  API helper, gates run in CI. Responsive images
-  (qa/generate-responsive.py written, masters in
-  qa/masters/) + home og.jpg are queued until writes
-  clear; do not deploy the Picture change without
-  the generated files. Local HEAD lags remote after
-  the API push — reconcile carefully once git writes
-  work (see docs/12 §6).
+  local builds/gates/image generation for the first
+  commit: edits via file tools, push via the Git
+  Data API helper, gates run in CI. The failure
+  cleared ~13:27 IST; the local tree was reconciled
+  to the pushed commit by full blob comparison
+  (42/42 match) + reset --hard, and the image work
+  landed the same day in a follow-up commit (108
+  width variants, srcset/sizes, og.jpg, prettier
+  fixes for 4 files) with full local gates green.
+  Sizes MUST be repeated on every <source> — img-only
+  sizes was measured falling back to 100vw. See
+  docs/12 for the full account.

@@ -156,17 +156,31 @@ sitemap count, JSON-LD extraction, PSI/validator/RRT re-tests on changed
 pages, visual spot-checks) after deploy. Results are in the chat report
 of 2026-11-18, not here, because this file was written before the push.
 
-## Pending: responsive images (§6)
+## Responsive images (done in the follow-up commit, same day)
 
-`qa/generate-responsive.py` generates 4 widths × 3 formats per image from
+The sandbox failure cleared ~13:27 IST, so the image work landed the
+same day instead of queueing. `qa/generate-responsive.py` generated 4
+widths × 3 formats per image (108 files, all dimensions verified) from
 the PNG masters in `qa/masters/` (7 recovered from git history at
-`cd33256^`, 2 already present) with the original encoder settings.
-`Picture.svelte` must then gain `widths` + `sizes` props (illustrations
-`[640, 960, 1280, 1920]`, sizes `(max-width: 1023px) 100vw, 592px`;
-screens `[320, 480, 720, native]`, sizes `144px`) and the old
-single-resolution files removed. Home `og.png` (219 KB) → JPG is queued
-with this work. Blocked only by the sandbox write failure; do not deploy
-the Picture change without the generated files (srcset would 404).
+`cd33256^`, 2 already present) with the original encoder settings; the
+27 old single-resolution files were deleted. `Picture.svelte` gained
+`widths` + `sizes` props (illustrations `[640, 960, 1280, 1920]`, sizes
+`(max-width: 1023px) 100vw, 592px`; screens `[320, 480, 720, native]`,
+sizes `144px`). Home `og.png` (219 KB) → `og.jpg` (65 KB, same 1200×630)
+with the head tags repointed; `og.png` kept on disk, unreferenced.
+
+Measured selection trap: `sizes` on the `<img>` alone was IGNORED for
+`<source>` selection in headless Chromium — desktop fetched the 1920w
+variant (100vw fallback) despite `sizes` saying 592px. Repeating
+`sizes` on every `<source>` fixed it: desktop now fetches hero-640
+(14.9 KB, was 43.2 KB) and screen-320 (14.1 KB, was 54.6 KB) at DPR 1,
+verified via request logging + `currentSrc` at 1440 and 390. Visual QA
+(home + /projects, 1440 + 390) shows zero visual change. Full local
+gates green on this tree: prettier, check 0/0, lint, Vitest 18/18,
+Playwright 6/6, audit 0 problems / 81 notes. The prettier fixes for 4
+files from the first commit (PostCard, accessibility, privacy,
+testimonials — whitespace only) ride in this commit; the first commit's
+CI run is expected red on prettier only.
 
 ## Sandbox failure (2026-11-18 ~13:17 IST, recurring)
 

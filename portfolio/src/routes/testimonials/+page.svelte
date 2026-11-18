@@ -13,7 +13,12 @@
 		'@type': 'BreadcrumbList',
 		itemListElement: [
 			{ '@type': 'ListItem', position: 1, name: 'Home', item: data.site.baseUrl },
-			{ '@type': 'ListItem', position: 2, name: 'Testimonials', item: `${data.site.baseUrl}/testimonials` }
+			{
+				'@type': 'ListItem',
+				position: 2,
+				name: 'Testimonials',
+				item: `${data.site.baseUrl}/testimonials`
+			}
 		]
 	});
 </script>
